@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NPPA CRS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Datetimepicker CSS -->
+    <link rel="stylesheet" href="../plugins/bootstrap4-datetimepicker-master/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../plugins/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <!-- nppa Icon CSS -->
+    <link rel="stylesheet" href="../dist/css/nppa_icon.css">
+    <!-- nppa CSS -->
+    <link rel="stylesheet" href="../dist/css/nppa.css">
+    <!-- nppa SVG -->
+    <link rel="stylesheet" href="../dist/css/nppa_svg.css">
+</head>
+
+<body class="usr">
+    <div class="mh-wrapper">
+        <!-- header -->
+        <div class="login-user-header">
+            <div class="login-usr-hd-logo">
+                <img src="../dist/img/logo-login.png" alt="NPPA CRS">
+                <div class="login-title-txt">
+                    <strong>NPPA<span>CRS</span></strong>
+                    <span class="login-tit-notice">National Public Prosecution Authority <br><em>Criminal Record System</em></span>
+                </div>
+            </div>
+        </div>
+        <!--컨텐츠영역-->
+        <div class="login-user-contents">
+            <form>
+                <div class="adm-statbox">
+                  <div class="noti-txt">CRS requires the email confirmation to recognize you're the only person who can create your account.</div>
+                <ul class="adm-step-list">
+                  <li class="done">
+                      <em class="adm-step"><span class="icon_email"></span></em>
+                      <span class="adm-step-name">Email Confirmation</span>
+                  </li>
+                  <li class="done">
+                      <em class="adm-step"><span class="icon_authentication"></span></em>
+                      <span class="adm-step-name">Personal Authentication</span>
+                  </li>
+                  <li class="active">
+                      <em class="adm-step"><span class="icon_info"></span></em>
+                      <span class="adm-step-name">Personal Information</span>
+                  </li>
+                  <li class="">
+                      <em class="adm-step"><span class="icon_complete"></span></em>
+                      <span class="adm-step-name">Complete</span>
+                  </li>
+                </ul>
+              </div>
+            </form>
+            <form>
+              <div class="sign-contents">
+                <div class="tit">Sign Up<span class="txt">Please provide your information</span></div>
+				<!-- 영역-->
+				<div class="usr-detail-area">
+					<!-- 어플리칸트 디테일-->
+					<div class="usr-area">
+						<h3>Applicant Detail</h3>
+						<div class="row mb-30p">
+							<div class="col-12">
+								<div class="profile-id">
+								User Register Type : <span>Citizen</span>
+								</div>
+								<div class="profile-id">
+								National ID : <span>7108267201</span>
+								</div>
+							</div>
+						</div>
+						<div class="profile-pic more">
+							<img src="../dist/img/no-img.jpg" alt="">
+							<div class="form-group inline-group">
+								<input type="hidden" id="fileName" class="form-control mh-form-control">
+								<div class="attach-btn">
+									<button type="button" class="btn" for="#attach1"><span class="btn_attach"></span> Photo</button>
+									<input type="file" name="file_1" class="file_input_hidden" onchange="javascript: document.getElementById('fileName').value = this.value"/>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-4">
+								<div class="tit_cont">First Name</div>
+								<div class="form-group">
+									<input type="text" class="form-control mh-form-control">
+								</div>
+								</div>
+							<div class="col-4">
+								<div class="tit_cont">Middle Name</div>
+								<div class="form-group">
+									<input type="text" class="form-control mh-form-control">
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="tit_cont">Middle Name</div>
+								<div class="form-group">
+									<input type="text" class="form-control mh-form-control">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<div class="form-type02">
+									<div class="tit_cont">Gender</div>
+									<div class="inline-group">
+										<div class="mh-radio-wrapper">
+											<input type="radio" class="mh-radio-tab" name="gender" value="1" id="ra1" checked />
+											<label for="ra1">Male</label>
+											<input type="radio" class="mh-radio-tab" name="gender" value="2" id="ra2" />
+											<label for="ra2">Female</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-type02">
+									<div class="tit_cont">Birthday</div>
+									<div class="inline-group">
+										<div class="datetimepicker-wrapper datetimepicker">
+											<input type="text" class="form-control mh-form-control" id="datetimepicker3">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>									
+						<div class="row">
+							<div class="col-12">
+								<div class="form-type02">
+									<div class="tit_cont">Civil State</div>
+									<div class="inline-group">
+										<div class="mh-radio-wrapper">
+											<input type="radio" class="mh-radio-tab" name="status" value="1" id="ra01" checked />
+											<label for="ra01">Married</label>
+											<input type="radio" class="mh-radio-tab" name="status" value="2" id="ra02" />
+											<label for="ra02">Single</label>
+											<input type="radio" class="mh-radio-tab" name="status" value="3" id="ra03" />
+											<label for="ra03">Unknown</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<div class="form-type02">
+									<div class="tit_cont">Preferred Language for Certificate</div>
+									<div class="inline-group">
+										<div class="mh-radio-wrapper">
+											<input type="radio" class="mh-radio-tab" name="status1" value="1" id="ra05" checked />
+											<label for="ra05">English</label>
+											<input type="radio" class="mh-radio-tab" name="status1" value="2" id="ra06" />
+											<label for="ra06">French</label>
+											<input type="radio" class="mh-radio-tab" name="status1" value="3" id="ra07" />
+											<label for="ra07">Kinyarwanda</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row mt-25p">
+							<div class="col-12">
+								<div class="min-sub-wrap ">
+									<div class="min-sub-tit type02">
+										<span>Father's Name</span>
+									</div>
+									<div class="min-sub-item">
+										<div>
+											<div class="tit_cont">First Name</div>
+											<div class="form-group">
+												<input type="text" class="form-control mh-form-control" id="">
+											</div>
+										</div>
+									</div>
+									<div class="min-sub-item">
+										<div>
+											<div class="tit_cont">Last Name</div>
+											<div class="form-group">
+												<input type="text" class="form-control mh-form-control" id="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="min-sub-wrap ">
+									<div class="min-sub-tit type02">
+										<span>Father's Name</span>
+									</div>
+									<div class="min-sub-item">
+										<div>
+											<div class="tit_cont">First Name</div>
+											<div class="form-group">
+												<input type="text" class="form-control mh-form-control" id="">
+											</div>
+										</div>
+									</div>
+									<div class="min-sub-item">
+										<div>
+											<div class="tit_cont">Last Name</div>
+											<div class="form-group">
+												<input type="text" class="form-control mh-form-control" id="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //어플리칸트 디테일-->
+					<!-- 플레이스 디테일-->
+					<div class="usr-area mt-80p">
+						<h3>Place Detail</h3>
+						<div class="min-sub-wrap ">
+							<div class="min-sub-tit type02"><span>Country</span> </div>
+							<div class="min-sub-item">
+								<div>
+									<div class="tit_cont">Place of Birth</div>
+									<div class="form-group">
+										<select class="form-control mh-form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="min-sub-item">
+								<div>
+									<div class="tit_cont">Place of Residence</div>
+									<div class="form-group">
+										<select class="form-control mh-form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="min-sub-item">
+								<div>
+									<div class="tit_cont">Citizen Registration Place</div>
+									<div class="form-group">
+										<select class="form-control mh-form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="min-sub-wrap">
+							<div class="min-sub-tit type02"><span>Province</span></div>
+							<div class="min-sub-item">
+								<div>
+									<div class="form-group">
+										<select class="form-control mh-form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="min-sub-item">
+								<div>
+									<div class="form-group">
+										<select class="form-control mh-form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="min-sub-item">
+								<div>
+									<div class="form-group">
+										<select class="form-control mh-form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="min-sub-wrap">
+							<div class="min-sub-tit type02"><span>District</span></div>
+							<div class="min-sub-item">
+								<div>
+									<div class="form-group">
+										<select class="form-control mh-form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="min-sub-item">
+								<div>
+									<div class="form-group">
+										<select class="form-control mh-form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="min-sub-item">
+								<div>
+									<div class="form-group">
+										<select class="form-control mh-form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="min-sub-wrap">
+							<div class="min-sub-tit type02"><span>Sector</span></div>
+							<div class="min-sub-item">
+								<div>
+									<div class="form-group">
+										<select class="form-control mh-form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="min-sub-item">
+								<div>
+									<div class="form-group">
+										<select class="form-control mh-form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="min-sub-item">
+								<div>
+									<div class="form-group">
+										<select class="form-control mh-form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="min-sub-wrap">
+							<div class="min-sub-tit type02"><span>Cell</span></div>
+							<div class="min-sub-item">
+								<div>
+									<div class="form-group">
+										<select class="form-control mh-form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="min-sub-item">
+								<div>
+									<div class="form-group">
+										<select class="form-control mh-form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="min-sub-item">
+								<div>
+									<div class="form-group">
+										<select class="form-control mh-form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="min-sub-wrap type02">
+							<div class="min-sub-tit type02"><span>Additional<br>Information</span></div>
+							<div class="min-sub-item">
+								<div class="tit_cont">Nation(s)  <button type="button" class="list-add"></button></div>
+								<div class="choose-list-box">
+									<div>Engineering <button type="button" class="list-del"></button></div>
+									<div>Engineering <button type="button" class="list-del"></button></div>
+								</div>
+							</div>
+							<div class="min-sub-item">
+								<div class="tit_cont">Profession(s)  <button type="button" class="list-add"></button></div>
+								<div class="choose-list-box">
+									<div>Engineering <button type="button" class="list-del"></button></div>
+									<div>Engineering <button type="button" class="list-del"></button></div>
+									<div>Engineering <button type="button" class="list-del"></button></div>
+								</div>
+							</div>
+							<div class="min-sub-item">
+								<div class="tit_cont">Occupation(s)  <button type="button" class="list-add"></button></div>
+								<div class="choose-list-box">
+									<div>Engineering <button type="button" class="list-del"></button></div>
+									<div>Engineering <button type="button" class="list-del"></button></div>
+									<div>Engineering <button type="button" class="list-del"></button></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //플레이스 디테일-->
+					<!-- 체인지페스워드-->
+					<div class="usr-area mt-80p">
+						<h3>Password</h3>
+						<div class="row mt-20p">
+							<div class="col-12">
+								<div class="min-sub-wrap ">
+									<div class="min-sub-tit type02">
+										<span>New Password</span>
+									</div>
+									<div class="min-sub-item">
+										<div>
+											<div class="form-group">
+												<input type="text" class="form-control mh-form-control" id="">
+											</div>
+										</div>
+									</div>
+									<div class="min-sub-item">
+										
+									</div>
+								</div>
+								<div class="min-sub-wrap ">
+									<div class="min-sub-tit type02">
+										<span>Re-enter Password</span>
+									</div>
+									<div class="min-sub-item">
+										<div>
+											<div class="form-group">
+												<input type="text" class="form-control mh-form-control" id="">
+											</div>
+										</div>
+									</div>
+									<div class="min-sub-item ver-mid">
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //체인지페스워드-->
+				</div>
+				<!-- //영역-->
+                <div class="btn-area mb-0p">
+                  <button type="button" class="btn h50 solo" data-toggle="modal" data-target="#exampleModal2" id="modal1">Send Information</button>
+                </div>
+              </div>
+            </form>
+
+        </div>
+        <!--//컨텐츠영역-->
+        <div class="user-footer">
+            <div class="user-footer-area">
+                <span class="copyright-img"><img src="../dist/img/icon_gray.png" alt="" /><em>National Public<br>Prosecution
+                        Authority</em></span>
+                <span class="copyright-footer">Copyright &copy; 2019 2018. National Public Prosecution Authority.All Rights Reserved.</span>
+            </div>
+            
+
+        </div>
+    </div>
+    <!-- jQuery JS -->
+    <script src="../plugins/jquery/jquery-1.12.4.min.js"></script>
+    <script src="../plugins/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <!-- popper JS -->
+    <script src="../plugins/popper/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Datetimepicker - Moment js -->
+    <script src="../plugins/moment/js/moment-with-locales.js"></script>
+    <!-- Datetimepicker JS -->
+    <script src="../plugins/bootstrap4-datetimepicker-master/js/bootstrap-datetimepicker.min.js"></script>
+    <!-- nppa JS -->
+    <script src="../dist/js/nppa.js"></script>
+    <script>
+    $(function() {
+        $("#datetimepicker1").datetimepicker({
+            format: 'DD/MM/YYYY'
+        });
+        $("#datetimepicker2").datetimepicker({
+            format: 'DD/MM/YYYY'
+        });
+    });
+    </script>
+    
+</body>
+
+</html>
