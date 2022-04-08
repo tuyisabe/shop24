@@ -43,7 +43,7 @@
 }
 .captha-form {
     border: 1px solid #c3c9ce;
-    height: 108px;
+    height: 10%;
     /* 	    margin-top: 20px; */
     padding: 10px 15px 15px 15px;
 }
@@ -63,8 +63,8 @@
 }
 
 .captha-form .captha-area .captha-img img {
-    width: 180px;
-    height: 60px;
+    width: 28%;
+    height: 6%;
     display: inline-block;
     padding-right: 2px;
     border: 1px solid #aaafb4;
@@ -74,14 +74,13 @@
     height: 60px;
     vertical-align: top;
 }
-.captha-form .captha-area .form-group.captha-input {
-    float: right;
+.captha-form .captha-area .form-group.captha-input { 
     position: relative;
 }
 .captha-form .captha-area .form-group.captha-input input {
-    width: 140px;
+    width: 24%;
     height: 60px;
-    line-height: 58px;
+    line-height: 58%;
     padding: 0 20px 0 10px;
 }
 .btn.login,
