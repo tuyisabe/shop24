@@ -12,7 +12,7 @@ public class UserSignIn {
 
     @GetMapping(value ="")
     public String index(Model model) {
-        return "second_route/index";
+        return "second_route/user_sign_in/login";
     }
      @GetMapping(value = "/login")
     public String login(Model model) {

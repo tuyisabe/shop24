@@ -32,8 +32,7 @@
                     <span class="login-tit-notice">National Public Prosecution Authority <br><em>Criminal Record System</em></span>
                 </div>
             </div>
-        </div>
-        <!--컨텐츠영역-->
+        </div> 
         <div class="login-user-contents">
             <form>
                 <div class="adm-statbox">
@@ -74,8 +73,7 @@
               </div>
             </form>
 
-        </div>
-        <!--//컨텐츠영역-->
+        </div> 
         <div class="user-footer">
             <div class="user-footer-area">
                 <span class="copyright-img"><img src="../dist/img/icon_gray.png" alt="" /><em>National Public<br>Prosecution
@@ -89,8 +87,7 @@
     <!-- modal type02  '' -->
     <div class="modal fade mh-modal" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModal2">
         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content alert-modal">
-                <!-- .alert-modal 붙여줌-->
+            <div class="modal-content alert-modal"> 
                 <div class="modal-body">
                     <p>We sent the confirmation number.<br>Please check your e-mail.</p>
                 </div>
@@ -119,6 +116,14 @@
     <!-- nppa JS -->
     <script src="../dist/js/nppa.js"></script>
 </body>
+<script>
+    $(document).ready(function () { 
+        $(".btn").click(function () { 
+                alert("clicked next step");
+                window.location='/personal_authentication'
+            });
+          });
+          </script>
 
     <script>
     $(document).ready(function() {

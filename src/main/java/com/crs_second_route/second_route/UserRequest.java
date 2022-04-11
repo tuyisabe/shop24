@@ -22,6 +22,10 @@ public class UserRequest {
     public String requestTwo(Model model) {
         return "second_route/user_request/application_equest_two";
     }
+    @GetMapping(value = "/request_three")
+    public String requestThree(Model model) {
+        return "second_route/user_request/application_request_three";
+    }
     @GetMapping(value = "/application_search")
     public String applicationsSearch(Model model) {
         return "second_route/user_request/list_search_result";
@@ -33,5 +37,9 @@ public class UserRequest {
     @GetMapping(value = "/user_detail")
     public String userDetail(Model model) {
         return  "second_route/user_request/user_detail";
+    }
+    @GetMapping(value = "/application_details")
+    public String applicationDetails(Model model) {
+        return  "second_route/user_request/application_details";
     }
 }

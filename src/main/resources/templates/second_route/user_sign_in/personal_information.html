@@ -160,7 +160,7 @@
 						</div>
 						<div class="row mt-25p">
 							<div class="col-12">
-								<div class="min-sub-wrap ">
+								<div class="min-sub-wrap">
 									<div class="min-sub-tit type02">
 										<span>Father's Name</span>
 									</div>
@@ -207,7 +207,7 @@
 					</div> 
 					<div class="usr-area mt-80p">
 						<h3>Place Detail</h3>
-						<div class="min-sub-wrap ">
+						<div class="min-sub-wrap">
 							<div class="min-sub-tit type02"><span>Country</span> </div>
 							<div class="min-sub-item">
 								<div>
@@ -485,6 +485,14 @@
     <script src="../plugins/bootstrap4-datetimepicker-master/js/bootstrap-datetimepicker.min.js"></script>
     <!-- nppa JS -->
     <script src="../dist/js/nppa.js"></script>
+	<script>
+        $(document).ready(function () { 
+            $(".btn").click(function () { 
+                    alert("clicked next step");
+                    window.location='/complete'
+                });
+              });
+              </script>
     <script>
     $(function() {
         $("#datetimepicker1").datetimepicker({

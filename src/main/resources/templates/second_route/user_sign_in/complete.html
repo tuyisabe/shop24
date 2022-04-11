@@ -30,8 +30,7 @@
                     <span class="login-tit-notice">National Public Prosecution Authority <br><em>Criminal Record System</em></span>
                 </div>
             </div>
-        </div>
-        <!--컨텐츠영역-->
+        </div> 
         <div class="login-user-contents">
             <form>
                 <div class="adm-statbox">
@@ -69,8 +68,7 @@
               </div>
             </form>
 
-        </div>
-        <!--//컨텐츠영역-->
+        </div> 
         <div class="user-footer">
             <div class="user-footer-area">
                 <span class="copyright-img"><img src="../dist/img/icon_gray.png" alt="" /><em>National Public<br>Prosecution
@@ -93,6 +91,14 @@
     <script src="../plugins/bootstrap4-datetimepicker-master/js/bootstrap-datetimepicker.min.js"></script>
     <!-- nppa JS -->
     <script src="../dist/js/nppa.js"></script>
+    <script>
+        $(document).ready(function () { 
+            $(".btn").click(function () { 
+                    alert("clicked next step");
+                    window.location='/application_list'
+                });
+              });
+              </script>
     <script>
     $(function() {
         $("#datetimepicker1").datetimepicker({

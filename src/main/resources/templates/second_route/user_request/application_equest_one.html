@@ -59,9 +59,9 @@
                                 <li class="nav-item">
                                     <a class="nav-link" id="default2-tab"><span class="icon_place"></span>Step2. <strong>Place Detail</strong></a>
                                 </li>
-                                <!--<li class="nav-item">
+                                <li class="nav-item">
                                     <a class="nav-link" id="default3-tab"><span class="icon_attachments"></span>Step3. <strong>Attachments</strong></a>
-                                </li>-->
+                                </li>
                             </ul>
                             <div class="tab-content">
                                 <div class="tab-pane fade show active" id="default1" role="tabpanel" aria-labelledby="default1-tab">
@@ -223,13 +223,10 @@
                     </div>
                     <div class="btn-area steps">
                         <button type="button" class="btn">Next<span class="btn_next"></span></button>
-                    </div>
-
-                    <!-- //컨텐츠영역 : 여기에 작성 -->
+                    </div> 
                 </div>
             </div>
-        </div>
-        <!--//컨텐츠영역-->
+        </div> 
         <div class="user-footer">
             <div class="user-footer-area">
                 <span class="copyright-img"><img src="../dist/img/icon_gray.png" alt="" /><em>National Public<br>Prosecution
@@ -257,6 +254,13 @@
     <script src="../plugins/datatables/js/jquery.dataTables.min.js"></script>
     <!-- nppa JS -->
     <script src="../dist/js/nppa.js"></script>
+    <script>
+      $(document).ready(function () { 
+          $(".btn").click(function () {  
+                  window.location='/request_two'
+              });
+            });
+            </script>
     <script>
         $(function () {
             $("#datetimepicker1").datetimepicker({

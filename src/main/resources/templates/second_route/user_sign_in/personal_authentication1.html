@@ -190,6 +190,14 @@
     <!-- nppa JS -->
     <script src="../dist/js/nppa.js"></script>
     <script>
+        $(document).ready(function () { 
+            $(".btn").click(function () { 
+                    alert("clicked next step");
+                    window.location='/personal_information'
+                });
+              });
+              </script>
+    <script>
         $(function () {
             $("#datetimepicker1").datetimepicker({
                 format: 'DD/MM/YYYY'
