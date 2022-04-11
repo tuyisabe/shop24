@@ -109,7 +109,14 @@
     <script src="../plugins/bootstrap4-datetimepicker-master/js/bootstrap-datetimepicker.min.js"></script>
     <!-- nppa JS -->
     <script src="../dist/js/nppa.js"></script>
-    
+    <script>
+        $(document).ready(function () { 
+                  $(".btn").click(function () { 
+                          alert("clicked next step");
+                          window.location='/confirm_email'
+                      });
+                    });
+                    </script>
 </body>
 
 </html>

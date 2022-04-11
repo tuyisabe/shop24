@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NPPA CRS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Datetimepicker CSS -->
+    <link rel="stylesheet" href="../plugins/bootstrap4-datetimepicker-master/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../plugins/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <!-- font-awesome CSS -->
+    <link rel="stylesheet" href="../plugins/font-awesome/css/all.css">
+    <!-- nppa Icon CSS -->
+    <link rel="stylesheet" href="../dist/css/nppa_icon.css">
+    <!-- nppa CSS -->
+    <link rel="stylesheet" href="../dist/css/nppa.css">
+    <!-- nppa SVG -->
+    <link rel="stylesheet" href="../dist/css/nppa_svg.css">
+</head>
+
+<body class="usr">
+  <div class="mh-wrapper">
+      <!-- header -->
+      <div class="usr-request-header">
+          <div class="login-usr-hd-logo">
+              <img src="../dist/img/logo-login.png" alt="NPPA CRS">
+              <div class="login-title-txt">
+                  <strong>NPPA<span>CRS</span></strong>
+                  <span class="login-tit-notice">National Public Prosecution Authority <br><em>Criminal Record System</em></span>
+              </div>
+              <div class="top-log">
+                    <span>don.cheadle@gmail.com</span> <button type="button" class="request-logout">logout</button>
+                    <div class="form-group lang-inline-group">
+                        <select class="form-control lang-select">
+                            <option>Kinyarwanda</option>
+                            <option>english</option>
+                        </select>
+                    </div>
+                </div>
+          </div>
+      </div> 
+      <div class="usr-request-contents">
+          <div class="usr-request-area">
+              <div class="top-area-data">
+                  <div class="top-statue">Application Status</div>
+                  <ul class="top-data">
+                      <li><span>PENDING</span><strong>3</strong></li>
+                      <li><span>APPROVED</span><strong>99</strong></li>
+                      <li><span>PROCESSING</span><strong>23</strong></li>
+                      <li><span>ISSUED</span><strong>13</strong></li>
+                      <li><span>REJECTED</span><strong>13</strong></li>
+                  </ul>
+              </div>
+              <div class="adm-searchbox">
+                  <form>
+                      <div class="top-statue">Status Search</div>
+                      <div class="mh-radio-wrapper radio-type02">
+                          <input type="radio" class="mh-radio-tab" name="radioTabTest2" value="1" id="ra11" checked />
+                          <label for="ra11">1 Month</label>
+                          <input type="radio" class="mh-radio-tab" name="radioTabTest2" value="2" id="ra12" />
+                          <label for="ra12">3 Months</label>
+                          <input type="radio" class="mh-radio-tab" name="radioTabTest2" value="3" id="ra13" />
+                          <label for="ra13">6 Months</label>
+                      </div>
+                      <div class="datetimepicker-wrapper datetimepicker">
+                          <input type="text" class="form-control mh-form-control" id="datetimepicker1">&nbsp;~&nbsp;<input type="text"
+                              class="form-control mh-form-control" id="datetimepicker2">
+                      </div>
+                      <button type="button" class="btn h38"><span class="btn_search"></span>Search</button>
+                  </form>
+              </div>
+              <div class="main-area"> 
+                  <h2>Information for Application</h2>
+                  <div class="row">
+                      <div class="col-12">
+                          <ul class="nav tab-type01"> 
+                              <li class="nav-item">
+                                  <a class="nav-link" id="default1-tab"><span class="icon_applicants"></span> Step1. <strong>Applicants Detail</strong></a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" id="default2-tab"><span class="icon_place"></span>Step2. <strong>Place Detail</strong></a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link active" id="default3-tab"><span class="icon_attachments"></span>Step3. <strong>Attachments</strong></a>
+                              </li>
+                          </ul>
+                          <div class="tab-content">
+                              <div class="tab-pane fade" id="default1" role="tabpanel" aria-labelledby="default1-tab">
+                              </div>
+                              <div class="tab-pane fade" id="default2" role="tabpanel" aria-labelledby="default2-tab">
+                              </div>
+                              <div class="tab-pane fade show active" id="default3" role="tabpanel" aria-labelledby="default3-tab">
+                                    <div class="usr-area">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="tit_cont">Preffered Language for Certificate</div>
+                                                <div class="form-group">
+                                                   <select class="form-control mh-form-control">
+                                                      <option>Village</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row  mt-30p">
+                                            <div class="col-12">
+                                                <div class="tit_cont">Passport Picture</div>
+                                                <div class="form-group inline-group">
+                                                    <input type="text" id="fileName" class="form-control mh-form-control">
+                                                    <div class="attach-btn">
+                                                      <button type="button" class="btn attach"><span class="btn_attach"></span>Attach</button>
+                                                      <input type="file" name="file_1" class="file_input_hidden" onchange="javascript: document.getElementById('fileName').value = this.value"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-30p">
+                                            <div class="col-12">
+                                                <div class="tit_cont">Supporting Documents for Request</div>
+                                                <div class="form-group inline-group">
+                                                    <input type="text" id="fileName2" class="form-control mh-form-control">
+                                                    <div class="attach-btn">
+                                                      <button type="button" class="btn attach"><span class="btn_attach"></span>Attach</button>
+                                                      <input type="file" name="file_1" class="file_input_hidden" onchange="javascript: document.getElementById('fileName2').value = this.value"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+                  <div class="btn-area steps">
+                      <button type="button" class="btn back"><span class="btn_back"></span>Back</button>
+                      <button type="button" class="btn savebtn"><span class="btn_save"></span>Confirm</button>
+                  </div>
+ 
+              </div>
+          </div>
+      </div> 
+      <div class="user-footer">
+          <div class="user-footer-area">
+              <span class="copyright-img"><img src="../dist/img/icon_gray.png" alt="" /><em>National Public<br>Prosecution
+                      Authority</em></span>
+              <span class="copyright-footer">Copyright &copy; 2019 2018. National Public Prosecution Authority.All Rights Reserved.</span>
+          </div>
+      </div>
+  </div>
+  <!-- jQuery JS -->
+  <script src="../plugins/jquery/jquery-1.12.4.min.js"></script>
+  <script src="../plugins/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+
+  <!-- popper JS -->
+  <script src="../plugins/popper/popper.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Datetimepicker - Moment js -->
+  <script src="../plugins/moment/js/moment-with-locales.js"></script>
+  
+  <!-- Datetimepicker JS -->
+  <script src="../plugins/bootstrap4-datetimepicker-master/js/bootstrap-datetimepicker.min.js"></script>
+  <!-- Data Tables JS -->
+  <script src="../plugins/datatables/js/jquery.dataTables.min.js"></script>
+  <!-- nppa JS -->
+  <script src="../dist/js/nppa.js"></script>
+  <script>
+    $(document).ready(function () { 
+        $(".savebtn").click(function () {  
+            alert("saved")
+                window.location='/application_list'
+            }); 
+          $(".back").click(function () {  
+                window.location='/request_two'
+            });
+          });
+          </script>
+  <script>
+      $(function () {
+          $("#datetimepicker1").datetimepicker({
+              format: 'DD/MM/YYYY'
+              //debug:true
+          });
+          $("#datetimepicker2").datetimepicker({
+              format: 'DD/MM/YYYY'
+              //debug:true
+          });
+          $("#datetimepicker3").datetimepicker({
+              format: 'DD/MM/YYYY'
+              //debug:true
+          });
+      });
+  </script>
+</body>
+
+</html>

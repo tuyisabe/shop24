@@ -92,6 +92,7 @@
                                     <th scope="col">Requested Date</th>
                                     <th scope="col">Message</th>
                                     <th scope="col">Status</th>
+                                    <th scope="col">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -100,30 +101,37 @@
                                     <td>06/07/2019</td>
                                     <td>Processing now.</td>
                                     <td><span class="status_mark pending">PENDING</span></td>
+                                    <td><a href="/application_details">Details</a></td>
+
                                 </tr>
                                 <tr>
                                     <td><a href="#none" class="stat_num">A190131LKJI</a></td>
                                     <td>06/07/2019</td>
                                     <td>It's been processed.</td>
                                     <td><span class="status_mark approved">APPROVED</span></td>
+                                    <td><a href="/application_details">Details</a></td>
                                 </tr>
                                 <tr>
                                     <td><a href="#none" class="stat_num">A190131LKJ0</a></td>
                                     <td>06/07/2019</td>
                                     <td>Processing now.</td>
                                     <td><span class="status_mark processing">PROCESSING</span></td>
-                                </tr>
+                                    <td><a   href="/application_details">Details</a></td>
+
+                                </tr>   
                                 <tr>
                                     <td><a href="#none" class="stat_num">A190131LKJI</a></td>
                                     <td>06/07/2019</td>
                                     <td>There is insufficient evidence.</td>
                                     <td><span class="status_mark rejected">REJECTED</span></td>
+                                    <td><a   href="/application_details">Details</a></td>
                                 </tr>
                                 <tr>
                                     <td><a href="#none" class="stat_num">A190131LKJI</a></td>
                                     <td>06/07/2019</td>
                                     <td>There is insufficient evidence.</td>
                                     <td><span class="status_mark issued">ISSUED</span></td>
+                                    <td><a   href="/application_details">Details</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -177,6 +185,13 @@
   <script src="../plugins/datatables/js/jquery.dataTables.min.js"></script>
   <!-- nppa JS -->
   <script src="../dist/js/nppa.js"></script>
+  <script>
+    $(document).ready(function () { 
+        $(".btn").click(function () {  
+                window.location='/request_one'
+            });
+          });
+          </script>
   <script>
       $(function () {
           $("#datetimepicker1").datetimepicker({

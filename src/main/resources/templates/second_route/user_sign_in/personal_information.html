@@ -30,8 +30,7 @@
                     <span class="login-tit-notice">National Public Prosecution Authority <br><em>Criminal Record System</em></span>
                 </div>
             </div>
-        </div>
-        <!--컨텐츠영역-->
+        </div> 
         <div class="login-user-contents">
             <form>
                 <div class="adm-statbox">
@@ -59,9 +58,7 @@
             <form>
               <div class="sign-contents">
                 <div class="tit">Sign Up<span class="txt">Please provide your information</span></div>
-				<!-- 영역-->
-				<div class="usr-detail-area">
-					<!-- 어플리칸트 디테일-->
+				 <div class="usr-detail-area"> 
 					<div class="usr-area">
 						<h3>Applicant Detail</h3>
 						<div class="row mb-30p">
@@ -163,7 +160,7 @@
 						</div>
 						<div class="row mt-25p">
 							<div class="col-12">
-								<div class="min-sub-wrap ">
+								<div class="min-sub-wrap">
 									<div class="min-sub-tit type02">
 										<span>Father's Name</span>
 									</div>
@@ -207,12 +204,10 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<!-- //어플리칸트 디테일-->
-					<!-- 플레이스 디테일-->
+					</div> 
 					<div class="usr-area mt-80p">
 						<h3>Place Detail</h3>
-						<div class="min-sub-wrap ">
+						<div class="min-sub-wrap">
 							<div class="min-sub-tit type02"><span>Country</span> </div>
 							<div class="min-sub-item">
 								<div>
@@ -421,9 +416,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<!-- //플레이스 디테일-->
-					<!-- 체인지페스워드-->
+					</div> 
 					<div class="usr-area mt-80p">
 						<h3>Password</h3>
 						<div class="row mt-20p">
@@ -460,18 +453,15 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<!-- //체인지페스워드-->
-				</div>
-				<!-- //영역-->
+					</div> 
+				</div> 
                 <div class="btn-area mb-0p">
                   <button type="button" class="btn h50 solo" data-toggle="modal" data-target="#exampleModal2" id="modal1">Send Information</button>
                 </div>
               </div>
             </form>
 
-        </div>
-        <!--//컨텐츠영역-->
+        </div> 
         <div class="user-footer">
             <div class="user-footer-area">
                 <span class="copyright-img"><img src="../dist/img/icon_gray.png" alt="" /><em>National Public<br>Prosecution
@@ -495,6 +485,14 @@
     <script src="../plugins/bootstrap4-datetimepicker-master/js/bootstrap-datetimepicker.min.js"></script>
     <!-- nppa JS -->
     <script src="../dist/js/nppa.js"></script>
+	<script>
+        $(document).ready(function () { 
+            $(".btn").click(function () { 
+                    alert("clicked next step");
+                    window.location='/complete'
+                });
+              });
+              </script>
     <script>
     $(function() {
         $("#datetimepicker1").datetimepicker({
