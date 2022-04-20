@@ -1,4 +1,4 @@
-package com.crs_second_route.second_route;
+package com.crs_second_route.second_route.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

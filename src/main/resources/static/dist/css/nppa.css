@@ -4481,7 +4481,7 @@ select:focus > option:hover {
 }
 .login-usr-contents {
   width: 55%;
-  height: 81%;
+  height: 73%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -4494,7 +4494,7 @@ select:focus > option:hover {
 @media(max-width:1280px) {
   .login-usr-contents {
     width: 80%;
-    height: 84%;
+    height: 94.5%;
     position: absolute;
     top: 30%;
     left: 30%;
@@ -7533,8 +7533,7 @@ p {
 }
 .dselect-div-contents .btn-search-list {
   margin-top: 1.25rem;
-}
-/*공지사항 레프트네비바*/
+} 
 .list-notice-area {
   height: 650px;
   overflow: auto;
@@ -8359,9 +8358,7 @@ p {
   padding: 15px 0 10px;
 }
 
-.mh-chat-window .mh-custommenu {
-  /* border:1px solid #eb384d; */
-}
+
 
 .mh-chat-window .mh-icon-lock-round {
   display: block;
@@ -11514,16 +11511,7 @@ p {
   width: 100%;
   table-layout: fixed;
 }
-.profile-container
-  .profile-wrap
-  .profile-info
-  .profile-info-cont
-  .profile-info-row03
-  > .row-item
-  .mh-radio-wrapper
-  .mh-radio-tab
-  + label {
-}
+
 .profile-container
   .profile-wrap
   .profile-info.check-type
