@@ -16,7 +16,7 @@ public class UserRequest {
 
     @GetMapping(value = "/application_list")
     public String applicationsList(Model model) {
-//        userTableService.findAll();
+        userTableService.findAll();
         return "second_route/user_request/application_list";
     }
     @GetMapping(value = "/request_one")

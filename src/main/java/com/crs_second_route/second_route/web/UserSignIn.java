@@ -4,6 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import java.util.Random;
+
 @Controller
 public class UserSignIn {
     private static final String INDEX = "second_route/user_sign_in/login";
@@ -12,6 +14,11 @@ public class UserSignIn {
 
     @GetMapping(value ="")
     public String index(Model model) {
+        Random text = new Random();
+        int randomInt = text.nextInt(1000000) + 1;
+        System.out.println(">>>>>>>>>>>>");
+        System.out.println(randomInt);
+        System.out.println(">>>>>>>>>>>>>>");
         return "second_route/user_sign_in/login";
     }
      @GetMapping(value = "/login")

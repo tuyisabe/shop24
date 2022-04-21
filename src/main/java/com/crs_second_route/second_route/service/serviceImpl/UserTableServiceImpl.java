@@ -10,10 +10,10 @@ import java.util.List;
 
 @Service
 public class UserTableServiceImpl implements UserTableService {
-//    @Autowired
-//    private UserTableDAO userTableDAO;
-//    @Override
-//    public List<UserTable> findAll() {
-//        return userTableDAO.findAll();
-//    }
+    @Autowired
+    private UserTableDAO userTableDAO;
+    @Override
+    public List<UserTable> findAll() {
+        return userTableDAO.findAll();
+    }
 }

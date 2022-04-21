@@ -18,4 +18,5 @@ public class UserProfession {
     @ManyToOne
     @JoinColumn(name = "user_id")
     private UserTable userId;
+    private String profession;
 }

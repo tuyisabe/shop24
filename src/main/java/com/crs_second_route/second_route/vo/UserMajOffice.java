@@ -19,4 +19,5 @@ public class UserMajOffice {
     @ManyToOne
     @JoinColumn(name = "user_id")
     private UserTable userId;
+    private String majOffice;
 }

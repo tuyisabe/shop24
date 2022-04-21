@@ -98,4 +98,6 @@ public class UserTable {
     @Column(name = "last_modified_at")
     @LastModifiedDate
     private Timestamp lastModifiedAt;
+    @Column(name = "is_deleted", insertable = false, columnDefinition = "boolean default false")
+    private boolean isDeleted;
 }
