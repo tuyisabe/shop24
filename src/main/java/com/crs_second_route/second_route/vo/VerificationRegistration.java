@@ -28,6 +28,6 @@ public class VerificationRegistration {
     private Timestamp createdAt;
 
     private Date expiryDate;
-
+@Column(name = "is_enabled")
     private boolean IsEnabled;
 }

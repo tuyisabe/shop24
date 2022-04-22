@@ -1,6 +1,8 @@
 package com.crs_second_route.second_route.service.serviceImpl;
 
+import com.crs_second_route.second_route.dao.VerificationRegistrationDAO;
 import com.crs_second_route.second_route.service.VerificationRegistrationService;
+import com.crs_second_route.second_route.vo.VerificationRegistration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
@@ -8,12 +10,13 @@ import org.springframework.stereotype.Service;
 import org.thymeleaf.spring5.SpringTemplateEngine;
 
 import javax.mail.internet.MimeMessage;
-import java.nio.charset.StandardCharsets;
 
 @Service
 public class VerificationRegistrationServiceImpl implements VerificationRegistrationService {
     @Autowired
     private JavaMailSender emailSender;
+    @Autowired
+    private VerificationRegistrationDAO verificationRegistrationDAO;
 
     @Autowired
     private SpringTemplateEngine templateEngine;
@@ -33,5 +36,15 @@ public class VerificationRegistrationServiceImpl implements VerificationRegistra
             throw new RuntimeException(e);
         }
 
+    }
+
+    @Override
+    public void saveCode(VerificationRegistration verificationRegistration) {
+    verificationRegistrationDAO.save(verificationRegistration);
+    }
+
+    @Override
+    public String findByCode(String code) {
+        return verificationRegistrationDAO.findByCode(code);
     }
 }
