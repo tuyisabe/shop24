@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
@@ -42,7 +44,6 @@ public class EmailVerification {
             verificationRegistration.setCreatedAt(new Timestamp(new Date().getTime()));
             verificationRegistration.setExpiryDate(new Timestamp(new Date().getTime()));
 
-
             ExecutorService emailExecutor = Executors.newCachedThreadPool();
             emailExecutor.execute(new Runnable() {
                 @Override
@@ -53,12 +54,30 @@ public class EmailVerification {
             });
             map.put("success", "user deleted successful");
             return new ResponseEntity<Map<String, Object>>(map, HttpStatus.OK);
-
-        }
- 
-        catch (Exception e) {
+        }   catch (Exception e) {
             map.put("message", e);
             throw new RuntimeException(e);
         }
     }
+
+    @GetMapping("/get_verification_code/{code}")
+    public ResponseEntity<Map<String, Object>> getVerificationCode(Model model, @PathVariable("code") String code) {
+        Map<String, Object> map = new HashMap<>();
+        try {
+            String verificationRegistration= verificationRegistrationService.findByCode(code);
+            verificationRegistrationService.disableCode(code);
+            System.out.println(">>>>>>>>>>>");
+            System.out.println(verificationRegistration);
+            System.out.println(">>>>>>>>>>>");
+            map.put("verificationRegistration", verificationRegistration);
+            model.addAttribute("verificationRegistration", verificationRegistration);
+            return new ResponseEntity<Map<String, Object>>(map, HttpStatus.OK);
+        } catch (Exception e) {
+            map.put("error", e);
+            return new ResponseEntity<Map<String, Object>>(map, HttpStatus.BAD_REQUEST);
+
+        }
+    }
+
+
 }

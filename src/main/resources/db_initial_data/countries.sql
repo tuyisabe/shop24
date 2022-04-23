@@ -1,0 +1,8713 @@
+INSERT INTO `crs_second_route_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        1,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'AF',
+        'AFG',
+        'AS',
+        'Islamic Republic of Afghanistan',
+        'Afghanistan',
+        NULL,
+        NULL,
+        '004'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        217,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'AX',
+        'ALA',
+        'EU',
+        'Åland Islands',
+        'Åland Islands',
+        NULL,
+        NULL,
+        '248'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        3,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'AL',
+        'ALB',
+        'EU',
+        'Republic of Albania',
+        'Albania',
+        NULL,
+        NULL,
+        '008'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        4,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'DZ',
+        'DZA',
+        'AF',
+        'People''s Democratic Republic of Algeria',
+        'Algeria',
+        NULL,
+        NULL,
+        '012'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        218,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'AS',
+        'ASM',
+        'OC',
+        'American Samoa',
+        'American Samoa',
+        NULL,
+        NULL,
+        '016'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        6,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'AD',
+        'AND',
+        'EU',
+        'Principality of Andorra',
+        'Andorra',
+        NULL,
+        NULL,
+        '020'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        7,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'AO',
+        'AGO',
+        'AF',
+        'Republic of Angola',
+        'Angola',
+        NULL,
+        NULL,
+        '024'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        219,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'AI',
+        'AIA',
+        'NA',
+        'Anguilla',
+        'Anguilla',
+        NULL,
+        NULL,
+        '660'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        220,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'AQ',
+        'ATA',
+        'AN',
+        'Antarctica (the territory South of 60 deg S)',
+        'Antarctica',
+        NULL,
+        NULL,
+        '010'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        8,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'AG',
+        'ATG',
+        'NA',
+        'Antigua and Barbuda',
+        'Antigua and Barbuda',
+        NULL,
+        NULL,
+        '028'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        10,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'AR',
+        'ARG',
+        'SA',
+        'Argentine Republic',
+        'Argentina',
+        NULL,
+        NULL,
+        '032'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        11,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'AM',
+        'ARM',
+        'AS',
+        'Republic of Armenia',
+        'Armenia',
+        NULL,
+        NULL,
+        '051'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        221,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'AW',
+        'ABW',
+        'NA',
+        'Aruba',
+        'Aruba',
+        NULL,
+        NULL,
+        '533'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        12,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'AU',
+        'AUS',
+        'OC',
+        'Commonwealth of Australia',
+        'Australia',
+        NULL,
+        NULL,
+        '036'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        13,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'AT',
+        'AUT',
+        'EU',
+        'Republic of Austria',
+        'Austria',
+        NULL,
+        NULL,
+        '040'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        14,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'AZ',
+        'AZE',
+        'AS',
+        'Republic of Azerbaijan',
+        'Azerbaijan',
+        NULL,
+        NULL,
+        '031'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        15,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'BS',
+        'BHS',
+        'NA',
+        'Commonwealth of the Bahamas',
+        'Bahamas',
+        NULL,
+        NULL,
+        '044'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        16,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'BH',
+        'BHR',
+        'AS',
+        'Kingdom of Bahrain',
+        'Bahrain',
+        NULL,
+        NULL,
+        '048'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        17,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'BD',
+        'BGD',
+        'AS',
+        'People''s Republic of Bangladesh',
+        'Bangladesh',
+        NULL,
+        NULL,
+        '050'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        18,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'BB',
+        'BRB',
+        'NA',
+        'Barbados',
+        'Barbados',
+        NULL,
+        NULL,
+        '052'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        23,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'BY',
+        'BLR',
+        'EU',
+        'Republic of Belarus',
+        'Belarus',
+        NULL,
+        NULL,
+        '112'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        19,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'BE',
+        'BEL',
+        'EU',
+        'Kingdom of Belgium',
+        'Belgium',
+        NULL,
+        NULL,
+        '056'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        20,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'BZ',
+        'BLZ',
+        'NA',
+        'Belize',
+        'Belize',
+        NULL,
+        NULL,
+        '084'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        21,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'BJ',
+        'BEN',
+        'AF',
+        'Republic of Benin',
+        'Benin',
+        NULL,
+        NULL,
+        '204'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        222,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'BM',
+        'BMU',
+        'NA',
+        'Bermuda',
+        'Bermuda',
+        NULL,
+        NULL,
+        '060'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        22,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'BT',
+        'BTN',
+        'AS',
+        'Kingdom of Bhutan',
+        'Bhutan',
+        NULL,
+        NULL,
+        '064'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        25,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'BO',
+        'BOL',
+        'SA',
+        'Plurinational State of Bolivia',
+        'Bolivia',
+        NULL,
+        NULL,
+        '068'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        223,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'BQ',
+        'BES',
+        'NA',
+        'Bonaire, Sint Eustatius and Saba',
+        'Bonaire, Sint Eustatius and Saba',
+        NULL,
+        NULL,
+        '535'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        26,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'BA',
+        'BIH',
+        'EU',
+        'Bosnia and Herzegovina',
+        'Bosnia and Herzegovina',
+        NULL,
+        NULL,
+        '070'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        27,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'BW',
+        'BWA',
+        'AF',
+        'Republic of Botswana',
+        'Botswana',
+        NULL,
+        NULL,
+        '072'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        232,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'BV',
+        'BVT',
+        'AN',
+        'Bouvet Island (Bouvetøya)',
+        'Bouvet Island (Bouvetøya)',
+        NULL,
+        NULL,
+        '074'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        28,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'BR',
+        'BRA',
+        'SA',
+        'Federative Republic of Brazil',
+        'Brazil',
+        NULL,
+        NULL,
+        '076'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        302,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'IO',
+        'IOT',
+        'AS',
+        'British Indian Ocean Territory (Chagos Archipelago)',
+        'British Indian Ocean Territory (Chagos Archipelago)',
+        NULL,
+        NULL,
+        '086'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        226,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'VG',
+        'VGB',
+        'NA',
+        'British Virgin Islands',
+        'British Virgin Islands',
+        NULL,
+        NULL,
+        '092'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        29,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'BN',
+        'BRN',
+        'AS',
+        'Brunei Darussalam',
+        'Brunei Darussalam',
+        NULL,
+        NULL,
+        '096'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        30,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'BG',
+        'BGR',
+        'EU',
+        'Republic of Bulgaria',
+        'Bulgaria',
+        NULL,
+        NULL,
+        '100'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        31,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'BF',
+        'BFA',
+        'AF',
+        'Burkina Faso',
+        'Burkina Faso',
+        NULL,
+        NULL,
+        '854'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        32,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'BI',
+        'BDI',
+        'AF',
+        'Republic of Burundi',
+        'Burundi',
+        NULL,
+        NULL,
+        '108'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        33,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'KH',
+        'KHM',
+        'AS',
+        'Kingdom of Cambodia',
+        'Cambodia',
+        NULL,
+        NULL,
+        '116'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        34,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'CM',
+        'CMR',
+        'AF',
+        'Republic of Cameroon',
+        'Cameroon',
+        NULL,
+        NULL,
+        '120'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        35,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'CA',
+        'CAN',
+        'NA',
+        'Canada',
+        'Canada',
+        NULL,
+        NULL,
+        '124'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        36,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'CV',
+        'CPV',
+        'AF',
+        'Republic of Cabo Verde',
+        'Cabo Verde',
+        NULL,
+        NULL,
+        '132'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        227,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'KY',
+        'CYM',
+        'NA',
+        'Cayman Islands',
+        'Cayman Islands',
+        NULL,
+        NULL,
+        '136'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        141,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'CF',
+        'CAF',
+        'AF',
+        'Central African Republic',
+        'Central African Republic',
+        NULL,
+        NULL,
+        '140'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        175,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'TD',
+        'TCD',
+        'AF',
+        'Republic of Chad',
+        'Chad',
+        NULL,
+        NULL,
+        '148'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        37,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'CL',
+        'CHL',
+        'SA',
+        'Republic of Chile',
+        'Chile',
+        NULL,
+        NULL,
+        '152'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        38,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'CN',
+        'CHN',
+        'AS',
+        'People''s Republic of China',
+        'China',
+        NULL,
+        NULL,
+        '156'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        228,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'CX',
+        'CXR',
+        'AS',
+        'Christmas Island',
+        'Christmas Island',
+        NULL,
+        NULL,
+        '162'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        229,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'CC',
+        'CCK',
+        'AS',
+        'Cocos (Keeling) Islands',
+        'Cocos (Keeling) Islands',
+        NULL,
+        NULL,
+        '166'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        40,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'CO',
+        'COL',
+        'SA',
+        'Republic of Colombia',
+        'Colombia',
+        NULL,
+        NULL,
+        '170'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        41,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'KM',
+        'COM',
+        'AF',
+        'Union of the Comoros',
+        'Comoros',
+        NULL,
+        NULL,
+        '174'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        142,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'CD',
+        'COD',
+        'AF',
+        'Democratic Republic of the Congo',
+        'Democratic Republic of the Congo',
+        NULL,
+        NULL,
+        '180'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        144,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'CG',
+        'COG',
+        'AF',
+        'Republic of the Congo',
+        'Republic of the Congo',
+        NULL,
+        NULL,
+        '178'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        300,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'CK',
+        'COK',
+        'OC',
+        'Cook Islands',
+        'Cook Islands',
+        NULL,
+        NULL,
+        '184'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        44,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'CR',
+        'CRI',
+        'NA',
+        'Republic of Costa Rica',
+        'Costa Rica',
+        NULL,
+        NULL,
+        '188'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        45,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'CI',
+        'CIV',
+        'AF',
+        'Republic of Cote d''Ivoire',
+        'Ivory Coast',
+        'Cote d''Ivoire',
+        NULL,
+        '384'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        46,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'HR',
+        'HRV',
+        'EU',
+        'Republic of Croatia',
+        'Croatia',
+        NULL,
+        NULL,
+        '191'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        47,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'CU',
+        'CUB',
+        'NA',
+        'Republic of Cuba',
+        'Cuba',
+        NULL,
+        NULL,
+        '192'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        301,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'CW',
+        'CUW',
+        'NA',
+        'Curaçao',
+        'Curaçao',
+        NULL,
+        NULL,
+        '531'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        39,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'CY',
+        'CYP',
+        'AS',
+        'Republic of Cyprus',
+        'Cyprus',
+        NULL,
+        NULL,
+        '196'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        225,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'CZ',
+        'CZE',
+        'EU',
+        'Czech Republic',
+        'Czechia/Czech Republic',
+        NULL,
+        NULL,
+        '203'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        48,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'DK',
+        'DNK',
+        'EU',
+        'Kingdom of Denmark',
+        'Denmark',
+        NULL,
+        NULL,
+        '208'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        49,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'DJ',
+        'DJI',
+        'AF',
+        'Republic of Djibouti',
+        'Djibouti',
+        NULL,
+        NULL,
+        '262'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        304,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'DM',
+        'DMA',
+        'NA',
+        'Commonwealth of Dominica',
+        'Dominica',
+        NULL,
+        NULL,
+        '212'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        143,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'DO',
+        'DOM',
+        'NA',
+        'Dominican Republic',
+        'Dominican Republic',
+        NULL,
+        NULL,
+        '214'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        53,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'EC',
+        'ECU',
+        'SA',
+        'Republic of Ecuador',
+        'Ecuador',
+        NULL,
+        NULL,
+        '218'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        51,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'EG',
+        'EGY',
+        'AF',
+        'Arab Republic of Egypt',
+        'Egypt',
+        NULL,
+        NULL,
+        '818'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        155,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'SV',
+        'SLV',
+        'NA',
+        'Republic of El Salvador',
+        'El Salvador',
+        NULL,
+        NULL,
+        '222'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        70,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'GQ',
+        'GNQ',
+        'AF',
+        'Republic of Equatorial Guinea',
+        'Equatorial Guinea',
+        NULL,
+        NULL,
+        '226'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        54,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'ER',
+        'ERI',
+        'AF',
+        'State of Eritrea',
+        'Eritrea',
+        NULL,
+        NULL,
+        '232'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        56,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'EE',
+        'EST',
+        'EU',
+        'Republic of Estonia',
+        'Estonia',
+        NULL,
+        NULL,
+        '233'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        58,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'ET',
+        'ETH',
+        'AF',
+        'Federal Democratic Republic of Ethiopia',
+        'Ethiopia',
+        NULL,
+        NULL,
+        '231'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        400,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'FO',
+        'FRO',
+        'EU',
+        'Faroe Islands',
+        'Faroe Islands',
+        NULL,
+        NULL,
+        '234'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        401,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'FK',
+        'FLK',
+        'SA',
+        'Falkland Islands (Malvinas)',
+        'Falkland Islands (Malvinas)',
+        NULL,
+        NULL,
+        '238'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        59,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'FJ',
+        'FJI',
+        'OC',
+        'Republic of Fiji',
+        'Fiji',
+        NULL,
+        NULL,
+        '242'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        60,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'FI',
+        'FIN',
+        'EU',
+        'Republic of Finland',
+        'Finland',
+        NULL,
+        NULL,
+        '246'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        61,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'FR',
+        'FRA',
+        'EU',
+        'French Republic',
+        'France',
+        NULL,
+        NULL,
+        '250'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        402,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'GF',
+        'GUF',
+        'SA',
+        'French Guiana',
+        'French Guiana',
+        NULL,
+        NULL,
+        '254'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        403,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'PF',
+        'PYF',
+        'OC',
+        'French Polynesia',
+        'French Polynesia',
+        NULL,
+        NULL,
+        '258'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        404,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'TF',
+        'ATF',
+        'AN',
+        'French Southern Territories',
+        'French Southern Territories',
+        NULL,
+        NULL,
+        '260'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        62,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'GA',
+        'GAB',
+        'AF',
+        'Gabonese Republic',
+        'Gabon',
+        NULL,
+        NULL,
+        '266'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        63,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'GM',
+        'GMB',
+        'AF',
+        'Republic of the Gambia',
+        'Gambia',
+        NULL,
+        NULL,
+        '270'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        64,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'GE',
+        'GEO',
+        'AS',
+        'Georgia',
+        'Georgia',
+        NULL,
+        NULL,
+        '268'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        5,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'DE',
+        'DEU',
+        'EU',
+        'Federal Republic of Germany',
+        'Germany',
+        NULL,
+        NULL,
+        '276'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        65,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'GH',
+        'GHA',
+        'AF',
+        'Republic of Ghana',
+        'Ghana',
+        NULL,
+        NULL,
+        '288'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        305,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'GI',
+        'GIB',
+        'EU',
+        'Gibraltar',
+        'Gibraltar',
+        NULL,
+        NULL,
+        '292'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        66,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'GR',
+        'GRC',
+        'EU',
+        'Hellenic Republic of Greece',
+        'Greece',
+        NULL,
+        NULL,
+        '300'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        306,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'GL',
+        'GRL',
+        'NA',
+        'Greenland',
+        'Greenland',
+        NULL,
+        NULL,
+        '304'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        216,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'GD',
+        'GRD',
+        'NA',
+        'Grenada',
+        'Grenada',
+        NULL,
+        NULL,
+        '308'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        307,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'GP',
+        'GLP',
+        'NA',
+        'Guadeloupe',
+        'Guadeloupe',
+        NULL,
+        NULL,
+        '312'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        308,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'GU',
+        'GUM',
+        'OC',
+        'Guam',
+        'Guam',
+        NULL,
+        NULL,
+        '316'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        68,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'GT',
+        'GTM',
+        'NA',
+        'Republic of Guatemala',
+        'Guatemala',
+        NULL,
+        NULL,
+        '320'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        309,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'GG',
+        'GGY',
+        'EU',
+        'Bailiwick of Guernsey',
+        'Guernsey',
+        NULL,
+        NULL,
+        '831'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        69,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'GN',
+        'GIN',
+        'AF',
+        'Republic of Guinea',
+        'Guinea',
+        NULL,
+        NULL,
+        '324'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        71,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'GW',
+        'GNB',
+        'AF',
+        'Republic of Guinea-Bissau',
+        'Guinea-Bissau',
+        NULL,
+        NULL,
+        '624'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        72,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'GY',
+        'GUY',
+        'SA',
+        'Co-operative Republic of Guyana',
+        'Guyana',
+        NULL,
+        NULL,
+        '328'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        73,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'HT',
+        'HTI',
+        'NA',
+        'Republic of Haiti',
+        'Haiti',
+        NULL,
+        NULL,
+        '332'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        406,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'HM',
+        'HMD',
+        'AN',
+        'Heard Island and McDonald Islands',
+        'Heard Island and McDonald Islands',
+        NULL,
+        NULL,
+        '334'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        188,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'VA',
+        'VAT',
+        'EU',
+        'Holy See (Vatican City State)',
+        'Holy See (Vatican City State)',
+        NULL,
+        NULL,
+        '336'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        74,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'HN',
+        'HND',
+        'NA',
+        'Republic of Honduras',
+        'Honduras',
+        NULL,
+        NULL,
+        '340'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        201,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'HK',
+        'HKG',
+        'AS',
+        'Hong Kong Special Administrative Region of China',
+        'Hong Kong',
+        NULL,
+        NULL,
+        '344'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        75,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'HU',
+        'HUN',
+        'EU',
+        'Hungary',
+        'Hungary',
+        NULL,
+        NULL,
+        '348'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        83,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'IS',
+        'ISL',
+        'EU',
+        'Republic of Iceland',
+        'Iceland',
+        NULL,
+        NULL,
+        '352'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        78,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'IN',
+        'IND',
+        'AS',
+        'Republic of India',
+        'India',
+        NULL,
+        NULL,
+        '356'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        79,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'ID',
+        'IDN',
+        'AS',
+        'Republic of Indonesia',
+        'Indonesia',
+        NULL,
+        NULL,
+        '360'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        81,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'IR',
+        'IRN',
+        'AS',
+        'Islamic Republic of Iran',
+        'Iran',
+        NULL,
+        NULL,
+        '364'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        80,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'IQ',
+        'IRQ',
+        'AS',
+        'Republic of Iraq',
+        'Iraq',
+        NULL,
+        NULL,
+        '368'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        82,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'IE',
+        'IRL',
+        'EU',
+        'Ireland',
+        'Ireland',
+        NULL,
+        NULL,
+        '372'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        407,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'IM',
+        'IMN',
+        'EU',
+        'Isle of Man',
+        'Isle of Man',
+        NULL,
+        NULL,
+        '833'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        84,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'IL',
+        'ISR',
+        'AS',
+        'State of Israel',
+        'Israel',
+        NULL,
+        NULL,
+        '376'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        85,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'IT',
+        'ITA',
+        'EU',
+        'Republic of Italy',
+        'Italy',
+        NULL,
+        NULL,
+        '380'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        86,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'JM',
+        'JAM',
+        'NA',
+        'Jamaica',
+        'Jamaica',
+        NULL,
+        NULL,
+        '388'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        87,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'JP',
+        'JPN',
+        'AS',
+        'Japan',
+        'Japan',
+        NULL,
+        NULL,
+        '392'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        408,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'JE',
+        'JEY',
+        'EU',
+        'Bailiwick of Jersey',
+        'Jersey',
+        NULL,
+        NULL,
+        '832'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        88,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'JO',
+        'JOR',
+        'AS',
+        'Hashemite Kingdom of Jordan',
+        'Jordan',
+        NULL,
+        NULL,
+        '400'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        89,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'KZ',
+        'KAZ',
+        'AS',
+        'Republic of Kazakhstan',
+        'Kazakhstan',
+        NULL,
+        NULL,
+        '398'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        90,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'KE',
+        'KEN',
+        'AF',
+        'Republic of Kenya',
+        'Kenya',
+        NULL,
+        NULL,
+        '404'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        91,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'KI',
+        'KIR',
+        'OC',
+        'Republic of Kiribati',
+        'Kiribati',
+        NULL,
+        NULL,
+        '296'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        42,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'KP',
+        'PRK',
+        'AS',
+        'Democratic People''s Republic of Korea',
+        'North Korea',
+        NULL,
+        NULL,
+        '408'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        43,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'KR',
+        'KOR',
+        'AS',
+        'Republic of Korea',
+        'South Korea',
+        NULL,
+        NULL,
+        '410'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        92,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'KW',
+        'KWT',
+        'AS',
+        'State of Kuwait',
+        'Kuwait',
+        NULL,
+        NULL,
+        '414'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        93,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'KG',
+        'KGZ',
+        'AS',
+        'Kyrgyz Republic/Kyrgyzstan',
+        'Kyrgyz Republic/Kyrgyzstan',
+        NULL,
+        NULL,
+        '417'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        94,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'LA',
+        'LAO',
+        'AS',
+        'Lao People''s Democratic Republic',
+        'Lao People''s Democratic Republic',
+        NULL,
+        NULL,
+        '418'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        96,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'LV',
+        'LVA',
+        'EU',
+        'Republic of Latvia',
+        'Latvia',
+        NULL,
+        NULL,
+        '428'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        97,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'LB',
+        'LBN',
+        'AS',
+        'Lebanese Republic',
+        'Lebanon',
+        NULL,
+        NULL,
+        '422'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        95,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'LS',
+        'LSO',
+        'AF',
+        'Kingdom of Lesotho',
+        'Lesotho',
+        NULL,
+        NULL,
+        '426'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        98,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'LR',
+        'LBR',
+        'AF',
+        'Republic of Liberia',
+        'Liberia',
+        NULL,
+        NULL,
+        '430'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        99,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'LY',
+        'LBY',
+        'AF',
+        'State of Libya',
+        'Libya',
+        NULL,
+        NULL,
+        '434'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        100,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'LI',
+        'LIE',
+        'EU',
+        'Principality of Liechtenstein',
+        'Liechtenstein',
+        NULL,
+        NULL,
+        '438'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        101,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'LT',
+        'LTU',
+        'EU',
+        'Republic of Lithuania',
+        'Lithuania',
+        NULL,
+        NULL,
+        '440'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        102,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'LU',
+        'LUX',
+        'EU',
+        'Grand Duchy of Luxembourg',
+        'Luxembourg',
+        NULL,
+        NULL,
+        '442'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        409,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'MO',
+        'MAC',
+        'AS',
+        'Macao Special Administrative Region of China',
+        'Macao',
+        NULL,
+        NULL,
+        '446'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        104,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'MG',
+        'MDG',
+        'AF',
+        'Republic of Madagascar',
+        'Madagascar',
+        NULL,
+        NULL,
+        '450'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        106,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'MW',
+        'MWI',
+        'AF',
+        'Republic of Malawi',
+        'Malawi',
+        NULL,
+        NULL,
+        '454'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        105,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'MY',
+        'MYS',
+        'AS',
+        'Malaysia',
+        'Malaysia',
+        NULL,
+        NULL,
+        '458'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        107,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'MV',
+        'MDV',
+        'AS',
+        'Republic of Maldives',
+        'Maldives',
+        NULL,
+        NULL,
+        '462'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        108,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'ML',
+        'MLI',
+        'AF',
+        'Republic of Mali',
+        'Mali',
+        NULL,
+        NULL,
+        '466'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        109,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'MT',
+        'MLT',
+        'EU',
+        'Republic of Malta',
+        'Malta',
+        NULL,
+        NULL,
+        '470'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        76,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'MH',
+        'MHL',
+        'OC',
+        'Republic of the Marshall Islands',
+        'Marshall Islands',
+        NULL,
+        NULL,
+        '584'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        500,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'MQ',
+        'MTQ',
+        'NA',
+        'Martinique',
+        'Martinique',
+        NULL,
+        NULL,
+        '474'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        112,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'MR',
+        'MRT',
+        'AF',
+        'Islamic Republic of Mauritania',
+        'Mauritania',
+        NULL,
+        NULL,
+        '478'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        195,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'MU',
+        'MUS',
+        'AF',
+        'Republic of Mauritius',
+        'Mauritius',
+        NULL,
+        NULL,
+        '480'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        321,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'YT',
+        'MYT',
+        'AF',
+        'Mayotte',
+        'Mayotte',
+        NULL,
+        NULL,
+        '175'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        113,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'MX',
+        'MEX',
+        'NA',
+        'United Mexican States',
+        'Mexico',
+        NULL,
+        NULL,
+        '484'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        114,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'FM',
+        'FSM',
+        'OC',
+        'Federated States of Micronesia',
+        'Micronesia',
+        NULL,
+        NULL,
+        '583'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        115,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'MD',
+        'MDA',
+        'EU',
+        'Republic of Moldova',
+        'Moldova',
+        NULL,
+        NULL,
+        '498'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        116,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'MC',
+        'MCO',
+        'EU',
+        'Principality of Monaco',
+        'Monaco',
+        NULL,
+        NULL,
+        '492'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        117,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'MN',
+        'MNG',
+        'AS',
+        'Mongolia',
+        'Mongolia',
+        NULL,
+        NULL,
+        '496'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        224,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'ME',
+        'MNE',
+        'EU',
+        'Montenegro',
+        'Montenegro',
+        NULL,
+        NULL,
+        '499'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        233,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'MS',
+        'MSR',
+        'NA',
+        'Montserrat',
+        'Montserrat',
+        NULL,
+        NULL,
+        '500'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        110,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'MA',
+        'MAR',
+        'AF',
+        'Kingdom of Morocco',
+        'Morocco',
+        NULL,
+        NULL,
+        '504'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        118,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'MZ',
+        'MOZ',
+        'AF',
+        'Republic of Mozambique',
+        'Mozambique',
+        NULL,
+        NULL,
+        '508'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        24,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'MM',
+        'MMR',
+        'AS',
+        'Republic of the Union of Myanmar',
+        'Myanmar',
+        NULL,
+        NULL,
+        '104'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        119,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'NA',
+        'NAM',
+        'AF',
+        'Republic of Namibia',
+        'Namibia',
+        NULL,
+        NULL,
+        '516'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        120,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'NR',
+        'NRU',
+        'OC',
+        'Republic of Nauru',
+        'Nauru',
+        NULL,
+        NULL,
+        '520'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        121,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'NP',
+        'NPL',
+        'AS',
+        'Nepal',
+        'Nepal',
+        NULL,
+        NULL,
+        '524'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        135,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'NL',
+        'NLD',
+        'EU',
+        'Kingdom of the Netherlands',
+        'Netherlands',
+        NULL,
+        NULL,
+        '528'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        196,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'NC',
+        'NCL',
+        'OC',
+        'New Caledonia',
+        'New Caledonia',
+        NULL,
+        NULL,
+        '540'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        126,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'NZ',
+        'NZL',
+        'OC',
+        'New Zealand',
+        'New Zealand',
+        NULL,
+        NULL,
+        '554'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        122,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'NI',
+        'NIC',
+        'NA',
+        'Republic of Nicaragua',
+        'Nicaragua',
+        NULL,
+        NULL,
+        '558'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        123,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'NE',
+        'NER',
+        'AF',
+        'Republic of Niger',
+        'Niger',
+        NULL,
+        NULL,
+        '562'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        124,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'NG',
+        'NGA',
+        'AF',
+        'Federal Republic of Nigeria',
+        'Nigeria',
+        NULL,
+        NULL,
+        '566'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        334,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'NU',
+        'NIU',
+        'OC',
+        'Niue',
+        'Niue',
+        NULL,
+        NULL,
+        '570'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        164,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'NF',
+        'NFK',
+        'OC',
+        'Norfolk Island',
+        'Norfolk Island',
+        NULL,
+        NULL,
+        '574'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        103,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'MK',
+        'MKD',
+        'EU',
+        'Republic of North Macedonia',
+        'North Macedonia',
+        NULL,
+        NULL,
+        '807'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        335,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'MP',
+        'MNP',
+        'OC',
+        'Commonwealth of the Northern Mariana Islands',
+        'Northern Mariana Islands',
+        NULL,
+        NULL,
+        '580'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        125,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'NO',
+        'NOR',
+        'EU',
+        'Kingdom of Norway',
+        'Norway',
+        NULL,
+        NULL,
+        '578'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        127,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'OM',
+        'OMN',
+        'AS',
+        'Sultanate of Oman',
+        'Oman',
+        NULL,
+        NULL,
+        '512'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        130,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'PK',
+        'PAK',
+        'AS',
+        'Islamic Republic of Pakistan',
+        'Pakistan',
+        NULL,
+        NULL,
+        '586'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        131,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'PW',
+        'PLW',
+        'OC',
+        'Republic of Palau',
+        'Palau',
+        NULL,
+        NULL,
+        '585'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        336,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'PS',
+        'PSE',
+        'AS',
+        'State of Palestine',
+        'Palestine',
+        NULL,
+        NULL,
+        '275'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        132,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'PA',
+        'PAN',
+        'NA',
+        'Republic of Panama',
+        'Panama',
+        NULL,
+        NULL,
+        '591'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        133,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'PG',
+        'PNG',
+        'OC',
+        'Independent State of Papua New Guinea',
+        'Papua New Guinea',
+        NULL,
+        NULL,
+        '598'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        134,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'PY',
+        'PRY',
+        'SA',
+        'Republic of Paraguay',
+        'Paraguay',
+        NULL,
+        NULL,
+        '600'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        136,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'PE',
+        'PER',
+        'SA',
+        'Republic of Peru',
+        'Peru',
+        NULL,
+        NULL,
+        '604'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        137,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'PH',
+        'PHL',
+        'AS',
+        'Republic of the Philippines',
+        'Philippines',
+        NULL,
+        NULL,
+        '608'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        236,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'PN',
+        'PCN',
+        'OC',
+        'Pitcairn Islands',
+        'Pitcairn Islands',
+        NULL,
+        NULL,
+        '612'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        138,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'PL',
+        'POL',
+        'EU',
+        'Republic of Poland',
+        'Poland',
+        NULL,
+        NULL,
+        '616'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        139,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'PT',
+        'PRT',
+        'EU',
+        'Portuguese Republic',
+        'Portugal',
+        NULL,
+        NULL,
+        '620'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        237,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'PR',
+        'PRI',
+        'NA',
+        'Commonwealth of Puerto Rico',
+        'Puerto Rico',
+        NULL,
+        NULL,
+        '630'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        140,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'QA',
+        'QAT',
+        'AS',
+        'State of Qatar',
+        'Qatar',
+        NULL,
+        NULL,
+        '634'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        238,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'RE',
+        'REU',
+        'AF',
+        'Réunion',
+        'Réunion',
+        NULL,
+        NULL,
+        '638'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        146,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'RO',
+        'ROU',
+        'EU',
+        'Romania',
+        'Romania',
+        NULL,
+        NULL,
+        '642'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        148,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'RU',
+        'RUS',
+        'EU',
+        'Russian Federation',
+        'Russian Federation',
+        NULL,
+        NULL,
+        '643'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        149,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'RW',
+        'RWA',
+        'AF',
+        'Republic of Rwanda',
+        'Rwanda',
+        NULL,
+        NULL,
+        '646'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        247,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'BL',
+        'BLM',
+        'NA',
+        'Saint Barthélemy',
+        'Saint Barthélemy',
+        NULL,
+        NULL,
+        '652'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        248,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'SH',
+        'SHN',
+        'AF',
+        'Saint Helena, Ascension and Tristan da Cunha',
+        'Saint Helena, Ascension and Tristan da Cunha',
+        NULL,
+        NULL,
+        '654'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        151,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'KN',
+        'KNA',
+        'NA',
+        'Federation of Saint Kitts and Nevis',
+        'Saint Kitts and Nevis',
+        NULL,
+        NULL,
+        '659'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        152,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'LC',
+        'LCA',
+        'NA',
+        'Saint Lucia',
+        'Saint Lucia',
+        NULL,
+        NULL,
+        '662'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        153,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'MF',
+        'MAF',
+        'NA',
+        'Saint Martin (French part)',
+        'Saint Martin',
+        NULL,
+        NULL,
+        '663'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        249,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'PM',
+        'SPM',
+        'NA',
+        'Saint Pierre and Miquelon',
+        'Saint Pierre and Miquelon',
+        NULL,
+        NULL,
+        '666'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        154,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'VC',
+        'VCT',
+        'NA',
+        'Saint Vincent and the Grenadines',
+        'Saint Vincent and the Grenadines',
+        NULL,
+        NULL,
+        '670'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        156,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'WS',
+        'WSM',
+        'OC',
+        'Independent State of Samoa',
+        'Samoa',
+        NULL,
+        NULL,
+        '882'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        194,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'SM',
+        'SMR',
+        'EU',
+        'Republic of San Marino',
+        'San Marino',
+        NULL,
+        NULL,
+        '674'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        157,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'ST',
+        'STP',
+        'AF',
+        'Democratic Republic of São Tomé and Príncipe',
+        'São Tomé and Príncipe',
+        NULL,
+        NULL,
+        '678'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        9,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'SA',
+        'SAU',
+        'AS',
+        'Kingdom of Saudi Arabia',
+        'Saudi Arabia',
+        NULL,
+        NULL,
+        '682'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        158,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'SN',
+        'SEN',
+        'AF',
+        'Republic of Senegal',
+        'Senegal',
+        NULL,
+        NULL,
+        '686'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        159,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'RS',
+        'SRB',
+        'EU',
+        'Republic of Serbia',
+        'Serbia',
+        NULL,
+        NULL,
+        '688'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        160,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'SC',
+        'SYC',
+        'AF',
+        'Republic of Seychelles',
+        'Seychelles',
+        NULL,
+        NULL,
+        '690'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        161,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'SL',
+        'SLE',
+        'AF',
+        'Republic of Sierra Leone',
+        'Sierra Leone',
+        NULL,
+        NULL,
+        '694'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        162,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'SG',
+        'SGP',
+        'AS',
+        'Republic of Singapore',
+        'Singapore',
+        NULL,
+        NULL,
+        '702'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        202,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'SX',
+        'SXM',
+        'NA',
+        'Sint Maarten (Dutch part)',
+        'Sint Maarten (Dutch part)',
+        NULL,
+        NULL,
+        '534'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        163,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'SK',
+        'SVK',
+        'EU',
+        'Slovakia (Slovak Republic)',
+        'Slovakia (Slovak Republic)',
+        NULL,
+        NULL,
+        '703'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        164,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'SI',
+        'SVN',
+        'EU',
+        'Republic of Slovenia',
+        'Slovenia',
+        NULL,
+        NULL,
+        '705'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        205,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'SB',
+        'SLB',
+        'OC',
+        'Solomon Islands',
+        'Solomon Islands',
+        NULL,
+        NULL,
+        '090'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        165,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'SO',
+        'SOM',
+        'AF',
+        'Federal Republic of Somalia',
+        'Somalia',
+        NULL,
+        NULL,
+        '706'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        2,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'ZA',
+        'ZAF',
+        'AF',
+        'Republic of South Africa',
+        'South Africa',
+        NULL,
+        NULL,
+        '710'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        208,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'GS',
+        'SGS',
+        'AN',
+        'South Georgia and the South Sandwich Islands',
+        'South Georgia and the South Sandwich Islands',
+        NULL,
+        NULL,
+        '239'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        197,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'SS',
+        'SSD',
+        'AF',
+        'Republic of South Sudan',
+        'South Sudan',
+        NULL,
+        NULL,
+        '728'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        55,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'ES',
+        'ESP',
+        'EU',
+        'Kingdom of Spain',
+        'Spain',
+        NULL,
+        NULL,
+        '724'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        167,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'LK',
+        'LKA',
+        'AS',
+        'Democratic Socialist Republic of Sri Lanka',
+        'Sri Lanka',
+        NULL,
+        NULL,
+        '144'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        166,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'SD',
+        'SDN',
+        'AF',
+        'Republic of Sudan',
+        'Sudan',
+        NULL,
+        NULL,
+        '729'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        170,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'SR',
+        'SUR',
+        'SA',
+        'Republic of Suriname',
+        'Suriname',
+        NULL,
+        NULL,
+        '740'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        214,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'SJ',
+        'SJM',
+        'EU',
+        'Svalbard & Jan Mayen Islands',
+        'Svalbard & Jan Mayen Islands',
+        NULL,
+        NULL,
+        '744'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        171,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'SZ',
+        'SWZ',
+        'AF',
+        'Kingdom of Eswatini',
+        'Eswatini',
+        NULL,
+        NULL,
+        '748'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        168,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'SE',
+        'SWE',
+        'EU',
+        'Kingdom of Sweden',
+        'Sweden',
+        NULL,
+        NULL,
+        '752'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        169,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'CH',
+        'CHE',
+        'EU',
+        'Swiss Confederation',
+        'Switzerland',
+        NULL,
+        NULL,
+        '756'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        172,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'SY',
+        'SYR',
+        'AS',
+        'Syrian Arab Republic',
+        'Syrian Arab Republic',
+        NULL,
+        NULL,
+        '760'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        235,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'TW',
+        'TWN',
+        'AS',
+        'Taiwan, Province of China',
+        'Taiwan',
+        NULL,
+        NULL,
+        '158'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        173,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'TJ',
+        'TJK',
+        'AS',
+        'Republic of Tajikistan',
+        'Tajikistan',
+        NULL,
+        NULL,
+        '762'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        174,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'TZ',
+        'TZA',
+        'AF',
+        'United Republic of Tanzania',
+        'Tanzania',
+        NULL,
+        NULL,
+        '834'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        176,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'TH',
+        'THA',
+        'AS',
+        'Kingdom of Thailand',
+        'Thailand',
+        NULL,
+        NULL,
+        '764'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        177,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'TL',
+        'TLS',
+        'AS',
+        'Democratic Republic of Timor-Leste',
+        'Timor-Leste',
+        NULL,
+        NULL,
+        '626'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        178,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'TG',
+        'TGO',
+        'AF',
+        'Togolese Republic',
+        'Togo',
+        NULL,
+        NULL,
+        '768'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        303,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'TK',
+        'TKL',
+        'OC',
+        'Tokelau',
+        'Tokelau',
+        NULL,
+        NULL,
+        '772'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        179,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'TO',
+        'TON',
+        'OC',
+        'Kingdom of Tonga',
+        'Tonga',
+        NULL,
+        NULL,
+        '776'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        180,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'TT',
+        'TTO',
+        'NA',
+        'Republic of Trinidad and Tobago',
+        'Trinidad and Tobago',
+        NULL,
+        NULL,
+        '780'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        181,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'TN',
+        'TUN',
+        'AF',
+        'Tunisian Republic',
+        'Tunisia',
+        NULL,
+        NULL,
+        '788'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        183,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'TR',
+        'TUR',
+        'AS',
+        'Republic of Turkey',
+        'Turkey',
+        NULL,
+        NULL,
+        '792'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        182,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'TM',
+        'TKM',
+        'AS',
+        'Turkmenistan',
+        'Turkmenistan',
+        NULL,
+        NULL,
+        '795'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        231,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'TC',
+        'TCA',
+        'NA',
+        'Turks and Caicos Islands',
+        'Turks and Caicos Islands',
+        NULL,
+        NULL,
+        '796'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        184,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'TV',
+        'TUV',
+        'OC',
+        'Tuvalu',
+        'Tuvalu',
+        NULL,
+        NULL,
+        '798'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        128,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'UG',
+        'UGA',
+        'AF',
+        'Republic of Uganda',
+        'Uganda',
+        NULL,
+        NULL,
+        '800'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        185,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'UA',
+        'UKR',
+        'EU',
+        'Ukraine',
+        'Ukraine',
+        NULL,
+        NULL,
+        '804'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        52,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'AE',
+        'ARE',
+        'AS',
+        'United Arab Emirates',
+        'United Arab Emirates',
+        NULL,
+        NULL,
+        '784'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        147,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'GB',
+        'GBR',
+        'EU',
+        'United Kingdom of Great Britain & Northern Ireland',
+        'United Kingdom of Great Britain and Northern Ireland',
+        NULL,
+        NULL,
+        '826'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        57,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'US',
+        'USA',
+        'NA',
+        'United States of America',
+        'United States of America',
+        NULL,
+        NULL,
+        '840'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        246,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'UM',
+        'UMI',
+        'OC',
+        'United States Minor Outlying Islands',
+        'United States Minor Outlying Islands',
+        NULL,
+        NULL,
+        '581'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        239,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'VI',
+        'VIR',
+        'NA',
+        'United States Virgin Islands',
+        'United States Virgin Islands',
+        NULL,
+        NULL,
+        '850'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        186,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'UY',
+        'URY',
+        'SA',
+        'Eastern Republic of Uruguay',
+        'Uruguay',
+        NULL,
+        NULL,
+        '858'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        129,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'UZ',
+        'UZB',
+        'AS',
+        'Republic of Uzbekistan',
+        'Uzbekistan',
+        NULL,
+        NULL,
+        '860'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        187,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'VU',
+        'VUT',
+        'OC',
+        'Republic of Vanuatu',
+        'Vanuatu',
+        NULL,
+        NULL,
+        '548'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        189,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'VE',
+        'VEN',
+        'SA',
+        'Bolivarian Republic of Venezuela',
+        'Venezuela',
+        NULL,
+        NULL,
+        '862'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        190,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'VN',
+        'VNM',
+        'AS',
+        'Socialist Republic of Vietnam',
+        'Vietnam',
+        NULL,
+        NULL,
+        '704'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        245,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'WF',
+        'WLF',
+        'OC',
+        'Wallis and Futuna',
+        'Wallis and Futuna',
+        NULL,
+        NULL,
+        '876'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        150,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'EH',
+        'ESH',
+        'AF',
+        'Western Sahara',
+        'Western Sahara',
+        NULL,
+        NULL,
+        '732'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        191,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'YE',
+        'YEM',
+        'AS',
+        'Yemen',
+        'Yemen',
+        NULL,
+        NULL,
+        '887'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        192,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'ZM',
+        'ZMB',
+        'AF',
+        'Republic of Zambia',
+        'Zambia',
+        NULL,
+        NULL,
+        '894'
+    );
+
+INSERT
+    IGNORE INTO `crs_db`.`crs_country` (
+        `id`,
+        `created_at`,
+        `created_by`,
+        `is_deleted`,
+        `last_modified_at`,
+        `last_updated_by`,
+        `alpha2code`,
+        `alpha3code`,
+        `continent_code`,
+        `full_name`,
+        `name_english`,
+        `name_french`,
+        `name_kinyarwanda`,
+        `numeric_code`
+    )
+VALUES
+    (
+        193,
+        NULL,
+        NULL,
+        0,
+        NULL,
+        NULL,
+        'ZW',
+        'ZWE',
+        'AF',
+        'Republic of Zimbabwe',
+        'Zimbabwe',
+        NULL,
+        NULL,
+        '716'
+    );

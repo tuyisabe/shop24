@@ -63,13 +63,13 @@
                 <div class="cont-area">
                   <div class="tit_cont">Confirmation Number</div>
                   <div class="form-group">
-                      <input type="text" class="form-control mh-form-control" id="">
+                      <input type="text" class="form-control mh-form-control" id="confirm_code">
                       <!-- <span class="text-alert">Please enter a question for resetting in case you lose your E-mail.</span> -->
                   </div>
                 </div>
                 <div class="btn-area">
                   <button type="button" class="btn h50 cancel">Resend</button>
-                  <button type="button" class="btn h50">Confirmation</button>
+                  <button type="button" class="btn h50 Confirmation-btn">Confirmation</button>
                 </div>
               </div>
             </form>
@@ -117,12 +117,27 @@
     <!-- nppa JS -->
     <script src="../dist/js/nppa.js"></script>
     <script>
-    $(document).ready(function () { 
-        $(".btn").click(function () { 
-                alert("clicked next step");
-                window.location='/email_alert'
-            });
-          });
+      //   VERIFY EMAIL
+      $(document).ready(function () {                 
+        
+            $(".Confirmation-btn").click(function (e) { 
+                        e.preventDefault();
+                        var code= document.getElementById("confirm_code").value; 
+                        $.ajax({
+                url:"/get_verification_code/"+code,
+                            success: function(data) {  
+                                if(data.verificationRegistration ==null){alert("Nothing Found");}                                 
+                                else {
+                                    $(".mh-modal").modal("show");
+                                console.log(data.verificationRegistration); }                                 
+                                   },
+                            error: function (err) {
+                                console.log(err);
+                            },
+                        });
+                    }); 
+        });
+         //   VERIFY EMAIL
           </script>
 </body>
 </html>

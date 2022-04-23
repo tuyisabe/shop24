@@ -47,4 +47,9 @@ public class VerificationRegistrationServiceImpl implements VerificationRegistra
     public String findByCode(String code) {
         return verificationRegistrationDAO.findByCode(code);
     }
+
+    @Override
+    public void disableCode(String code) {
+        verificationRegistrationDAO.disableCode(code);
+    }
 }

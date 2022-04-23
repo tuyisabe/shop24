@@ -21,20 +21,6 @@ public class UserTable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-
-
-    private String identificationType;
-    private String IdentificationNumber;
-    private String PlaceOfIssue;
-    private String DateOfIssue;
-    private String DateOfExpiry;
-
-    @Column(unique = false, nullable = true)
-    private String email;
-
-    @Column(unique = false, nullable = true)
-    private String phoneNumber;
-
     @Column(name = "first_name")
     private String firstName;
 
@@ -48,21 +34,36 @@ public class UserTable {
     private String fullName;
 
     private Date dateOfBirth;
-
     private String fatherName;
     private String motherName;
     private String maritalStatus;
     private String gender;
 
+    private String identificationType;
+    private String IdentificationNumber;
+    private String PlaceOfIssue;
+    private String DateOfIssue;
+    private String DateOfExpiry;
+
+    @Column(unique = true, nullable = false)
+    private String email;
+    @Column(unique = false, nullable = false)
+    private String password;
+
+    private String phoneNumber;
+
     @OneToMany(mappedBy = "userId", fetch = FetchType.LAZY)
     @JsonBackReference
     private List<UserOccupation> occupations;
+
     @OneToMany(mappedBy = "userId", fetch = FetchType.LAZY)
     @JsonBackReference
     private List<UserProfession> professions;
+
     @OneToMany(mappedBy = "userId", fetch = FetchType.LAZY)
     @JsonBackReference
     private List<UserAttachments> attachments;
+
     @OneToMany(mappedBy = "userId", fetch = FetchType.LAZY)
     @JsonBackReference
     private List<UserNationalities> nationalities;
