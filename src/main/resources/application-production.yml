@@ -1,0 +1,8 @@
+spring:
+  datasource:
+      data:
+        - classpath:/db_initial_data/countries.sql
+        - classpath:/db_initial_data/provinces.sql
+        - classpath:/db_initial_data/districts.sql
+        - classpath:/db_initial_data/sectors.sql
+        - classpath:/db_initial_data/cells.sql

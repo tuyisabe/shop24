@@ -1,6 +1,5 @@
-<!DOCTYPE html>
-<html lang="ko">
-
+<html xmlns:th="http://www.thymeleaf.org"
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"> 
 <head>
     <meta charset="UTF-8">
     <title>NPPA CRS</title>
@@ -32,43 +31,614 @@
             </div>
         </div> 
         <div class="login-user-contents">
+            <div>
+                    <div class="adm-statbox">
+                        <div class="noti-txt">CRS requires the email confirmation to recognize you're the only person who can create your account.</div>
+                        <!-- EMAIL STEP    -->
+                        <ul class="adm-step-list email-step">
+                            <li class="active">
+                                <em class="adm-step"><span class="icon_email"></span></em>
+                                <span class="adm-step-name">Email Confirmation</span>
+                            </li>
+                            <li class="">
+                                <em class="adm-step"><span class="icon_authentication"></span></em>
+                                <span class="adm-step-name">Personal Authentication</span>
+                            </li>
+                            <li class="">
+                                <em class="adm-step"><span class="icon_info"></span></em>
+                                <span class="adm-step-name">Personal Information</span>
+                            </li>
+                            <li class="">
+                                <em class="adm-step"><span class="icon_complete"></span></em>
+                                <span class="adm-step-name">Complete</span>
+                            </li>
+                            </ul>
+                        <!-- EMAIL STEP    -->
+                         <!-- IDENTIFICATION TYPE STEP    -->
+                            <ul class="adm-step-list identification-step">
+                                <li class="done">
+                                    <em class="adm-step"><span class="icon_email"></span></em>
+                                    <span class="adm-step-name">Email Confirmation</span>
+                                </li>
+                                <li class="active">
+                                    <em class="adm-step"><span class="icon_authentication"></span></em>
+                                    <span class="adm-step-name">Personal Authentication</span>
+                                </li>
+                                <li class="">
+                                    <em class="adm-step"><span class="icon_info"></span></em>
+                                    <span class="adm-step-name">Personal Information</span>
+                                </li>
+                                <li class="">
+                                    <em class="adm-step"><span class="icon_complete"></span></em>
+                                    <span class="adm-step-name">Complete</span>
+                                </li>
+                              </ul>
+                              <!-- IDENTIFICATION TYPE STEP    -->
+
+                              <!-- PERSONAL INFORMATION STEP -->
+
+                              <ul class="adm-step-list  personal_information-step">
+                                <li class="done">
+                                    <em class="adm-step"><span class="icon_email"></span></em>
+                                    <span class="adm-step-name">Email Confirmation</span>
+                                </li>
+                                <li class="done">
+                                    <em class="adm-step"><span class="icon_authentication"></span></em>
+                                    <span class="adm-step-name">Personal Authentication</span>
+                                </li>
+                                <li class="active">
+                                    <em class="adm-step"><span class="icon_info"></span></em>
+                                    <span class="adm-step-name">Personal Information</span>
+                                </li>
+                                <li class="">
+                                    <em class="adm-step"><span class="icon_complete"></span></em>
+                                    <span class="adm-step-name">Complete</span>
+                                </li>
+                              </ul>
+
+                              <!-- PERSONAL INFORMATION STEP -->
+
+
+
+
+                        </div>
+                 </div>
+            <div>
+
+            </div>
+          
+                    <div class="sign-contents verification-sent-form">
+                        <div class="tit">Sign Up<span class="txt">Please enter your email and send to us.</span></div>
+                        <div class="cont-area">
+                            <div class="tit_cont">Confirmation Number</div>
+                            <div class="form-group">
+                                <input type="text" class="form-control mh-form-control" id="confirm_code">
+                                <!-- <span class="text-alert">Please enter a question for resetting in case you lose your E-mail.</span> -->
+                            </div>
+                        </div>
+                        <div class="btn-area">
+                            <button type="button" class="btn h50 cancel">Resend</button>
+                            <button type="button" class="btn h50 Confirmation-btn">Confirmation</button>
+                        </div>
+                    </div>
             <form>
-                <div class="adm-statbox">
-                  <div class="noti-txt">CRS requires the email confirmation to recognize you're the only person who can create your account.</div>
-                <ul class="adm-step-list">
-                  <li class="active">
-                      <em class="adm-step"><span class="icon_email"></span></em>
-                      <span class="adm-step-name">Email Confirmation</span>
-                  </li>
-                  <li class="">
-                      <em class="adm-step"><span class="icon_authentication"></span></em>
-                      <span class="adm-step-name">Personal Authentication</span>
-                  </li>
-                  <li class="">
-                      <em class="adm-step"><span class="icon_info"></span></em>
-                      <span class="adm-step-name">Personal Information</span>
-                  </li>
-                  <li class="">
-                      <em class="adm-step"><span class="icon_complete"></span></em>
-                      <span class="adm-step-name">Complete</span>
-                  </li>
-                </ul>
+                <!-- IDENTIFICATION TYPE -->
+
+              <div class="sign-contents identification-type-form">
+                <div class="tit">Sign Up<span class="txt">Please provide your information</span></div>
+                  <div class="top-area">
+                    <div class="tit_cont">Select Applicant Type</div>
+                  </div>
+                  <ul class="nav tab-type03" role="tablist"> 
+                      <li class="nav-item">
+                          <a class="nav-link active" id="default1-tab" data-toggle="tab" href="#default1" role="tab" aria-controls="default1" aria-selected="true">Citizens living in Rwanda</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" id="default2-tab" data-toggle="tab" href="#default2" role="tab" aria-controls="default2" aria-selected="false">Citizens living abroad</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" id="default3-tab" data-toggle="tab" href="#default3" role="tab" aria-controls="default3" aria-selected="false">Refugees</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" id="default4-tab" data-toggle="tab" href="#default4" role="tab" aria-controls="default4" aria-selected="false">Foreigners living in Rwanda</a>
+                      </li>
+                  </ul>
+                  <div class="tab-content">
+                      <div class="tab-pane fade show active" id="default1" role="tabpanel" aria-labelledby="default1-tab">
+                        <div class="cont-area tab_st">
+                          <div class="tit_cont">Identity Type</div>
+                          <div class="form-group mb-15p">
+                              <select class="form-control mh-form-control">
+                                  <option>----SELECT---</option>
+                                  <option>National id</option>
+                                  <option>Passport</option>
+                              </select>
+                          </div>
+                          <div class="tit_cont">NIID Number</div>
+                          <div class="form-group mb-15p">
+                              <input type="text" class="form-control mh-form-control" id="">
+                          </div> 
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="default2" role="tabpanel" aria-labelledby="default2-tab">
+                        <div class="cont-area tab_st">
+                          <div class="tit_cont">Rwandan Passport No.</div>
+                          <div class="form-group mb-15p">
+                              <input type="text" class="form-control mh-form-control" id="">
+                          </div>
+                          <div class="tit_cont">Place of Issue</div>
+                          <div class="form-group mb-15p">
+                              <input type="text" class="form-control mh-form-control" id="">
+                          </div>
+                          <div class="datetimepicker-wrapper datetimepicker mb-15p">
+                              <div class="tit_cont">Date of Issue</div>
+                              <input type="text" class="form-control mh-form-control" id="datetimepicker1">
+                          </div>
+                          <span class="dash">~</span>
+                          <div class="datetimepicker-wrapper datetimepicker mb-15p">
+                              <div class="tit_cont">Date of Expiry</div><input type="text" class="form-control mh-form-control" id="datetimepicker2">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="default3" role="tabpanel" aria-labelledby="default3-tab">
+                        <div class="cont-area tab_st">
+                          <div class="tit_cont">Proof of Registration No.</div>
+                          <div class="form-group mb-15p">
+                              <input type="text" class="form-control mh-form-control" id="">
+                          </div>
+                          <div class="tit_cont">Place of Issue</div>
+                          <div class="form-group mb-15p">
+                              <input type="text" class="form-control mh-form-control" id="">
+                          </div>
+                          <div class="datetimepicker-wrapper datetimepicker mb-20p">
+                              <div class="tit_cont">Date of Issue</div>
+                              <input type="text" class="form-control mh-form-control" id="datetimepicker3">
+                          </div>
+                          <span class="dash">~</span>
+                          <div class="datetimepicker-wrapper datetimepicker mb-20p">
+                              <div class="tit_cont">Date of Expiry</div><input type="text" class="form-control mh-form-control" id="datetimepicker4">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="default4" role="tabpanel" aria-labelledby="default4-tab">
+                        <div class="cont-area tab_st">
+                          <div class="tit_cont">Current Passport No.</div>
+                          <div class="form-group mb-15p">
+                              <input type="text" class="form-control mh-form-control" id="">
+                          </div>
+                          <div class="tit_cont">Place of Issue</div>
+                          <div class="form-group mb-15p">
+                              <input type="text" class="form-control mh-form-control" id="">
+                          </div>
+                          <div class="datetimepicker-wrapper datetimepicker mb-20p">
+                              <div class="tit_cont">Date of Issue</div>
+                              <input type="text" class="form-control mh-form-control" id="datetimepicker5">
+                          </div>
+                          <span class="dash">~</span>
+                          <div class="datetimepicker-wrapper datetimepicker mb-20p">
+                              <div class="tit_cont">Date of Expiry</div><input type="text" class="form-control mh-form-control" id="datetimepicker6">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                <div class="btn-area mb-0p">
+                  <button type="button" class="btn h50 solo">Authenticate</button>
+                </div>
               </div>
-            </form>
-            <form>
-              <div class="sign-contents">
+
+              <!-- IDENTIFICATION TYPE -->
+              <div class="sign-contents send-email-form">
                 <div class="tit">Sign Up<span class="txt">Please enter your email and send to us.</span></div>
                 <div class="cont-area">
                   <div class="tit_cont">Mail address</div>
                   <div class="form-group">
-                      <input type="text" class="form-control mh-form-control" id="">
+                      <input type="email" class="form-control mh-form-control" id="input-email">
                       <!-- <span class="text-alert">Please enter a question for resetting in case you lose your E-mail.</span> -->
                   </div>
                 </div>
                 <div class="btn-area">
-                  <button type="button" class="btn h50 solo" data-toggle="modal" data-target="#exampleModal2" id="modal1">Send</button>
+                  <button type="button" class="btn h50 solo send-email-btn" data-toggle="modal" data-target="#exampleModal1" id="modal1">Send</button>
                 </div>
               </div>
+
+
+              <!-- PERSONAL INFORMATION FORM -->
+
+              <div class="sign-contents personal_information-form">
+                <div class="tit">Sign Up<span class="txt">Please provide your information</span></div>
+				 <div class="usr-detail-area"> 
+					<div class="usr-area">
+						<h3>Applicant Detail</h3>
+						<div class="row mb-30p">
+							<div class="col-12">
+								<div class="profile-id">
+								User Register Type : <span>Citizen</span>
+								</div>
+								<div class="profile-id">
+								National ID : <span>7108267201</span>
+								</div>
+							</div>
+						</div>
+						<div class="profile-pic more">
+							<img src="../dist/img/no-img.jpg" alt="">
+							<div class="form-group inline-group">
+								<input type="hidden" id="fileName" class="form-control mh-form-control">
+								<div class="attach-btn">
+									<button type="button" class="btn" for="#attach1"><span class="btn_attach"></span> Photo</button>
+									<input type="file" name="file_1" class="file_input_hidden" onchange="javascript: document.getElementById('fileName').value = this.value"/>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-4">
+								<div class="tit_cont">First Name</div>
+								<div class="form-group">
+									<input type="text" class="form-control mh-form-control">
+								</div>
+								</div>
+							<div class="col-4">
+								<div class="tit_cont">Middle Name</div>
+								<div class="form-group">
+									<input type="text" class="form-control mh-form-control">
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="tit_cont">Middle Name</div>
+								<div class="form-group">
+									<input type="text" class="form-control mh-form-control">
+								</div>
+							</div>
+						</div>
+						<div class="row mb-15p">
+							<div class="col-12">
+								<div class="min-sub-wrap"> 
+									<div class="min-sub-item">
+										<div>
+											<div class="tit_cont">Gender</div>
+											<div class="form-group">
+												<select class="form-control mh-form-control">
+													<option>--SELECT STATUS---</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="min-sub-item">
+										<div>
+											<div class="tit_cont">Birthday</div>
+											<div class="form-group">
+												<input type="text" class="form-control mh-form-control" id="datetimepicker3">
+											</div>
+										</div>
+									</div>
+								</div> 
+								 
+							</div>
+						</div>									
+						<div class="row">
+							<div class="col-4">
+								<div class="tit_cont">Civil status</div>
+								<div class="form-group">
+									<select class="form-control mh-form-control">
+										<option>--SELECT STATUS---</option>
+									</select>
+								</div>
+								</div>
+							<div class="col-4">
+								<div class="tit_cont">Language for Certificate</div>
+								<div class="form-group">
+									<select class="form-control mh-form-control">
+										<option>--SELECT STATUS---</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="tit_cont">Maj Office</div>
+								<div class="form-group">
+									<select class="form-control mh-form-control">
+										<option>--SELECT STATUS---</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					 
+						<div class="row mt-25p">
+							<div class="col-12">
+								<div class="min-sub-wrap">
+									<div class="min-sub-tit type02">
+										<span>Father's Name</span>
+									</div>
+									<div class="min-sub-item">
+										<div>
+											<div class="tit_cont">First Name</div>
+											<div class="form-group">
+												<input type="text" class="form-control mh-form-control" id="">
+											</div>
+										</div>
+									</div>
+									<div class="min-sub-item">
+										<div>
+											<div class="tit_cont">Last Name</div>
+											<div class="form-group">
+												<input type="text" class="form-control mh-form-control" id="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="min-sub-wrap ">
+									<div class="min-sub-tit type02">
+										<span>Father's Name</span>
+									</div>
+									<div class="min-sub-item">
+										<div>
+											<div class="tit_cont">First Name</div>
+											<div class="form-group">
+												<input type="text" class="form-control mh-form-control" id="">
+											</div>
+										</div>
+									</div>
+									<div class="min-sub-item">
+										<div>
+											<div class="tit_cont">Last Name</div>
+											<div class="form-group">
+												<input type="text" class="form-control mh-form-control" id="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> 
+					<div class="usr-area mt-80p">
+						<h3>Place Detail</h3>
+						<div class="min-sub-wrap">
+							<div class="min-sub-tit type02"><span>Country</span> </div>
+							<div class="min-sub-item">
+								<div>
+									<div class="tit_cont">Place of Birth</div>
+									<div class="form-group">
+										<select class="form-control" id="registrationCountryId" name="registrationCountryId" style="width: 100%;"  >
+                                            <option >--SELECT--</option>
+                                             <option th:each="country :${countries}" 
+                                             th:value="${country.id}" th:text="${country.nameEnglish}"></option>
+                                         </select>
+									</div>
+								</div>
+							</div>
+							<div class="min-sub-item">
+								<div>
+									<div class="tit_cont">Place of Residence</div>
+									<div class="form-group">
+										<select class="form-control mh-form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="min-sub-item">
+								<div>
+									<div class="tit_cont">Citizen Registration Place</div>
+									<div class="form-group">
+										<select class="form-control mh-form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="min-sub-wrap">
+							<div class="min-sub-tit type02"><span>Province</span></div>
+							<div class="min-sub-item">
+								<div>
+									<div class="form-group">
+										<select class="form-control mh-form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="min-sub-item">
+								<div>
+									<div class="form-group">
+										<select class="form-control mh-form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="min-sub-item">
+								<div>
+									<div class="form-group">
+										<select class="form-control mh-form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="min-sub-wrap">
+							<div class="min-sub-tit type02"><span>District</span></div>
+							<div class="min-sub-item">
+								<div>
+									<div class="form-group">
+										<select class="form-control mh-form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="min-sub-item">
+								<div>
+									<div class="form-group">
+										<select class="form-control mh-form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="min-sub-item">
+								<div>
+									<div class="form-group">
+										<select class="form-control mh-form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="min-sub-wrap">
+							<div class="min-sub-tit type02"><span>Sector</span></div>
+							<div class="min-sub-item">
+								<div>
+									<div class="form-group">
+										<select class="form-control mh-form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="min-sub-item">
+								<div>
+									<div class="form-group">
+										<select class="form-control mh-form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="min-sub-item">
+								<div>
+									<div class="form-group">
+										<select class="form-control mh-form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="min-sub-wrap">
+							<div class="min-sub-tit type02"><span>Cell</span></div>
+							<div class="min-sub-item">
+								<div>
+									<div class="form-group">
+										<select class="form-control mh-form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="min-sub-item">
+								<div>
+									<div class="form-group">
+										<select class="form-control mh-form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="min-sub-item">
+								<div>
+									<div class="form-group">
+										<select class="form-control mh-form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="min-sub-wrap type02">
+							<div class="min-sub-tit"><span>Additional<br>Information</span></div>
+							<div class="min-sub-item">
+							  <div class="tit_cont">Nation(s)  <button type="button" class="list-add"></button></div>
+							  <select class="form-control mh-form-control">
+								<option>--SELECT STATUS---</option>
+							  </select>
+							</div>
+							<div class="min-sub-item">
+							  <div class="tit_cont">Profession(s)  <button type="button" class="list-add"></button></div>
+							  <select class="form-control mh-form-control">
+								<option>--SELECT STATUS---</option>
+							  </select>
+							</div>
+							<div class="min-sub-item">
+							  <div class="tit_cont">Occupation(s)  <button type="button" class="list-add"></button></div>
+							  <select class="form-control mh-form-control">
+								<option>--SELECT STATUS---</option>
+							  </select>
+							</div>
+						  </div>
+					</div> 
+					<div class="usr-area mt-80p">
+						<h3>Password</h3>
+						<div class="row mt-20p">
+							<div class="col-12">
+								<div class="min-sub-wrap ">
+									<div class="min-sub-tit type02">
+										<span>New Password</span>
+									</div>
+									<div class="min-sub-item">
+										<div>
+											<div class="form-group">
+												<input type="text" class="form-control mh-form-control" id="">
+											</div>
+										</div>
+									</div>
+									<div class="min-sub-item">
+										
+									</div>
+								</div>
+								<div class="min-sub-wrap ">
+									<div class="min-sub-tit type02">
+										<span>Re-enter Password</span>
+									</div>
+									<div class="min-sub-item">
+										<div>
+											<div class="form-group">
+												<input type="text" class="form-control mh-form-control" id="">
+											</div>
+										</div>
+									</div>
+									<div class="min-sub-item ver-mid">
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> 
+				</div> 
+                <div class="btn-area mb-0p">
+                  <button type="button" class="btn h50 solo" data-toggle="modal" data-target="#exampleModal2" id="modal1">Send Information</button>
+                </div>
+              </div>
+             <!-- END OF PERSONAL INFORMATION FORM -->
+
             </form>
 
         </div> 
@@ -83,19 +653,31 @@
         </div>
     </div>
     <!-- modal type02  '' -->
-    <div class="modal fade mh-modal" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModal2">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal fade mh-modal email-sent" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModal2">
+        <div class="modal-dialog modal-dialog-centered" style="padding: 30px;" role="document">
             <div class="modal-content alert-modal"> 
                 <div class="modal-body">
                     <p>We sent the confirmation number.<br>Please check your e-mail.</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn email-verification">Verify</button>
                 </div>
             </div>
         </div>
     </div>
-    <!-- //modal type02  -->
+    <div class="modal fade mh-modal verification-sent-modal" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content alert-modal"> 
+                <div class="modal-body">
+                    <p>Code Verified Successfully.<br>Please continue Registration.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn next-to-personal-auth" data-dismiss="modal">Next</button>
+                    <button type="button" class="btn" data-dismiss="modal">concel</button>
+                </div> 
+            </div>
+        </div>
+    </div>  
     <!-- jQuery JS -->
     <script src="../plugins/jquery/jquery-1.12.4.min.js"></script>
     <script src="../plugins/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
@@ -111,11 +693,81 @@
     <script src="../dist/js/nppa.js"></script>
     <script>
         $(document).ready(function () { 
-                  $(".btn").click(function () { 
-                          alert("clicked next step");
-                          window.location='/confirm_email'
-                      });
+            $(".verification-sent-form").hide();
+            $(".identification-step").hide();
+            $(".identification-type-form").hide();
+            // $(".personal_information-form").hide();
+            $(".personal_information-step").hide();
+                  $(".send-email-btn").click(function () {  
+                        var email= document.getElementById("input-email").value; 
+                        $.ajax({
+                url:"/verify_email/"+email,
+                type: "POST",  data: "id=" + email,
+                success: function (data) {  $(".email-sent").modal("show");
+                    console.log("Email sent successfully!!!", {  icon: "success",
+                    }).then((okey) => {                        
+                        if (okey) window.location='/confirm_email';
+                    }); },
+                error: function (err) {   console.log(err);   },
+            }); });  });
+                    $(document).ready(function () { 
+            $(".email-verification").click(function(){                
+                $(".email-sent").modal("hide");
+                $(".send-email-form").hide();
+                $(".verification-sent-form").show();
+            }); });
+
+            //   VERIFY EMAIL
+      $(document).ready(function () {                 
+        
+        $(".Confirmation-btn").click(function (e) { 
+                    e.preventDefault();
+                    var code= document.getElementById("confirm_code").value; 
+                    $.ajax({
+            url:"/get_verification_code/"+code,
+                        success: function(data) { 
+                            if(data.verificationRegistration ==null){alert("Nothing Found");}                                 
+                            else {
+                                $(".verification-sent-modal").modal("show");
+                            console.log(data.verificationRegistration); }                                 
+                               },
+                        error: function (err) {
+                            console.log(err);
+                        },
                     });
+                }); 
+    });
+    $(document).ready(function () { 
+            $(".next-to-personal-auth").click(function(){                
+                $(".verification-sent-modal").modal("hide");
+                $(".send-email-form").hide();
+                $(".verification-sent-form").hide();
+                $(".identification-type-form").show();
+                $(".identification-step").show();
+                $(".email-step").hide();
+            }); });
+     //   VERIFY EMAIL
+
+// PERSONAL INFORMATION REGISTRATION
+
+$(document).ready(function () { 
+    $(".next-to-personal-auth").click(function(){
+        $(".send-email-form").hide();
+            $(".verification-sent-form").hide();
+            $(".identification-type-form").hide();
+            $(".identification-step").hide();
+            $(".email-step").hide();
+            $(".personal_information-form").show();
+            $(".personal_information-step").show();
+
+    });
+
+});
+
+// PERSONAL INFORMATION REGISTRATION
+     
+               
+
                     </script>
 </body>
 

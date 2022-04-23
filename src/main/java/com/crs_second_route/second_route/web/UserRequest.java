@@ -1,4 +1,6 @@
-package com.crs_second_route.second_route;
+package com.crs_second_route.second_route.web;
+import com.crs_second_route.second_route.service.UserTableService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,10 +10,13 @@ public class UserRequest {
     private static final String INDEX = "second_route/user_request/application_list";
     private static final String REDIRECT_INDEX = "redirect:/application_list";
     private static final String REDIRECT_TO_LOGOUT = "redirect:/login?logout";
+    @Autowired
+    private UserTableService userTableService;
 
 
     @GetMapping(value = "/application_list")
     public String applicationsList(Model model) {
+        userTableService.findAll();
         return "second_route/user_request/application_list";
     }
     @GetMapping(value = "/request_one")
