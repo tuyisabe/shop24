@@ -28,8 +28,7 @@
                                     "Post Successfully! " +
                                     "---> Customer's Info: FirstName = " +
                                     result.data.firstName + " ,LastName = " + result.data.lastName + "");
-                            }
-                            console.log(result);
+                            } 
                         },
                         error: function(e) {
                             alert("Error!")

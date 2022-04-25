@@ -75,7 +75,6 @@ public class EmailVerification {
         } catch (Exception e) {
             map.put("error", e);
             return new ResponseEntity<Map<String, Object>>(map, HttpStatus.BAD_REQUEST);
-
         }
     }
 

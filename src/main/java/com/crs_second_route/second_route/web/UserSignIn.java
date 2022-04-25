@@ -1,7 +1,6 @@
 package com.crs_second_route.second_route.web;
 
-import com.crs_second_route.second_route.service.CountryService;
-import com.crs_second_route.second_route.service.ProvinceService;
+import com.crs_second_route.second_route.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,9 +16,20 @@ public class UserSignIn {
 
     @Autowired
     private ProvinceService provinceService;
-
     @Autowired
     private CountryService countryService;
+    @Autowired
+    private OccupationService occupationService;
+    @Autowired
+    private IdentificationTypeService identificationTypeService;
+    @Autowired
+    private ProfessionService professionService;
+    @Autowired
+    private NationalityService nationalityService;
+    @Autowired
+    private LanguageService languageService;
+    @Autowired
+    private MajofficeService majofficeService;
 
     @GetMapping(value ="")
     public String index(Model model) {
@@ -40,9 +50,14 @@ public class UserSignIn {
     }
 
     @GetMapping(value = "/send_email")
-    public String sendmEmail(Model model) {
+    public String sendmEmail(Model model) throws Exception {
         model.addAttribute("provinces", provinceService.findAll());
         model.addAttribute("countries", countryService.findAll());
+        model.addAttribute("occupation",occupationService.findAllOccupation());
+        model.addAttribute("profession",professionService.findAll());
+        model.addAttribute("nationality",nationalityService.findAll());
+        model.addAttribute("maj",majofficeService.listMajorOffices());
+        model.addAttribute("languages",languageService.findAll());
         return  "second_route/user_sign_in/send_email";
     }
 

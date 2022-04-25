@@ -7,6 +7,7 @@ import lombok.Setter;
 import org.hibernate.annotations.NaturalId;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 
 @Entity(name = "crs_province")
@@ -18,9 +19,9 @@ import java.util.List;
 @NoArgsConstructor
 // @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class,
 // property="id")
-public class Province {
+public class Province implements Serializable {
 
-    private static final long serialVersionUID = 2558925075008721537L;
+    // private static final long serialVersionUID = 2558925075008721537L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

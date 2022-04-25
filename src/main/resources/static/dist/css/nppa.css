@@ -11629,12 +11629,13 @@ p {
     width: 60%;
   }  
   .min-sub-wrap .min-sub-item .form-group input{
-    width: 100%;
+    width: 30%;
   }  
   .min-sub-wrap .min-sub-item .tit_cont{
     width: 100%;
     
   }
+}
   @media(max-width:800px) {
     .min-sub-wrap .min-sub-item .tit_cont .form-group{
       width: 20%;
@@ -11645,7 +11646,7 @@ p {
     width: 100%; 
   }
   
-}
+
 .min-sub-wrap > div {
   display: table-cell;
   vertical-align: bottom;

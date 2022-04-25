@@ -1,6 +1,7 @@
 package com.crs_second_route.second_route.vo;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -38,6 +39,10 @@ public class UserTable {
     private String motherName;
     private String maritalStatus;
     private String gender;
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JsonManagedReference
+    @JoinColumn(name = "language_code", nullable = false, referencedColumnName = "code")
+    private LanguageVO language;
 
     private String identificationType;
     private String IdentificationNumber;
@@ -54,11 +59,15 @@ public class UserTable {
 
     @OneToMany(mappedBy = "userId", fetch = FetchType.LAZY)
     @JsonBackReference
-    private List<UserOccupation> occupations;
+    private List<UserReason> reason;
 
     @OneToMany(mappedBy = "userId", fetch = FetchType.LAZY)
     @JsonBackReference
-    private List<UserProfession> professions;
+    private List<UserOccupation> occupation;
+
+    @OneToMany(mappedBy = "userId", fetch = FetchType.LAZY)
+    @JsonBackReference
+    private List<UserProfession> profession;
 
     @OneToMany(mappedBy = "userId", fetch = FetchType.LAZY)
     @JsonBackReference
@@ -66,7 +75,9 @@ public class UserTable {
 
     @OneToMany(mappedBy = "userId", fetch = FetchType.LAZY)
     @JsonBackReference
-    private List<UserNationalities> nationalities;
+    private List<UserNationalities> nationality;
+
+
 
     // Place of Birth
     private String birthCountryId;

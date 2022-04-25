@@ -21,7 +21,7 @@ public class UserAttachments {
     @ManyToOne
     @JoinColumn(name = "user_id")
     private UserTable userId;
-    private String attachments;
+    private String attachment;
 
 
 }
