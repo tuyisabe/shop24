@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface UserTableService {
     public List<UserTable> findAll();
+
+    public UserTable createNewUser(UserTable userTable) throws Exception;
 }

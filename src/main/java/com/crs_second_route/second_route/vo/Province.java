@@ -1,5 +1,6 @@
 package com.crs_second_route.second_route.vo;
 
+import com.crs_second_route.second_route.vo.extensions.AuditingExtension;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -19,9 +20,9 @@ import java.util.List;
 @NoArgsConstructor
 // @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class,
 // property="id")
-public class Province implements Serializable {
+public class Province  extends AuditingExtension implements Serializable {
 
-    // private static final long serialVersionUID = 2558925075008721537L;
+//     private static final long serialVersionUID = 2558925075008721537L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

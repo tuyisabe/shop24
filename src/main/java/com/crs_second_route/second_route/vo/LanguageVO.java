@@ -29,13 +29,11 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class LanguageVO extends AuditingExtension implements Serializable {
+public class LanguageVO implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @NaturalId
-    @Column(name = "code")
     private String code;
 
     private String nameEnglish;

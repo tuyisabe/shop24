@@ -28,9 +28,9 @@ import lombok.Data;
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
 @Data
-public class AuditingExtension implements Serializable {
+public class AuditingExtension  {
 
-    private static final long serialVersionUID = 5716173505088478730L;
+//    private static final long serialVersionUID = 5716173505088478730L;
 
     @Column(name = "created_at", nullable = true, updatable = false)
     @CreatedDate

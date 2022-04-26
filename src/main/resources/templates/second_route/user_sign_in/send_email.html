@@ -261,12 +261,12 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 							</div>
 						</div>
 						<div class="profile-pic more">
-							<img src="../dist/img/no-img.jpg" alt="">
+							<img id="blah" src="../dist/img/no-img.jpg" alt="" width="150">
 							<div class="form-group inline-group">
 								<input type="hidden" id="fileName" class="form-control mh-form-control">
 								<div class="attach-btn">
 									<button type="button" class="btn" for="#attach1"><span class="btn_attach"></span> Photo</button>
-									<input type="file" name="file_1" class="file_input_hidden" onchange="javascript: document.getElementById('fileName').value = this.value"/>
+									<input type="file" name="file_1" id="inputImage" class="file_input_hidden input-Image" />
 								</div>
 							</div>
 						</div>
@@ -274,55 +274,52 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 							<div class="col-4">
 								<div class="tit_cont">First Name</div>
 								<div class="form-group">
-									<input type="text" class="form-control mh-form-control">
+									<input type="text" class="form-control mh-form-control firstName" name="firstName">
 								</div>
 								</div>
 							<div class="col-4">
 								<div class="tit_cont">Middle Name</div>
 								<div class="form-group">
-									<input type="text" class="form-control mh-form-control">
+									<input type="text" class="form-control mh-form-control middleName" name="middleName">
 								</div>
 							</div>
 							<div class="col-4">
 								<div class="tit_cont">Middle Name</div>
 								<div class="form-group">
-									<input type="text" class="form-control mh-form-control">
+									<input type="text" class="form-control mh-form-control lastName" name="lastName">
 								</div>
 							</div>
-						</div>
-						<div class="row mb-15p">
-							<div class="col-12">
-								<div class="min-sub-wrap"> 
-									<div class="min-sub-item">
-										<div>
-											<div class="tit_cont">Gender</div>
+						</div>			
+						<div class="row">
+							<div class="col-4">
+								<div class="tit_cont">Gender</div>
 											<div class="form-group">
-												<select class="form-control mh-form-control">
+												<select class="form-control mh-form-control gender" name="gender">
 													<option>--SELECT STATUS---</option>
 													<option value="male">Male</option>
 													<option value="female">Female</option>
 													<option value="others">Others</option>
 												</select>
 											</div>
-										</div>
-									</div>
-									<div class="min-sub-item">  
-										<div>
-											<div class="tit_cont">Birthday</div>
+								</div>
+							<div class="col-4">
+								<div class="tit_cont">Birthday</div>
 											<div class="form-group">
-												<input type="date" class="form-control mh-form-control" id="datetimepicker3">
+												<input type="date" class="form-control mh-form-control dateOfBirth" id="datetimepicker3" name="dateOfBirth">
 											</div>
-										</div>
-									</div>
-								</div> 
-								 
 							</div>
-						</div>									
+							<div class="col-4">
+								<div class="tit_cont">Telephone</div>
+								<div class="form-group">
+									<input class="form-control mh-form-control phoneNumber" type="text" name="telephone" />
+								</div>
+							</div>
+						</div>
 						<div class="row">
 							<div class="col-4">
 								<div class="tit_cont">Civil status</div>
 								<div class="form-group">
-									<select class="form-control mh-form-control">
+									<select class="form-control mh-form-control maritalStatus" name="maritalStatus">
 										<option>--SELECT STATUS---</option>
 										<option value="maried">Maried</option>
 										<option value="single">Single</option>
@@ -333,7 +330,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 							<div class="col-4">
 								<div class="tit_cont">Language for Certificate</div>
 								<div class="form-group">
-									<select class="form-control mh-form-control" >
+									<select class="form-control mh-form-control language" name="language">
 										<option>--SELECT STATUS---</option>
 								<option th:each="lang:${languages}" th:value="${lang.id}" th:text="${lang.nameEnglish}"></option> 
 									</select>
@@ -342,7 +339,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 							<div class="col-4">
 								<div class="tit_cont">Maj Office</div>
 								<div class="form-group">
-									<select class="form-control mh-form-control">
+									<select class="form-control mh-form-control majOffice" name="majOffice">
 										<option>--SELECT---</option>
 								<option th:each="majoff:${maj}" th:value="${majoff.id}" th:text="${majoff.name}"></option> 
 									</select>
@@ -360,7 +357,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 										<div>
 											<div class="tit_cont">First Name</div>
 											<div class="form-group">
-												<input type="text" class="form-control mh-form-control" id="">
+												<input type="text" class="form-control mh-form-control fatherFirstName" name="fatherFirstName">
 											</div>
 										</div>
 									</div>
@@ -368,20 +365,20 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 										<div>
 											<div class="tit_cont">Last Name</div>
 											<div class="form-group">
-												<input type="text" class="form-control mh-form-control" id="">
+												<input type="text" class="form-control mh-form-control fatherLastName" name="fatherLastName">
 											</div>
 										</div>
 									</div>
 								</div>
 								<div class="min-sub-wrap ">
 									<div class="min-sub-tit type02">
-										<span>Father's Name</span>
+										<span>Mother's Name</span>
 									</div>
 									<div class="min-sub-item">
 										<div>
 											<div class="tit_cont">First Name</div>
 											<div class="form-group">
-												<input type="text" class="form-control mh-form-control" id="">
+												<input type="text" class="form-control mh-form-control motherFirstName" name="motherFirstName">
 											</div>
 										</div>
 									</div>
@@ -389,7 +386,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 										<div>
 											<div class="tit_cont">Last Name</div>
 											<div class="form-group">
-												<input type="text" class="form-control mh-form-control" id="">
+												<input type="text" class="form-control mh-form-control motherLastName" name="motherLastName">
 											</div>
 										</div>
 									</div>
@@ -405,11 +402,11 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 								<div>
 									<div class="tit_cont">Place of Birth</div>
 									<div class="form-group">
-                                        <select class="form-control fav_clr birthCountryId" name="birthCountryId" style="width: 100%;"  >
-                                             <option th:each="country :${countries}" 
+                                    <select class="form-control fav_clr birthCountryId" name="birthCountryId" style="width: 100%;"  >
+                                        <option value="">--Select Birth Country--</option>    
+                                        <option th:each="country :${countries}" 
                                              th:value="${country.id}" th:text="${country.nameEnglish}"></option>
-                                         </select>
-										
+                                         </select>										
 									</div>
 								</div>
 							</div>
@@ -417,8 +414,9 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 								<div>
 									<div class="tit_cont">Place of Residence</div>
 									<div class="form-group"> 
-                                        <select class="form-control fav_clr birthCountryId" name="birthCountryId" style="width: 100%;"  >
-										  <option th:each="country :${countries}" 
+                                        <select class="form-control fav_clr resCountryId" name="residentCountryId" style="width: 100%;"  >
+                                            <option value="">--Select Resident Country--</option>    
+                                            <option th:each="country :${countries}" 
                                              th:value="${country.id}" th:text="${country.nameEnglish}"></option>
                                          </select>
 									</div>
@@ -428,8 +426,9 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 								<div>
 									<div class="tit_cont">Citizen Registration Place</div>
 									<div class="form-group">										 
-                                        <select class="form-control fav_clr birthCountryId" name="birthCountryId" style="width: 100%;"  >
-                                                <option th:each="country :${countries}" 
+                                        <select class="form-control fav_clr regCountryId" name="registrationCountryId" style="width: 100%;"  >
+                                        <option value="">--Select Registration Country--</option>    
+                                        <option th:each="country :${countries}" 
                                                  th:value="${country.id}" th:text="${country.nameEnglish}"></option>
                                              </select>
 									</div>
@@ -438,10 +437,12 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 						</div>
 						<div class="min-sub-wrap">
 							<div class="min-sub-tit type02"><span>Province</span></div>
-							<div class="min-sub-item">
+							<div class="min-sub-item">  
 								<div>
 									<div class="form-group"> 
-                                        <select  class="form-control birthProvinceId"name="birthProvinceId">
+                                    <input type="text" class="form-control otherbirthProvince" name="otherBirthProvince" placeholder="Enter Province/State"/>
+                                    <select  class="form-control birthProvinceId"name="registrationProvinceId">
+										<option>--Select Birth Province--</option> 
 										 <option th:each="province:${provinces}"
                                              th:value="${province.code}" th:text="${province.name}"></option>
                                      </select>
@@ -451,8 +452,9 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 							<div class="min-sub-item">
 								<div>
 									<div class="form-group">
-                                        <select  class="form-control birthProvinceId"name="birthProvinceId">
-										<option>--SELECT--</option> 
+                                    <input type="text" class="form-control resProvince" name="otherResidentProvince" placeholder="Enter Province/State"/>
+                                    <select  class="form-control resProvinceId"name="residentProvinceId">
+										<option>--Select Resident Province--</option> 
                                         <option th:each="province:${provinces}"
                                              th:value="${province.code}" th:text="${province.name}"></option>
                                      </select>
@@ -462,8 +464,9 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 							<div class="min-sub-item">
 								<div>
 									<div class="form-group">
-                                        <select  class="form-control birthProvinceId"name="birthProvinceId">
-										<option>--SELECT--</option> 
+                                    <input type="text" class="form-control otherRegProvince" name="otherRegistrationProvince" placeholder="Enter Province/State"/>
+                                    <select  class="form-control regProvinceId"name="birthProvinceId">
+                                            <option>--Select Registration Province--</option> 
                                         <option th:each="province:${provinces}"
                                              th:value="${province.code}" th:text="${province.name}"></option>
                                      </select>
@@ -476,8 +479,8 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 							<div class="min-sub-item">
 								<div>
 									<div class="form-group">
-										<select class="form-control mh-form-control">
-										<option>birth_district</option> 
+										<select class="form-control mh-form-control birthDistrictId" name="birthDistrictId">
+										<option>--Select Birth District--</option> 
 										</select>
 									</div>
 								</div>
@@ -485,8 +488,8 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 							<div class="min-sub-item">
 								<div>
 									<div class="form-group">
-										<select class="form-control mh-form-control">
-										<option>resident_district</option> 
+										<select class="form-control mh-form-control resDistrict" name="residentDistrictId">
+										<option>--Select Resident District--</option> 
 										</select>
 									</div>
 								</div>
@@ -494,8 +497,8 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 							<div class="min-sub-item">
 								<div>
 									<div class="form-group">
-										<select class="form-control mh-form-control ">
-										<option>district registration</option>
+										<select class="form-control mh-form-control regDistrict" name="birthDistrictId">
+										<option>--Select registration District--</option>
 										</select>
 									</div>
 								</div>
@@ -506,8 +509,8 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 							<div class="min-sub-item">
 								<div>
 									<div class="form-group">
-										<select class="form-control mh-form-control">
-										<option>birth_sector</option> 
+										<select class="form-control mh-form-control birthSectorId" name="birthSectorId">
+										<option>--Select Birth Sector--</option> 
 										</select>
 									</div>
 								</div>
@@ -515,8 +518,8 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 							<div class="min-sub-item">
 								<div>
 									<div class="form-group">
-										<select class="form-control mh-form-control">
-										<option>resident_sector</option> 
+										<select class="form-control mh-form-control resSector" name="residentSectorId">
+										<option>Select Resident Sector--</option> 
 										</select>
 									</div>
 								</div>
@@ -524,8 +527,8 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 							<div class="min-sub-item">
 								<div>
 									<div class="form-group">
-										<select class="form-control mh-form-control">
-                                            <option>registration_sector</option>
+										<select class="form-control mh-form-control regSector" name="registrationSectorId">
+                                            <option>Select Registration Sector--</option>
 										</select>
 									</div>
 								</div>
@@ -536,8 +539,8 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 							<div class="min-sub-item">
 								<div>
 									<div class="form-group">
-										<select class="form-control mh-form-control birth_cell"> 
-										<option>birth_cell</option>
+										<select class="form-control mh-form-control birthCellId" name="birthCellId"> 
+										<option>--Select Birth Cell--</option>
 
 										</select>
 									</div>
@@ -546,8 +549,8 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 							<div class="min-sub-item">
 								<div>
 									<div class="form-group">
-										<select class="form-control mh-form-control resident_cell"> 
-										<option>resident_cell</option>
+										<select class="form-control mh-form-control resident_cell" name="residentCellId"> 
+										<option>--Select Resident Cell--</option>
 										</select>
 									</div>
 								</div>
@@ -556,7 +559,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 								<div>
 									<div class="form-group"> 
 										<select class="form-control mh-form-control registration_cell"> 
-										<option>registration_cell</option>
+										<option>--Select Registration Cell--</option>
 										</select>
 									</div>
 								</div>
@@ -565,22 +568,22 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 						<div class="min-sub-wrap type02">
 							<div class="min-sub-tit"><span>Additional<br>Information</span></div>
 							<div class="min-sub-item">
-							  <div class="tit_cont">Nation(s)  <button type="button" class="list-add"></button></div>
-							  <select class="form-control mh-form-control fav_clr" multiple="multiple" >
+							  <div class="tit_cont">Nation(s)  </div>
+							  <select class="form-control mh-form-control fav_clr nationality_id" multiple="multiple" >
                                   <option>----SELECT ---</option>
                                 <option th:each="nat:${nationality}" th:value="${nat.id}" th:text="${nat.nameEnglish}"></option> 
 							  </select>
 							</div>
 							<div class="min-sub-item">
-							  <div class="tit_cont">Profession(s)  <button type="button" class="list-add"></button></div>
-							  <select class="form-control mh-form-control fav_clr" multiple="multiple" >
+							  <div class="tit_cont">Profession(s)  </div>
+							  <select class="form-control mh-form-control fav_clr profession_id" multiple="multiple" >
                                 <option>----SELECT ---</option>
                                 <option th:each="prof:${profession}" th:value="${prof.id}" th:text="${prof.descriptionEnglish}"></option> 
 							  </select>
 							</div>
                             <div class="min-sub-item">
-                                <div class="tit_cont">Occupation(s) <button type="button" class="list-add"></button></div>
-                                <select class="form-control mh-form-control fav_clr" multiple="multiple" > 
+                                <div class="tit_cont">Occupation(s)</div>
+                                <select class="form-control mh-form-control fav_clr occupation_id"  multiple="multiple" > 
 								<option th:each="occupat:${occupation}" th:value="${occupat.id}" th:text="${occupat.descriptionEnglish}"></option> 
                                 </select>
                               </div> 
@@ -597,7 +600,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 									<div class="min-sub-item">
 										<div>
 											<div class="form-group">
-												<input type="text" class="form-control mh-form-control" id="">
+												<input type="password" class="form-control mh-form-control password" >
 											</div>
 										</div>
 									</div>
@@ -612,7 +615,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 									<div class="min-sub-item">
 										<div>
 											<div class="form-group">
-												<input type="text" class="form-control mh-form-control" id="">
+												<input type="password" class="form-control mh-form-control re_password">
 											</div>
 										</div>
 									</div>
@@ -625,7 +628,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 					</div> 
 				</div> 
                 <div class="btn-area mb-0p">
-                  <button type="button" class="btn h50 solo" data-toggle="modal" data-target="#exampleModal2" id="modal1">Send Information</button>
+                  <button type="button" class="btn h50 solo" id="save_user_btn">Send Information</button>
                 </div>
               </div>
              <!-- END OF PERSONAL INFORMATION FORM -->
@@ -664,7 +667,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn next-to-personal-auth" data-dismiss="modal">Next</button>
-                    <button type="button" class="btn" data-dismiss="modal">concel</button>
+                    <button type="button" class="btn" data-dismiss="modal">cancel</button>
                 </div> 
             </div>
         </div>
@@ -682,223 +685,9 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
     <script src="../plugins/bootstrap4-datetimepicker-master/js/bootstrap-datetimepicker.min.js"></script>
     <!-- nppa JS -->
     <script th:src="@{../plugins/select2/js/select2.min.js}"></script>
-    <script>
-        $(document).ready(function () { 
-            $(".verification-sent-form").hide();
-            $(".identification-step").hide();
-            $(".identification-type-form").hide();
-            // $(".personal_information-form").hide();
-            $(".personal_information-step").hide();
-                  $(".send-email-btn").click(function () {  
-                        var email= document.getElementById("input-email").value; 
-                        $.ajax({
-                url:"/verify_email/"+email,
-                type: "POST",  data: "id=" + email,
-                success: function (data) {  $(".email-sent").modal("show");
-                    console.log("Email sent successfully!!!", {  icon: "success",
-                    }).then((okey) => {                        
-                        if (okey) window.location='/confirm_email';
-                    }); },
-                error: function (err) {   console.log(err);   },
-            }); });  });
-                    $(document).ready(function () { 
-            $(".email-verification").click(function(){                
-                $(".email-sent").modal("hide");
-                $(".send-email-form").hide();
-                $(".verification-sent-form").show();
-            }); });
+    <script th:src="@{../js/second_route_ajax.js}"></script>
 
-            //   VERIFY EMAIL
-      $(document).ready(function () {                 
-        
-        $(".Confirmation-btn").click(function (e) { 
-                    e.preventDefault();
-                    var code= document.getElementById("confirm_code").value; 
-                    $.ajax({
-            url:"/get_verification_code/"+code,
-                        success: function(data) { 
-                            if(data.verificationRegistration ==null){alert("Nothing Found");}                                 
-                            else {
-                                $(".verification-sent-modal").modal("show");
-                            console.log(data.verificationRegistration); }                                 
-                               },
-                        error: function (err) {
-                            console.log(err);
-                        },
-                    });
-                }); 
-    });
-    $(document).ready(function () { 
-            $(".next-to-personal-auth").click(function(){                
-                $(".verification-sent-modal").modal("hide");
-                $(".send-email-form").hide();
-                $(".verification-sent-form").hide();
-                $(".identification-type-form").show();
-                $(".identification-step").show();
-                $(".email-step").hide();
-            }); });
-     //   VERIFY EMAIL
-
-// PERSONAL INFORMATION REGISTRATION
-
-$(document).ready(function () { 
-    $(".next-to-personal-auth").click(function(){
-        $(".send-email-form").hide();
-            $(".verification-sent-form").hide();
-            $(".identification-type-form").hide();
-            $(".identification-step").hide();
-            $(".email-step").hide();
-            $(".personal_information-form").show();
-            $(".personal_information-step").show();
-
-    });
-
-});
-
-// PERSONAL INFORMATION REGISTRATION
-     
-               
-
-                    </script>
-
-<script>
-    $(document).ready(function () {
-        $(".fav_clr").select2({
-            placeholder: " Select Role(s)",
-            width: "100%",
-            border: "1px solid #e4e5e7",
-        });
-    });
-
-    $(".fav_clr").on("select2:select", function (e) {
-        var data = e.params.data.text;
-        if (data == "all") {
-            $(".fav_clr > option").prop("selected", "selected");
-            $(".fav_clr").trigger("change");
-        }
-    });
-
-
-    // <!-- BIRTH PLACE -->
     
-$(document).ready(function(){
-    $('.fav_clr').select2({
-        placeholder: ' --Select--', 
-        with:'100%',
-        border: '1px solid #e4e5e7', 
-    });  
-});
-
-$(document).ready(function() {
-     $('#birthCountryId').select2(); 
-     $('#birthNation').hide();
- });
-
- $("#birthCountryId").change(function(){    
- $('#birthCountryId').on("select2:select", function (e) { 
-           var data = e.params.data.text;
-           
-           if(data!='Rwanda'){ 
-                $('#birthNation').show();	       
-                $('#birthDistrictId').empty();
-                $('#birthSectorId').empty();
-                $('#birthCellId').empty();  
-          
-               $('#birthProvinceId').hide();	
-                 $('#birthDistrictId').attr('disabled',true);      	  
-                 $('#birthSectorId').attr('disabled',true);      	  
-                 $('#birthCellId').attr('disabled',true);      	  
-           }else{                            
-              $('#birthDistrictId').attr('disabled',false);
-              $('#birthSectorId').attr('disabled',false);
-              $('#birthCellId').attr('disabled',false);                                                    
-            $('#birthDistrictId').empty();
-            $('#birthSectorId').empty();
-            $('#birthCellId').empty();    
-            $('#birthProvinceId').show();
-            $('#birthNation').hide();	 
-           }
-     }); 
-    });
-
-     
-    $("#birthProvinceId").change(function(){
-     $("#loading").show(); 
-     var selectedProvince = $(this).children("option:selected").val();
-     $('#birthDistrictId').empty();
-     $('#birthSectorId').empty();
-     $('#birthCellId').empty(); 
-     $.ajax({
-           url : "/getResidentProvince/"+selectedProvince,
-           success : function(result) {
-            $("#loading").hide();
-               var jsonData1 = result.provinceVO.districts;
-                var appendDistrictdata = "";
-               
-                   for (var i = 0; i < jsonData1.length; i++) {
-                       appendDistrictdata += "<option value = '" + jsonData1[i].code + " '>" + jsonData1[i].name + " </option>";
-                   }
-                   $('#birthDistrictId').append("<option>--Select--</option>")
-                   $("#birthDistrictId").append(appendDistrictdata);
-                   $('#birthDistrictId').show();
-           }, 
-           error : function(err) {
-               console.log(err);
-           }
-       });
-   });
-   $("#birthDistrictId").change(function(){
-    $("#loading").show(); 
-       var selectedDistrict = $(this).children("option:selected").val();
-       $('#birthSectorId').empty();
-       $('#birthCellId').empty(); 
-       $.ajax({
-             url : "/getResidentDistrict/"+selectedDistrict,
-             success : function(result) {
-                $("#loading").hide();
-                 var jsonData1 = result.districtVO.sectors;
-                  var appendSectordata = "";
-                 
-                     for (var i = 0; i < jsonData1.length; i++) {
-                         appendSectordata += "<option value = '" + jsonData1[i].code + " '>" + jsonData1[i].name + " </option>";
-                     }
-                     $('#birthSectorId').append("<option>--Select--</option>")
-                     $("#birthSectorId").append(appendSectordata);
-                     $('#birthSectorId').show();
-             }, 
-             error : function(err) {
-                 console.log(err);
-             }
-         });
-     });
-  
-  $("#birthSectorId").change(function(){
-    $("#loading").show(); 
-       var selectedSector = $(this).children("option:selected").val();
-       $('#birthCellId').empty(); 
-       $.ajax({
-             url : "/getResidentSector/"+selectedSector,
-             success : function(result) {
-                $("#loading").hide();
-                 var jsonData1 = result.sectorVO.cells;
-                  var appendCelldata = "";
-                 
-                     for (var i = 0; i < jsonData1.length; i++) {
-                         appendCelldata += "<option value = '" + jsonData1[i].code + " '>" + jsonData1[i].name + " </option>";
-                     }
-                     $('#birthCellId').append("<option>--Select--</option>")
-                     $("#birthCellId").append(appendCelldata);
-                     $('#birthCellId').show();
-             }, 
-             error : function(err) {
-                 console.log(err);
-             }
-         });
-     });
-
-     
-// <!-- BIRTH PLACE -->
-</script>
 </body>
 
 </html>

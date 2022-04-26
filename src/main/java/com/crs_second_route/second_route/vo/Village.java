@@ -1,5 +1,6 @@
 package com.crs_second_route.second_route.vo;
 
+import com.crs_second_route.second_route.vo.extensions.AuditingExtension;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -16,7 +17,7 @@ import java.io.Serializable;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Village  {
+public class Village extends AuditingExtension {
     private static final long serialVersionUID = 4653237485775960277L;
 
     @Id

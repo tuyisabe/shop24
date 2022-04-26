@@ -1,6 +1,7 @@
 package com.crs_second_route.second_route.vo;
 
 
+import com.crs_second_route.second_route.vo.extensions.AuditingExtension;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
@@ -22,7 +23,7 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
-public class Cell  {
+public class Cell extends AuditingExtension implements Serializable  {
 
     private static final long serialVersionUID = 1L;
 
@@ -41,7 +42,4 @@ public class Cell  {
     @JoinColumn(name = "sector_code", nullable = false, referencedColumnName = "code")
     private Sector sector;
 
-    @OneToMany(mappedBy = "cell", fetch = FetchType.LAZY)
-    @JsonManagedReference
-    private List<Village> villages;
 }

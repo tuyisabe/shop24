@@ -21,7 +21,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class MajOffice extends AuditingExtension implements Serializable {
+public class MajOffice  implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

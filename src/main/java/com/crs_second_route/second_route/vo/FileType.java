@@ -24,7 +24,7 @@ import java.util.Set;
 @Getter
 @Setter
 @Table(name = "crs_file_type")
-public class FileType extends AuditingExtension {
+public class FileType  {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

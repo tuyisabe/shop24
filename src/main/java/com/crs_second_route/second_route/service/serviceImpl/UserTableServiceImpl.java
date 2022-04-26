@@ -16,4 +16,9 @@ public class UserTableServiceImpl implements UserTableService {
     public List<UserTable> findAll() {
         return userTableDAO.findAll();
     }
+
+    @Override
+    public UserTable createNewUser(UserTable userTable) throws Exception {
+        return userTableDAO.save(userTable);
+    }
 }

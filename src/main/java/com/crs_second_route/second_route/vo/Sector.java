@@ -1,6 +1,7 @@
 package com.crs_second_route.second_route.vo;
 
 
+import com.crs_second_route.second_route.vo.extensions.AuditingExtension;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
@@ -22,7 +23,7 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
-public class Sector{
+public class Sector extends AuditingExtension implements Serializable {
 
     private static final long serialVersionUID = 2955361275505785739L;
 

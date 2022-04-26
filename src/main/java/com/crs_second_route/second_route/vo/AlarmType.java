@@ -36,7 +36,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class AlarmType extends AuditingExtension {
+public class AlarmType  {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
