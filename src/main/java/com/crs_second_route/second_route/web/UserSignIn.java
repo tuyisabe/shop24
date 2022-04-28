@@ -14,8 +14,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.sql.Timestamp;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.OffsetDateTime;
 import java.util.*;
 
 @Controller
@@ -99,15 +101,15 @@ public class UserSignIn {
         userTable.setMotherLastName(newUserDTO.getFatherLastName());
         userTable.setMaritalStatus(newUserDTO.getMaritalStatus());
         userTable.setGender(newUserDTO.getGender());
-        userTable.setLanguage("newUserDTO.getLanguage()");
-        userTable.setMajOffice(newUserDTO.getMajOffice());
+        userTable.setLanguage(newUserDTO.getLanguage());
+//        userTable.setMajOffice(newUserDTO.getMajOffice());
         userTable.setIdentificationNumber(newUserDTO.getIdentificationNumber());
         userTable.setIdentificationType(newUserDTO.getIdentificationType());
         userTable.setPlaceOfIssue(newUserDTO.getPlaceOfIssue());
         userTable.setDateOfIssue(newUserDTO.getDateOfIssue());
         userTable.setDateOfExpiry(newUserDTO.getDateOfExpiry());
-        userTable.setEmail("niysalom@gmail.com");
-        userTable.setPassword("newUserDTO.getPasswor");
+        userTable.setEmail("niysalomons@gmail.com");
+        userTable.setPassword(newUserDTO.getPassword());
         userTable.setPhoneNumber(newUserDTO.getPhoneNumber());
         userTable.setBirthCountryId(newUserDTO.getBirthCountryId());
         userTable.setOtherBirthProvince(newUserDTO.getOtherBirthProvince());
@@ -126,6 +128,8 @@ public class UserSignIn {
         userTable.setResidentDistrictId(newUserDTO.getResidentDistrictId());
         userTable.setResidentSectorId(newUserDTO.getResidentSectorId());
         userTable.setResidentCellId(newUserDTO.getResidentCellId());
+//        userTable.setCreatedAt(Timestamp.valueOf(String.valueOf(OffsetDateTime.now())));
+//        userTable.setLastModifiedAt(Timestamp.valueOf(String.valueOf(OffsetDateTime.now())));
 
 
         userTableService.createNewUser(userTable);

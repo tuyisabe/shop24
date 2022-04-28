@@ -1,4 +1,130 @@
-        $(document).ready(function () { 
+$(document).ready(function () { 
+    var identificationType;
+    $("#identity_type1").change(function(){ 
+        identificationType= document.getElementById("identity_type1").value;
+         if(identificationType == 'passport') {  $(".chosen_passport1").show();  $(".chosen_id1").hide();   }
+         else {  $(".chosen_id1").show();   $(".chosen_passport1").hide(); }
+        });
+            $(function () {
+                $(".citizen_living_rwanda").click(function(){
+                    if(identificationType == 'passport') { 
+                        if($(".passport-class").val() == "" || $(".place-issued-1").val() == "" || $(".date-issued-1").val() == "" || $(".date-expiry-1").val() == "") 
+                         { alert("All data is required!"); } 
+                        else{ 
+                             var IdentificationNumber=$(".passport-class").val();
+                             var PlaceOfIssue = $(".place-issued-1").val();
+                             var DateOfIssue = $(".date-issued-1").val();
+                             var DateOfExpiry = $(".date-expiry-1").val();
+                            console.log(DateOfExpiry);  
+                            $(".send-email-form").hide();
+                            $(".verification-sent-form").hide();
+                            $(".identification-type-form").hide();
+                            $(".identification-step").hide();
+                            $(".email-step").hide();
+                            $(".personal_information-form").show();
+                            $(".personal_information-step").show(); }  }
+                    else {   if ($(".nida-class").val() == "") { alert("National Identity is required!");  } 
+                        else{ 
+                             var IdentificationNumber=$(".nida-class").val();
+                            console.log(IdentificationNumber);
+                            $(".send-email-form").hide();
+                            $(".verification-sent-form").hide();
+                            $(".identification-type-form").hide();
+                            $(".identification-step").hide();
+                            $(".email-step").hide();
+                            $(".personal_information-form").show();
+                            $(".personal_information-step").show(); }
+                    }
+                    
+                });
+            });
+            $("#identity_type2").change(function(){ 
+                identificationType= document.getElementById("identity_type2").value;
+                 if(identificationType == 'passport') {  $(".chosen_passport").show();  $(".chosen_id").hide();   }
+                 else {  $(".chosen_id").show();   $(".chosen_passport").hide(); }
+                });
+                    $(function () {
+                        $(".citizen_living_abroad").click(function(){
+                            if(identificationType == 'passport') { 
+                                if($(".passport-class").val() == "" || $(".place-issued-2").val() == "" || $(".date-issued-2").val() == "" || $(".date-expiry-2").val() == "") 
+                                 { alert("All data is required!"); } 
+                                else{ 
+                                    var identificationType ="passport";
+                                     var IdentificationNumber=$(".passport-class").val();
+                                     var PlaceOfIssue = $(".place-issued-2").val();
+                                     var DateOfIssue = $(".date-issued-2").val();
+                                     var DateOfExpiry = $(".date-expiry-2").val();
+                                    console.log(DateOfExpiry);  
+                                    $(".send-email-form").hide();
+                                    $(".verification-sent-form").hide();
+                                    $(".identification-type-form").hide();
+                                    $(".identification-step").hide();
+                                    $(".email-step").hide();
+                                    $(".personal_information-form").show();
+                                    $(".personal_information-step").show(); }  }
+                            else {   if ($(".nida-class").val() == "") { alert("National Identity is required!");  } 
+                                else{  var IdentificationNumber=$(".nida-class").val();
+                                $(".send-email-form").hide();
+                                $(".verification-sent-form").hide();
+                                $(".identification-type-form").hide();
+                                $(".identification-step").hide();
+                                $(".email-step").hide();
+                                $(".personal_information-form").show();
+                                $(".personal_information-step").show();
+                                    console.log(IdentificationNumber); }
+                            }
+                            
+                        });
+                    });
+
+                    $(function () {
+                        $(".refugees").click(function(){
+                                if($(".proof-registration").val() == "" || $(".place-issued-3").val() == "" || $(".date-issued-3").val() == "" || $(".date-expiry-3").val() == "") 
+                                 { alert("All data is required!"); } 
+                                else{ 
+                                    var identificationType ="refugee";
+                                     var IdentificationNumber=$(".proof-registration").val();
+                                     var PlaceOfIssue = $(".place-issued-3").val();
+                                     var DateOfIssue = $(".date-issued-3").val();
+                                     var DateOfExpiry = $(".date-expiry-3").val();
+                                     $(".send-email-form").hide();
+                                     $(".verification-sent-form").hide();
+                                     $(".identification-type-form").hide();
+                                     $(".identification-step").hide();
+                                     $(".email-step").hide();
+                                     $(".personal_information-form").show();
+                                     $(".personal_information-step").show();
+                                 }  
+                            
+                        });
+                    });
+
+                    $(function () {
+                        $(".foreigner_living_rwanda").click(function(){
+                                if($(".current-passport").val() == "" || $(".place-issued-4").val() == "" || $(".date-issued-4").val() == "" || $(".date-expiry-4").val() == "") 
+                                 { alert("All data is required!"); } 
+                                else{ 
+                                    var identificationType ="foreigner living in rwanda";
+                                     var IdentificationNumber=$(".current-passport").val();
+                                     var PlaceOfIssue = $(".place-issued-3").val();
+                                     var DateOfIssue = $(".date-issued-3").val();
+                                     var DateOfExpiry = $(".date-expiry-3").val();
+                                     $(".send-email-form").hide();
+                                     $(".verification-sent-form").hide();
+                                     $(".identification-type-form").hide();
+                                     $(".identification-step").hide();
+                                     $(".email-step").hide();
+                                     $(".personal_information-form").show();
+                                     $(".personal_information-step").show(); 
+
+                                 }  
+                            
+                        });
+                    });
+
+});
+
+       $(document).ready(function () { 
             $(".verification-sent-form").hide();
             $(".identification-step").hide();
             $(".identification-type-form").hide();
@@ -57,7 +183,7 @@
 // PERSONAL INFORMATION REGISTRATION
 
 $(document).ready(function () { 
-    $(".next-to-personal-auth").click(function(){
+    $(".next-to-personal-info").click(function(){
         $(".send-email-form").hide();
             $(".verification-sent-form").hide();
             $(".identification-type-form").hide();
@@ -439,6 +565,9 @@ inputImage.onchange = evt => {
 // BROWSING IMAGE
 
 $(document).ready(function () { 
+    if($("#save_user_btn").click(function(){
+
+    }));
     $("#save_user_btn").click(function(){
 
     var Nationality = [];
@@ -475,7 +604,7 @@ $(document).ready(function () {
                 dateOfBirth: $(".dateOfBirth").val(),
                 language: $(".language").val(),  
                 maritalStatus: $(".maritalStatus").val(), 
-                majOffice: $(".majOffice").val(),                
+                password: $(".password").val(),                
                 fatherFirstName: $(".fatherFirstName").val(),
                 fatherLastName: $(".fatherLastName").val(),
                 motherFirstName:$(".motherFirstName").val(),
@@ -497,7 +626,7 @@ $(document).ready(function () {
                 registrationDistrictId :$(".regDistrict").val(),
                 registrationSectorId:$(".regSector").val(),
                 registrationCellId:$(".registration_cell").val(),
-                residentCountryId:$(".residentCountryId").val(),
+                residentCountryId:$(".resCountryId").val(),
                 otherResidentProvince:$(".resProvince").val(),
                 residentProvinceId: $(".resProvinceId").val(),
                 residentDistrictId :$(".resDistrict").val(),

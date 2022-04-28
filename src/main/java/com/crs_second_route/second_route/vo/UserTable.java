@@ -47,7 +47,7 @@ public class UserTable {
     private String gender;
     private String language;
 
-    private String majOffice;
+//    private String majOffice;
 
     private String identificationType;
     private String IdentificationNumber;
@@ -100,11 +100,11 @@ public class UserTable {
 
     @Column(name = "created_at")
     @CreatedDate
-    private Timestamp createdAt;
+    private Date createdAt;
 
     @Column(name = "last_modified_at")
     @LastModifiedDate
-    private Timestamp lastModifiedAt;
+    private Date lastModifiedAt;
     @Column(name = "is_deleted", insertable = false, columnDefinition = "boolean default false")
     private boolean isDeleted;
 }

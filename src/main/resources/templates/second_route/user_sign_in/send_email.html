@@ -141,7 +141,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
                           <a class="nav-link" id="default3-tab" data-toggle="tab" href="#default3" role="tab" aria-controls="default3" aria-selected="false">Refugees</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" id="default4-tab" data-toggle="tab" href="#default4" role="tab" aria-controls="default4" aria-selected="false">Foreigners living in Rwanda</a>
+                          <a class="nav-link " id="default4-tab" data-toggle="tab" href="#default4" role="tab" aria-controls="default4" aria-selected="false">Foreigners living in Rwanda</a>
                       </li>
                   </ul>
                   <div class="tab-content">
@@ -149,82 +149,136 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
                         <div class="cont-area tab_st">
                           <div class="tit_cont">Identity Type</div>
                           <div class="form-group mb-15p">
-                              <select class="form-control mh-form-control">
+                              <select class="form-control mh-form-control" id="identity_type1">
                                   <option>----SELECT---</option>
-                                  <option>National id</option>
-                                  <option>Passport</option>
+                                  <option value="nationalId">National id</option>
+                                  <option value="passport">Passport</option>
                               </select>
                           </div>
-                          <div class="tit_cont">NIID Number</div>
-                          <div class="form-group mb-15p">
-                              <input type="text" class="form-control mh-form-control" id="">
-                          </div> 
+						  <div> 	
+							<div class="chosen_id1">
+									<div class="tit_cont ">National Identity Number</div>
+									<div class="form-group mb-15p">
+										<input type="text" class="form-control mh-form-control nida-class" id="">
+									</div>
+						   </div>
+							  		<div class="chosen_passport1" style="display: none;">
+                         				<div class="tit_cont ">Passport Number</div>
+										<div class="form-group mb-15p">
+										<input type="text" class="form-control mh-form-control passport-class" id="">
+										<div class="tit_cont">Place of Issue</div>
+										<div class="form-group mb-15p">
+											<input type="text" class="form-control mh-form-control place-issued-1" id="">
+										</div>
+										<div class="datetimepicker-wrapper datetimepicker mb-15p">
+											<div class="tit_cont">Date of Issue</div>
+											<input type="date" class="form-control mh-form-control date-issued-1" id="datetimepicker1">
+										</div>
+											<span class="dash">~</span>
+										<div class="datetimepicker-wrapper datetimepicker mb-15p">
+											<div class="tit_cont">Date of Expiry</div>
+											<input type="date" class="form-control mh-form-control date-expiry-1" id="datetimepicker2">
+                         				 </div>
+									</div>
+								</div> 
+								<div class="btn-area mb-0p">
+									<button type="button" class="btn h50 solo citizen_living_rwanda">NEXT</button>
+								</div>
+						 	</div>
                         </div>
                       </div>
                       <div class="tab-pane fade" id="default2" role="tabpanel" aria-labelledby="default2-tab">
                         <div class="cont-area tab_st">
-                          <div class="tit_cont">Rwandan Passport No.</div>
-                          <div class="form-group mb-15p">
-                              <input type="text" class="form-control mh-form-control" id="">
-                          </div>
-                          <div class="tit_cont">Place of Issue</div>
-                          <div class="form-group mb-15p">
-                              <input type="text" class="form-control mh-form-control" id="">
-                          </div>
-                          <div class="datetimepicker-wrapper datetimepicker mb-15p">
-                              <div class="tit_cont">Date of Issue</div>
-                              <input type="text" class="form-control mh-form-control" id="datetimepicker1">
-                          </div>
-                          <span class="dash">~</span>
-                          <div class="datetimepicker-wrapper datetimepicker mb-15p">
-                              <div class="tit_cont">Date of Expiry</div><input type="text" class="form-control mh-form-control" id="datetimepicker2">
-                          </div>
-                        </div>
+							<div class="tit_cont">Identity Type</div>
+							<div class="form-group mb-15p">
+								<select class="form-control mh-form-control" id="identity_type2">
+									<option>----SELECT---</option>
+									<option value="nationalId">National id</option>
+									<option value="passport">Passport</option>
+								</select>
+							</div>
+							<div> 	
+							  <div class="chosen_id">
+									  <div class="tit_cont ">National Identity Number</div>
+									  <div class="form-group mb-15p">
+										  <input type="text" class="form-control mh-form-control nida-class" id="">
+									  </div>
+							 </div>
+										<div class="chosen_passport" style="display: none;">
+										   <div class="tit_cont ">Passport Number</div>
+										  <div class="form-group mb-15p">
+										  <input type="text" class="form-control mh-form-control passport-class" id="">
+										  <div class="tit_cont">Place of Issue</div>
+										  <div class="form-group mb-15p">
+											  <input type="text" class="form-control mh-form-control place-issued-2" id="">
+										  </div>
+										  <div class="datetimepicker-wrapper datetimepicker mb-15p">
+											  <div class="tit_cont">Date of Issue</div>
+											  <input type="date" class="form-control mh-form-control date-issued-2" id="datetimepicker1">
+										  </div>
+											  <span class="dash">~</span>
+										  <div class="datetimepicker-wrapper datetimepicker mb-15p">
+											  <div class="tit_cont">Date of Expiry</div>
+											  <input type="date" class="form-control mh-form-control date-expiry-2" id="datetimepicker2">
+											</div>
+									  </div>
+								  </div> 
+								  <div class="btn-area mb-0p">
+									  <button type="button" class="btn h50 solo citizen_living_abroad">NEXT</button>
+								  </div>
+							   </div>
+						  </div>
                       </div>
                       <div class="tab-pane fade" id="default3" role="tabpanel" aria-labelledby="default3-tab">
                         <div class="cont-area tab_st">
                           <div class="tit_cont">Proof of Registration No.</div>
                           <div class="form-group mb-15p">
-                              <input type="text" class="form-control mh-form-control" id="">
+                              <input type="text" class="form-control mh-form-control proof-registration" id="">
                           </div>
                           <div class="tit_cont">Place of Issue</div>
                           <div class="form-group mb-15p">
-                              <input type="text" class="form-control mh-form-control" id="">
+                              <input type="text" class="form-control mh-form-control place-issued-3" id="">
                           </div>
                           <div class="datetimepicker-wrapper datetimepicker mb-20p">
                               <div class="tit_cont">Date of Issue</div>
-                              <input type="text" class="form-control mh-form-control" id="datetimepicker3">
+                              <input type="date" class="form-control mh-form-control date-issued-3" id="datetimepicker3">
                           </div>
                           <span class="dash">~</span>
                           <div class="datetimepicker-wrapper datetimepicker mb-20p">
-                              <div class="tit_cont">Date of Expiry</div><input type="text" class="form-control mh-form-control" id="datetimepicker4">
+                              <div class="tit_cont">Date of Expiry</div>
+							  <input type="date" class="form-control mh-form-control date-expiry-3" id="datetimepicker4">
                           </div>
+						  <div class="btn-area mb-0p">
+							<button type="button" class="btn h50 solo refugees">NEXT</button>
+						  </div>
                         </div>
                       </div>
                       <div class="tab-pane fade" id="default4" role="tabpanel" aria-labelledby="default4-tab">
                         <div class="cont-area tab_st">
                           <div class="tit_cont">Current Passport No.</div>
                           <div class="form-group mb-15p">
-                              <input type="text" class="form-control mh-form-control" id="">
+                              <input type="text" class="form-control mh-form-control current-passport" id="">
                           </div>
                           <div class="tit_cont">Place of Issue</div>
                           <div class="form-group mb-15p">
-                              <input type="text" class="form-control mh-form-control" id="">
+                              <input type="text" class="form-control mh-form-control place-issued-4" id="">
                           </div>
                           <div class="datetimepicker-wrapper datetimepicker mb-20p">
                               <div class="tit_cont">Date of Issue</div>
-                              <input type="text" class="form-control mh-form-control" id="datetimepicker5">
+                              <input type="date" class="form-control mh-form-control date-issued-4" id="datetimepicker5">
                           </div>
                           <span class="dash">~</span>
                           <div class="datetimepicker-wrapper datetimepicker mb-20p">
-                              <div class="tit_cont">Date of Expiry</div><input type="text" class="form-control mh-form-control" id="datetimepicker6">
+                              <div class="tit_cont">Date of Expiry</div>
+							  <input type="date" class="form-control mh-form-control date-expiry-4" id="datetimepicker6">
                           </div>
+						  <div class="btn-area mb-0p">
+							<button type="button" class="btn h50 solo foreigner_living_rwanda">NEXT</button>
+						  </div>
                         </div>
                       </div>
                     </div>
-                <div class="btn-area mb-0p">
-                  <button type="button" class="btn h50 solo">Authenticate</button>
-                </div>
+                
               </div>
 
               <!-- IDENTIFICATION TYPE -->
@@ -316,7 +370,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-4">
+							<div class="col-6">
 								<div class="tit_cont">Civil status</div>
 								<div class="form-group">
 									<select class="form-control mh-form-control maritalStatus" name="maritalStatus">
@@ -327,21 +381,12 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 									</select>
 								</div>
 								</div>
-							<div class="col-4">
+							<div class="col-6">
 								<div class="tit_cont">Language for Certificate</div>
 								<div class="form-group">
 									<select class="form-control mh-form-control language" name="language">
 										<option>--SELECT STATUS---</option>
 								<option th:each="lang:${languages}" th:value="${lang.id}" th:text="${lang.nameEnglish}"></option> 
-									</select>
-								</div>
-							</div>
-							<div class="col-4">
-								<div class="tit_cont">Maj Office</div>
-								<div class="form-group">
-									<select class="form-control mh-form-control majOffice" name="majOffice">
-										<option>--SELECT---</option>
-								<option th:each="majoff:${maj}" th:value="${majoff.id}" th:text="${majoff.name}"></option> 
 									</select>
 								</div>
 							</div>
@@ -558,7 +603,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 							<div class="min-sub-item">
 								<div>
 									<div class="form-group"> 
-										<select class="form-control mh-form-control registration_cell"> 
+										<select class="form-control mh-form-control registration_cell" name="registrationCellId"> 
 										<option>--Select Registration Cell--</option>
 										</select>
 									</div>

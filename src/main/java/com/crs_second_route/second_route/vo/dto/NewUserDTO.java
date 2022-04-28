@@ -28,7 +28,7 @@ public class NewUserDTO {
     private String maritalStatus;
     private String gender;
     private String language;
-    private String majOffice;
+//    private String majOffice;
 
     private String identificationType;
     private String IdentificationNumber;
