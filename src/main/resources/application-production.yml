@@ -1,5 +1,13 @@
-#
-#spring:
+spring:
+    datasource:
+        data:
+            - classpath:/db_initial_data/provinces.sql
+            - classpath:/db_initial_data/districts.sql
+
+
+
+
+# spring:
 #   datasource:
 #          data:
 #          - classpath:/db_initial_data/countries.sql

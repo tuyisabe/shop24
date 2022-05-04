@@ -22,6 +22,7 @@ public class UserTable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
     @Lob
     @Column(name = "photo", columnDefinition="BLOB")
     private String profilePicture;

@@ -12393,10 +12393,6 @@ p {
   width: 100%;
 }
 
-.dataTables_wrapper { 
-}
-.input-search-wrap {
-}
 .input-search-wrap:after {
   display: block;
   content: "";

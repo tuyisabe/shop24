@@ -56,7 +56,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
                             </ul>
                         <!-- EMAIL STEP    -->
                          <!-- IDENTIFICATION TYPE STEP    -->
-                            <ul class="adm-step-list identification-step">
+                            <ul class="adm-step-list identification-step" style="display: none;">
                                 <li class="done">
                                     <em class="adm-step"><span class="icon_email"></span></em>
                                     <span class="adm-step-name">Email Confirmation</span>
@@ -78,7 +78,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
                               <!-- PERSONAL INFORMATION STEP -->
 
-                              <ul class="adm-step-list  personal_information-step">
+                              <ul class="adm-step-list  personal_information-step" style="display: none;">
                                 <li class="done">
                                     <em class="adm-step"><span class="icon_email"></span></em>
                                     <span class="adm-step-name">Email Confirmation</span>
@@ -108,7 +108,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
             </div>
           
-                    <div class="sign-contents verification-sent-form">
+                    <div class="sign-contents verification-sent-form" style="display: none;">
                         <div class="tit">Sign Up<span class="txt">Please enter your email and send to us.</span></div>
                         <div class="cont-area">
                             <div class="tit_cont">Confirmation Number</div>
@@ -125,7 +125,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
             <form>
                 <!-- IDENTIFICATION TYPE -->
 
-              <div class="sign-contents identification-type-form">
+              <div class="sign-contents identification-type-form" style="display: none;">
                 <div class="tit">Sign Up<span class="txt">Please provide your information</span></div>
                   <div class="top-area">
                     <div class="tit_cont">Select Applicant Type</div>
@@ -144,7 +144,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
                           <a class="nav-link " id="default4-tab" data-toggle="tab" href="#default4" role="tab" aria-controls="default4" aria-selected="false">Foreigners living in Rwanda</a>
                       </li>
                   </ul>
-                  <div class="tab-content">
+                  <div class="tab-content" >
                       <div class="tab-pane fade show active" id="default1" role="tabpanel" aria-labelledby="default1-tab">
                         <div class="cont-area tab_st">
                           <div class="tit_cont">Identity Type</div>
@@ -162,7 +162,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 										<input type="text" class="form-control mh-form-control nida-class" id="">
 									</div>
 						   </div>
-							  		<div class="chosen_passport1" style="display: none;">
+							  		<div class="chosen_passport1">
                          				<div class="tit_cont ">Passport Number</div>
 										<div class="form-group mb-15p">
 										<input type="text" class="form-control mh-form-control passport-class" id="">
@@ -204,7 +204,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 										  <input type="text" class="form-control mh-form-control nida-class" id="">
 									  </div>
 							 </div>
-										<div class="chosen_passport" style="display: none;">
+										<div class="chosen_passport">
 										   <div class="tit_cont ">Passport Number</div>
 										  <div class="form-group mb-15p">
 										  <input type="text" class="form-control mh-form-control passport-class" id="">
@@ -299,7 +299,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
               <!-- PERSONAL INFORMATION FORM -->
 
-              <div class="sign-contents personal_information-form">
+              <div class="sign-contents personal_information-form" style="display: none;">
                 <div class="tit">Sign Up<span class="txt">Please provide your information</span></div>
 				 <div class="usr-detail-area"> 
 					<div class="usr-area">
@@ -686,8 +686,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
                 <span class="copyright-img"><img src="../dist/img/icon_gray.png" alt="" /><em>National Public<br>Prosecution
                         Authority</em></span>
                 <span class="copyright-footer">Copyright &copy; 2019 2018. National Public Prosecution Authority.All Rights Reserved.</span>
-            </div>
-            
+            </div>      
 
         </div>
     </div>

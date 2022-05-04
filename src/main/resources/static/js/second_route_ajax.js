@@ -15,6 +15,8 @@ $(document).ready(function () {
                              var PlaceOfIssue = $(".place-issued-1").val();
                              var DateOfIssue = $(".date-issued-1").val();
                              var DateOfExpiry = $(".date-expiry-1").val();
+                            //  egewfwefewfewfewfewf
+                            
                             console.log(DateOfExpiry);  
                             $(".send-email-form").hide();
                             $(".verification-sent-form").hide();
@@ -27,6 +29,7 @@ $(document).ready(function () {
                         else{ 
                              var IdentificationNumber=$(".nida-class").val();
                             console.log(IdentificationNumber);
+                            get_nida_data();
                             $(".send-email-form").hide();
                             $(".verification-sent-form").hide();
                             $(".identification-type-form").hide();
@@ -38,6 +41,54 @@ $(document).ready(function () {
                     
                 });
             });
+            function get_nida_data() {
+                var nida_number = $(".nida-class").val();             
+                  $.ajax({
+                    url: "/getNidaResponse/" + nida_number,
+                    success: function (result) {
+                        console.log(result);
+                        // var defaultSelected = false;
+                        // var nowSelected = true;
+                        // //console.log(result)
+                        // $('#imagePreview').css('background-image', 'url(' + 'data:image/jpeg;base64,' + result.photo + ')');
+
+                        // $('#imageUpload').attr("src", "data:image/jpeg;base64," + result.photo)
+
+                        // $('#profilePictureInput').val(result.photo);
+                        // $("#firstName").val(result.foreName);
+                        // var gender = result.sex;
+                        // if (gender == 'F') {
+                        //     var female = "Female";
+                        //     var fCode = "F";
+                        //     $('#gender').append(new Option(female, fCode, defaultSelected, nowSelected));
+                        // } else if (gender == 'M') {
+                        //     var male = "Female";
+                        //     var mCode = "F";
+                        //     $('#gender').append(new Option(male, mCode, defaultSelected, nowSelected));
+                        // } else {
+                        //     var unknown = "Unknown";
+                        //     var uCode = "U";
+                        //     $('#gender').append(new Option(unknown, uCode, defaultSelected, nowSelected));
+                        // }
+                        // $("#birthDate").val(result.dateOfBirth);
+                        // $('#maritalStatus').append(new Option(result.maritalStatus, result.civilStatus, defaultSelected, nowSelected));
+                        // $("#fatherName").val(result.fatherNames);
+                        // $("#motherName").val(result.motherNames);
+                        // $("#spouseName").val(result.spouse);
+                        // $('#countryBirth').append(new Option(result.birthCountry, result.countryOfBirth, defaultSelected, nowSelected));
+                        // $("#placeBirth").val(result.placeOfBirth);
+                        // $('#registerCountry').append(new Option(result.countryOfDomicile, result.countryOfDomicileCode, defaultSelected, nowSelected));
+                        // $('#idCellNumber').val(result.villageId);
+                        // $('#countryNationality').append(new Option(result.countryOfDomicile, result.countryOfDomicileCode, defaultSelected, nowSelected));
+                        // //$('#countryNationality').empty();
+                        // // get_village_data();
+
+                    },
+                    error: function (err) {
+                        console.log(err);
+                    }
+                });
+            }
             $("#identity_type2").change(function(){ 
                 identificationType= document.getElementById("identity_type2").value;
                  if(identificationType == 'passport') {  $(".chosen_passport").show();  $(".chosen_id").hide();   }
@@ -127,7 +178,7 @@ $(document).ready(function () {
        $(document).ready(function () { 
             $(".verification-sent-form").hide();
             $(".identification-step").hide();
-            $(".identification-type-form").hide();
+            // $(".identification-type-form").hide();
             $(".personal_information-form").hide();
             $(".personal_information-step").hide();
                   $(".send-email-btn").click(function () {  
@@ -586,8 +637,6 @@ $(document).ready(function () {
     $(".occupation_id option:selected").each(function () {
         Occupation.push($(this).val());
     });
-    console.log(Occupation);
-    console.log($('.input-Image').val());
     $.ajax({
         type: "POST",
         contentType: "application/json",
