@@ -1,120 +1,89 @@
 $(document).ready(function () { 
-    var identificationType;
+    var IdentificationType;
+    var identificationNumber;
+    var placeOfIssue;
+    var dateOfIssue;
+    var  dateOfExpiry;
     $("#identity_type1").change(function(){ 
-        identificationType= document.getElementById("identity_type1").value;
-         if(identificationType == 'passport') {  $(".chosen_passport1").show();  $(".chosen_id1").hide();   }
+         IdentificationType= document.getElementById("identity_type1").value;
+         if(IdentificationType == 'passport') {  $(".chosen_passport1").show();  $(".chosen_id1").hide();   }
          else {  $(".chosen_id1").show();   $(".chosen_passport1").hide(); }
         });
             $(function () {
                 $(".citizen_living_rwanda").click(function(){
-                    if(identificationType == 'passport') { 
+                    if(IdentificationType == 'passport') { 
                         if($(".passport-class").val() == "" || $(".place-issued-1").val() == "" || $(".date-issued-1").val() == "" || $(".date-expiry-1").val() == "") 
                          { alert("All data is required!"); } 
                         else{ 
-                             var IdentificationNumber=$(".passport-class").val();
-                             var PlaceOfIssue = $(".place-issued-1").val();
-                             var DateOfIssue = $(".date-issued-1").val();
-                             var DateOfExpiry = $(".date-expiry-1").val();
+                           IdentificationType="passport";
+                            identificationNumber=$(".passport-class").val();
+                            placeOfIssue = $(".place-issued-1").val();
+                          dateOfIssue = $(".date-issued-1").val();
+                          dateOfExpiry = $(".date-expiry-1").val();
                             //  egewfwefewfewfewfewf
-                            
-                            console.log(DateOfExpiry);  
                             $(".send-email-form").hide();
                             $(".verification-sent-form").hide();
                             $(".identification-type-form").hide();
                             $(".identification-step").hide();
                             $(".email-step").hide();
+                            
                             $(".personal_information-form").show();
-                            $(".personal_information-step").show(); }  }
+                            $(".personal_information-step").show(); 
+                        $(".identity_type").val(IdentificationType);
+                        $(".identity_number").val(identificationNumber);
+                        $(".place_of_issued").val(placeOfIssue);
+                        $(".date_of_issued").val(dateOfIssue);
+                        $(".date_of_expiration").val(dateOfExpiry);
+                        }  
+                    }
                     else {   if ($(".nida-class").val() == "") { alert("National Identity is required!");  } 
                         else{ 
-                             var IdentificationNumber=$(".nida-class").val();
-                            console.log(IdentificationNumber);
-                            get_nida_data();
                             $(".send-email-form").hide();
                             $(".verification-sent-form").hide();
                             $(".identification-type-form").hide();
                             $(".identification-step").hide();
                             $(".email-step").hide();
                             $(".personal_information-form").show();
-                            $(".personal_information-step").show(); }
+                            $(".personal_information-step").show();
+                            identificationNumber = $(".nida-class").val();             
+                            get_citizen_living_rwanda(identificationNumber);
+                        }
                     }
                     
                 });
             });
-            function get_nida_data() {
-                var nida_number = $(".nida-class").val();             
-                  $.ajax({
-                    url: "/getNidaResponse/" + nida_number,
-                    success: function (result) {
-                        console.log(result);
-                        // var defaultSelected = false;
-                        // var nowSelected = true;
-                        // //console.log(result)
-                        // $('#imagePreview').css('background-image', 'url(' + 'data:image/jpeg;base64,' + result.photo + ')');
 
-                        // $('#imageUpload').attr("src", "data:image/jpeg;base64," + result.photo)
-
-                        // $('#profilePictureInput').val(result.photo);
-                        // $("#firstName").val(result.foreName);
-                        // var gender = result.sex;
-                        // if (gender == 'F') {
-                        //     var female = "Female";
-                        //     var fCode = "F";
-                        //     $('#gender').append(new Option(female, fCode, defaultSelected, nowSelected));
-                        // } else if (gender == 'M') {
-                        //     var male = "Female";
-                        //     var mCode = "F";
-                        //     $('#gender').append(new Option(male, mCode, defaultSelected, nowSelected));
-                        // } else {
-                        //     var unknown = "Unknown";
-                        //     var uCode = "U";
-                        //     $('#gender').append(new Option(unknown, uCode, defaultSelected, nowSelected));
-                        // }
-                        // $("#birthDate").val(result.dateOfBirth);
-                        // $('#maritalStatus').append(new Option(result.maritalStatus, result.civilStatus, defaultSelected, nowSelected));
-                        // $("#fatherName").val(result.fatherNames);
-                        // $("#motherName").val(result.motherNames);
-                        // $("#spouseName").val(result.spouse);
-                        // $('#countryBirth').append(new Option(result.birthCountry, result.countryOfBirth, defaultSelected, nowSelected));
-                        // $("#placeBirth").val(result.placeOfBirth);
-                        // $('#registerCountry').append(new Option(result.countryOfDomicile, result.countryOfDomicileCode, defaultSelected, nowSelected));
-                        // $('#idCellNumber').val(result.villageId);
-                        // $('#countryNationality').append(new Option(result.countryOfDomicile, result.countryOfDomicileCode, defaultSelected, nowSelected));
-                        // //$('#countryNationality').empty();
-                        // // get_village_data();
-
-                    },
-                    error: function (err) {
-                        console.log(err);
-                    }
-                });
-            }
             $("#identity_type2").change(function(){ 
-                identificationType= document.getElementById("identity_type2").value;
-                 if(identificationType == 'passport') {  $(".chosen_passport").show();  $(".chosen_id").hide();   }
+                IdentificationType= document.getElementById("identity_type2").value;
+                 if(IdentificationType == 'passport') {  $(".chosen_passport").show();  $(".chosen_id").hide();   }
                  else {  $(".chosen_id").show();   $(".chosen_passport").hide(); }
                 });
                     $(function () {
                         $(".citizen_living_abroad").click(function(){
-                            if(identificationType == 'passport') { 
+                            if(IdentificationType == 'passport') { 
                                 if($(".passport-class").val() == "" || $(".place-issued-2").val() == "" || $(".date-issued-2").val() == "" || $(".date-expiry-2").val() == "") 
                                  { alert("All data is required!"); } 
                                 else{ 
-                                    var identificationType ="passport";
-                                     var IdentificationNumber=$(".passport-class").val();
-                                     var PlaceOfIssue = $(".place-issued-2").val();
-                                     var DateOfIssue = $(".date-issued-2").val();
-                                     var DateOfExpiry = $(".date-expiry-2").val();
-                                    console.log(DateOfExpiry);  
+                                   IdentificationType ="passport";
+                                   identificationNumber=$(".passport-class").val();
+                                   placeOfIssue = $(".place-issued-2").val();
+                                   dateOfIssue = $(".date-issued-2").val();
+                                   dateOfExpiry = $(".date-expiry-2").val();
                                     $(".send-email-form").hide();
                                     $(".verification-sent-form").hide();
                                     $(".identification-type-form").hide();
                                     $(".identification-step").hide();
                                     $(".email-step").hide();
                                     $(".personal_information-form").show();
-                                    $(".personal_information-step").show(); }  }
-                            else {   if ($(".nida-class").val() == "") { alert("National Identity is required!");  } 
-                                else{  var IdentificationNumber=$(".nida-class").val();
+                                    $(".personal_information-step").show();
+                                $(".identity_type").val(IdentificationType);
+                                $(".identity_number").val(identificationNumber);
+                                $(".place_of_issued").val(placeOfIssue);
+                                $(".date_of_issued").val(dateOfIssue);
+                                $(".date_of_expiration").val(dateOfExpiry);
+                                }  }
+                            else {   if ($(".nida-class-2").val() == "") { alert("National Identity is required!");  } 
+                                else{  identificationNumber=$(".nida-class-2").val();
                                 $(".send-email-form").hide();
                                 $(".verification-sent-form").hide();
                                 $(".identification-type-form").hide();
@@ -122,22 +91,108 @@ $(document).ready(function () {
                                 $(".email-step").hide();
                                 $(".personal_information-form").show();
                                 $(".personal_information-step").show();
-                                    console.log(IdentificationNumber); }
+                                    console.log(identificationNumber);
+                                    get_citizen_living_rwanda(identificationNumber);
+
+                                 }
                             }
                             
                         });
                     });
+
+
+
+
+            function get_citizen_living_rwanda(nida_number) {
+                // var nida_number = $(".nida-class").val();             
+                $.ajax({
+                    url: "/getNidaResponse/" + nida_number,
+                    success: function (result) {
+                        console.log(result);
+                        var defaultSelected = false;
+                        var nowSelected = true;
+                        //console.log(result)
+                        $(".identity_number").val(nida_number).attr('disabled',true);
+                        $('#inputImage').css('background-image', 'url(' + 'data:image/jpeg;base64,' + result.photo + ')');
+
+                        $('#blah').attr("src", "data:image/jpeg;base64," + result.photo);
+                        $('#fileName').val(result.photo);
+                        var image = result.photo;
+                        // console.log(image);
+                        // $(".input-Image").val(image);
+
+                        $(".firstName").val(result.foreName).attr('disabled',true);
+                        $(".lastName").val(result.surnames).attr('disabled',true); 
+                        var gender = result.sex;
+                        if (gender == 'F') {
+                            var female = "Female";
+                            var fCode = "F";
+                            $('.gender').append(new Option(female, fCode, defaultSelected, nowSelected)).attr('disabled',true); 
+                        } else if (gender == 'M') {
+                            var male = "Male";
+                            var mCode = "F";
+                            $('.gender').append(new Option(male, mCode, defaultSelected, nowSelected)).attr('disabled',true);
+                        } else {
+                            var unknown = "Unknown";
+                            var uCode = "U";
+                            $('.gender').append(new Option(unknown, uCode, defaultSelected, nowSelected)).attr('disabled',true);
+                        }
+                        $(".identity_type").val("Citizen Living In Rwanda").attr('disabled',true);
+                       $(".dateOfBirth").val(result.dateOfBirth).attr('disabled',true);
+                        $('.maritalStatus').append(new Option(result.maritalStatus, result.civilStatus, defaultSelected, nowSelected));
+                        $(".fatherFirstName").val(result.fatherNames);
+                        $(".motherFirstName").val(result.motherNames);
+                        $(".place_of_issued").val(result.placeOfIssue);
+                        $(".date_of_issued").val(result.dateOfIssue);
+                        $(".date_of_expiration").val(result.dateOfExpiry);
+                        // $("#spouseName").val(result.spouse);
+                        $('.birthCountryId').append(new Option(result.birthCountry, result.countryOfBirth, defaultSelected, nowSelected)).attr('disabled',true);
+                        $("#placeBirth").val(result.placeOfBirth);
+                        
+                        // $('.nationality_id').append(new Option(result.countryOfDomicile, result.countryOfDomicileCode, defaultSelected, nowSelected));
+                        
+                        var code=result.villageId;
+                        get_village_data(code);
+
+                    },
+                    error: function (err) {
+                        console.log(err);
+                    }
+                });
+            }
+
+            function get_village_data(code) {
+                // var code = $("#idCellNumber").val();
+                $.ajax({
+                    url: "/getVillageByCode/" + code,
+                    success: function (result) {
+                        console.log(result);
+                        var defaultSelected = false;
+                        var nowSelected = true;
+
+                        $('.birthProvinceId').append(new Option(result.provinceVO.name, result.provinceVO.code, defaultSelected, nowSelected)).attr('disabled',true);
+                        $('.birthDistrictId').append(new Option(result.districtVO.name, result.districtVO.code, defaultSelected, nowSelected)).attr('disabled',true);
+                        $('.birthSectorId').append(new Option(result.sectorVO.name, result.sectorVO.code, defaultSelected, nowSelected)).attr('disabled',true);
+                        $('.birthCellId').append(new Option(result.cellVO.name, result.cellVO.code, defaultSelected, nowSelected)).attr('disabled',true);
+                       
+                    },
+                    error: function (err) {
+                        console.log(err);
+                    }
+                });
+            }
+            
 
                     $(function () {
                         $(".refugees").click(function(){
                                 if($(".proof-registration").val() == "" || $(".place-issued-3").val() == "" || $(".date-issued-3").val() == "" || $(".date-expiry-3").val() == "") 
                                  { alert("All data is required!"); } 
                                 else{ 
-                                    var identificationType ="refugee";
-                                     var IdentificationNumber=$(".proof-registration").val();
-                                     var PlaceOfIssue = $(".place-issued-3").val();
-                                     var DateOfIssue = $(".date-issued-3").val();
-                                     var DateOfExpiry = $(".date-expiry-3").val();
+                                   IdentificationType ="refugee";
+                                   identificationNumber=$(".proof-registration").val();
+                                    placeOfIssue = $(".place-issued-3").val();
+                                    dateOfIssue = $(".date-issued-3").val();
+                                     dateOfExpiry = $(".date-expiry-3").val();
                                      $(".send-email-form").hide();
                                      $(".verification-sent-form").hide();
                                      $(".identification-type-form").hide();
@@ -145,6 +200,11 @@ $(document).ready(function () {
                                      $(".email-step").hide();
                                      $(".personal_information-form").show();
                                      $(".personal_information-step").show();
+                            $(".identity_type").val(IdentificationType);
+                            $(".identity_number").val(identificationNumber);
+                            $(".place_of_issued").val(placeOfIssue);
+                            $(".date_of_issued").val(dateOfIssue);
+                            $(".date_of_expiration").val(dateOfExpiry);
                                  }  
                             
                         });
@@ -155,11 +215,11 @@ $(document).ready(function () {
                                 if($(".current-passport").val() == "" || $(".place-issued-4").val() == "" || $(".date-issued-4").val() == "" || $(".date-expiry-4").val() == "") 
                                  { alert("All data is required!"); } 
                                 else{ 
-                                    var identificationType ="foreigner living in rwanda";
-                                     var IdentificationNumber=$(".current-passport").val();
-                                     var PlaceOfIssue = $(".place-issued-3").val();
-                                     var DateOfIssue = $(".date-issued-3").val();
-                                     var DateOfExpiry = $(".date-expiry-3").val();
+                                    IdentificationType ="foreigner living in rwanda";
+                                    identificationNumber=$(".current-passport").val();
+                                    placeOfIssue = $(".place-issued-3").val();
+                                    dateOfIssue = $(".date-issued-3").val();
+                                    dateOfExpiry = $(".date-expiry-3").val();
                                      $(".send-email-form").hide();
                                      $(".verification-sent-form").hide();
                                      $(".identification-type-form").hide();
@@ -167,6 +227,11 @@ $(document).ready(function () {
                                      $(".email-step").hide();
                                      $(".personal_information-form").show();
                                      $(".personal_information-step").show(); 
+                                $(".identity_type").val(IdentificationType);
+                                $(".identity_number").val(identificationNumber);
+                                $(".place_of_issued").val(placeOfIssue);
+                                $(".date_of_issued").val(dateOfIssue);
+                                $(".date_of_expiration").val(dateOfExpiry);
 
                                  }  
                             
@@ -178,7 +243,7 @@ $(document).ready(function () {
        $(document).ready(function () { 
             $(".verification-sent-form").hide();
             $(".identification-step").hide();
-            // $(".identification-type-form").hide();
+            //  $(".identification-type-form").hide();
             $(".personal_information-form").hide();
             $(".personal_information-step").hide();
                   $(".send-email-btn").click(function () {  
@@ -608,18 +673,38 @@ $(".regCountryId").change(function(){
 //    BROWSING IMAGE
 
 inputImage.onchange = evt => {
-    const [file] = inputImage.files
+    const [file] = inputImage.files9;
     if (file) {
-      blah.src = URL.createObjectURL(file)
+      blah.src = URL.createObjectURL(file);
+      $("#fileName").val(URL.createObjectURL(file));
     }
   } 
 // BROWSING IMAGE
 
 $(document).ready(function () { 
-    if($("#save_user_btn").click(function(){
+    // if($("#save_user_btn").click(function(){
 
-    }));
+    // }));
     $("#save_user_btn").click(function(){
+        var identity_type= $("#identity_type").val();
+        var identity_number= $("#identity_number").val();
+        var place_of_issued= $("#place_of_issued").val();
+        var date_of_expiration= $("#date_of_expiration").val();
+        var date_of_issued= $("#date_of_issued").val();
+         if ($(".password").val() == "") {
+            alert("Password is required!");
+            
+        } 
+        else if ($(".password").val().length<6) {
+            alert("Password must be greater than ten characters!");
+        } 
+        else if ($(".re_password").val() == "") {
+            alert("please retype Password!");
+        } 
+        else if ($(".password").val() != $(".re_password").val()) {
+            alert("Password are not matching!");
+        } 
+        else{
 
     var Nationality = [];
     $(".nationality_id option:selected").each(function () {
@@ -637,15 +722,21 @@ $(document).ready(function () {
     $(".occupation_id option:selected").each(function () {
         Occupation.push($(this).val());
     });
+   
+    console.log("heee");
+    console.log(identity_type);
+    console.log(identity_number);
+    console.log(date_of_expiration);
+    console.log("heee");
+
     $.ajax({
         type: "POST",
         contentType: "application/json",
         url:"/add_public_users",
         datatype: "json",
             data: JSON.stringify({
-                profilePicture : $('.input-Image').val(),
-                nidaNumber: $("#nidaNumber").val(),
-                email: $("#email").val(),
+                profilePicture : $('#fileName').val(),
+                email: $("#input-email").val(),
                 firstName :$(".firstName").val(),
                 middleName: $(".middleName").val(),
                 lastName: $(".lastName").val(),
@@ -658,11 +749,12 @@ $(document).ready(function () {
                 fatherLastName: $(".fatherLastName").val(),
                 motherFirstName:$(".motherFirstName").val(),
                 motherLastName:$(".motherLastName").val(),
-                identificationType: "identificationType",
+                identificationType:document.getElementById("identity_type").value,
                 phoneNumber: $(".phoneNumber").val(),
-                IdentificationNumber: "IdentificationNumber",
-                DateOfExpiry: "DateOfExpiry",
-                DateOfIssue: "DateOfIssue", 
+                IdentificationNumber:document.getElementById("identity_number").value,
+                PlaceOfIssue: place_of_issued,
+                DateOfExpiry: date_of_expiration,
+                DateOfIssue:date_of_issued, 
                 birthCountryId: $(".birthCountryId").val(),
                 otherBirthProvince: $(".otherbirthProvince").val(),
                 birthProvinceId:$(".birthProvinceId").val(),
@@ -692,13 +784,13 @@ $(document).ready(function () {
             success: function (data) {
                 console.log(data)
                 alert("Record saved successfully!")
-                // window.location.href = "/added_un_record/"+data.justiciable;
-                //window.location()
+                // window.location='/complete'
             //location.reload();
             },
             error: function (err) {
                 console.log(err);
             },
         }); 
+    }
     });
 }); 

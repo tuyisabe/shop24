@@ -20,7 +20,7 @@ public class NewUserDTO {
     private String firstName;
     private String lastName;
     private String middleName;
-    private Date dateOfBirth;
+    private String dateOfBirth;
     private String fatherFirstName;
     private String fatherLastName;
     private String motherFirstName;

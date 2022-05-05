@@ -12,11 +12,16 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
     <link rel="stylesheet" href="../plugins/bootstrap4-datetimepicker-master/css/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="../plugins/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <!-- nppa Icon CSS -->
+	<link href="/plugins/timepicker/bootstrap-timepicker.min.css" rel="stylesheet" />
+    <link href="/plugins/mjolnic-bootstrap-colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet" />
+    <link href="/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../dist/css/nppa_icon.css">
     <!-- nppa CSS -->
     <link rel="stylesheet" href="../dist/css/nppa.css">
     <!-- nppa SVG -->
     <link rel="stylesheet" href="../dist/css/nppa_svg.css">
+   
+
 </head>
 
 <body>
@@ -125,7 +130,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
             <form>
                 <!-- IDENTIFICATION TYPE -->
 
-              <div class="sign-contents identification-type-form" style="display: none;">
+              <div class="sign-contents identification-type-form">
                 <div class="tit">Sign Up<span class="txt">Please provide your information</span></div>
                   <div class="top-area">
                     <div class="tit_cont">Select Applicant Type</div>
@@ -150,7 +155,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
                           <div class="tit_cont">Identity Type</div>
                           <div class="form-group mb-15p">
                               <select class="form-control mh-form-control" id="identity_type1">
-                                  <option>----SELECT---</option>
+                                  <option value="">----SELECT---</option>
                                   <option value="nationalId">National id</option>
                                   <option value="passport">Passport</option>
                               </select>
@@ -201,7 +206,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 							  <div class="chosen_id">
 									  <div class="tit_cont ">National Identity Number</div>
 									  <div class="form-group mb-15p">
-										  <input type="text" class="form-control mh-form-control nida-class" id="">
+										  <input type="text" class="form-control mh-form-control nida-class-2" id="">
 									  </div>
 							 </div>
 										<div class="chosen_passport">
@@ -303,15 +308,18 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
                 <div class="tit">Sign Up<span class="txt">Please provide your information</span></div>
 				 <div class="usr-detail-area"> 
 					<div class="usr-area">
-						<h3>Applicant Detail</h3>
+						<h3>User Detail</h3>
 						<div class="row mb-30p">
 							<div class="col-12">
 								<div class="profile-id">
-								User Register Type : <span>Citizen</span>
+								User Register Type : <input type="text" class="identity_type" id="identity_type"/>
 								</div>
 								<div class="profile-id">
-								National ID : <span>7108267201</span>
+								National ID : <input type="text" class="identity_number" id="identity_number"/>
 								</div>
+								<input type="text" class="place_of_issued" id="place_of_issued"/>
+								<input type="text" class="date_of_issued" id="date_of_issued"/>
+								<input type="text" class="date_of_expiration" id="date_of_expiration"/>
 							</div>
 						</div>
 						<div class="profile-pic more">
@@ -338,7 +346,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 								</div>
 							</div>
 							<div class="col-4">
-								<div class="tit_cont">Middle Name</div>
+								<div class="tit_cont">Last Name</div>
 								<div class="form-group">
 									<input type="text" class="form-control mh-form-control lastName" name="lastName">
 								</div>
@@ -349,17 +357,17 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 								<div class="tit_cont">Gender</div>
 											<div class="form-group">
 												<select class="form-control mh-form-control gender" name="gender">
-													<option>--SELECT STATUS---</option>
-													<option value="male">Male</option>
-													<option value="female">Female</option>
-													<option value="others">Others</option>
+													<option value="">--SELECT STATUS---</option>
+													<option value="M">Male</option>
+													<option value="F">Female</option>
+													<option value="U">Unknown</option>
 												</select>
 											</div>
 								</div>
 							<div class="col-4">
 								<div class="tit_cont">Birthday</div>
 											<div class="form-group">
-												<input type="date" class="form-control mh-form-control dateOfBirth" id="datetimepicker3" name="dateOfBirth">
+												<input type="text" class="form-control mh-form-control dateOfBirth" id="birthDate" name="dateOfBirth">
 											</div>
 							</div>
 							<div class="col-4">
@@ -374,7 +382,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 								<div class="tit_cont">Civil status</div>
 								<div class="form-group">
 									<select class="form-control mh-form-control maritalStatus" name="maritalStatus">
-										<option>--SELECT STATUS---</option>
+										<option value="">--SELECT STATUS---</option>
 										<option value="maried">Maried</option>
 										<option value="single">Single</option>
 										<option value="divorsed">Divorsed</option>
@@ -385,7 +393,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 								<div class="tit_cont">Language for Certificate</div>
 								<div class="form-group">
 									<select class="form-control mh-form-control language" name="language">
-										<option>--SELECT STATUS---</option>
+										<option value="">--SELECT STATUS---</option>
 								<option th:each="lang:${languages}" th:value="${lang.id}" th:text="${lang.nameEnglish}"></option> 
 									</select>
 								</div>
@@ -487,7 +495,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 									<div class="form-group"> 
                                     <input type="text" class="form-control otherbirthProvince" name="otherBirthProvince" placeholder="Enter Province/State"/>
                                     <select  class="form-control birthProvinceId"name="registrationProvinceId">
-										<option>--Select Birth Province--</option> 
+										<option value="">--Select Birth Province--</option> 
 										 <option th:each="province:${provinces}"
                                              th:value="${province.code}" th:text="${province.name}"></option>
                                      </select>
@@ -499,7 +507,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 									<div class="form-group">
                                     <input type="text" class="form-control resProvince" name="otherResidentProvince" placeholder="Enter Province/State"/>
                                     <select  class="form-control resProvinceId"name="residentProvinceId">
-										<option>--Select Resident Province--</option> 
+										<option value="">--Select Resident Province--</option> 
                                         <option th:each="province:${provinces}"
                                              th:value="${province.code}" th:text="${province.name}"></option>
                                      </select>
@@ -511,7 +519,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 									<div class="form-group">
                                     <input type="text" class="form-control otherRegProvince" name="otherRegistrationProvince" placeholder="Enter Province/State"/>
                                     <select  class="form-control regProvinceId"name="birthProvinceId">
-                                            <option>--Select Registration Province--</option> 
+                                            <option value="">--Select Registration Province--</option> 
                                         <option th:each="province:${provinces}"
                                              th:value="${province.code}" th:text="${province.name}"></option>
                                      </select>
@@ -525,7 +533,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 								<div>
 									<div class="form-group">
 										<select class="form-control mh-form-control birthDistrictId" name="birthDistrictId">
-										<option>--Select Birth District--</option> 
+										<option value="">--Select Birth District--</option> 
 										</select>
 									</div>
 								</div>
@@ -534,7 +542,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 								<div>
 									<div class="form-group">
 										<select class="form-control mh-form-control resDistrict" name="residentDistrictId">
-										<option>--Select Resident District--</option> 
+										<option value="">--Select Resident District--</option> 
 										</select>
 									</div>
 								</div>
@@ -543,7 +551,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 								<div>
 									<div class="form-group">
 										<select class="form-control mh-form-control regDistrict" name="birthDistrictId">
-										<option>--Select registration District--</option>
+										<option value="">--Select registration District--</option>
 										</select>
 									</div>
 								</div>
@@ -555,7 +563,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 								<div>
 									<div class="form-group">
 										<select class="form-control mh-form-control birthSectorId" name="birthSectorId">
-										<option>--Select Birth Sector--</option> 
+										<option value="">--Select Birth Sector--</option> 
 										</select>
 									</div>
 								</div>
@@ -564,7 +572,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 								<div>
 									<div class="form-group">
 										<select class="form-control mh-form-control resSector" name="residentSectorId">
-										<option>Select Resident Sector--</option> 
+										<option value="">Select Resident Sector--</option> 
 										</select>
 									</div>
 								</div>
@@ -573,7 +581,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 								<div>
 									<div class="form-group">
 										<select class="form-control mh-form-control regSector" name="registrationSectorId">
-                                            <option>Select Registration Sector--</option>
+                                            <option value="">Select Registration Sector--</option>
 										</select>
 									</div>
 								</div>
@@ -585,8 +593,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 								<div>
 									<div class="form-group">
 										<select class="form-control mh-form-control birthCellId" name="birthCellId"> 
-										<option>--Select Birth Cell--</option>
-
+										<option value="">--Select Birth Cell--</option>
 										</select>
 									</div>
 								</div>
@@ -595,7 +602,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 								<div>
 									<div class="form-group">
 										<select class="form-control mh-form-control resident_cell" name="residentCellId"> 
-										<option>--Select Resident Cell--</option>
+										<option value="">--Select Resident Cell--</option>
 										</select>
 									</div>
 								</div>
@@ -604,7 +611,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 								<div>
 									<div class="form-group"> 
 										<select class="form-control mh-form-control registration_cell" name="registrationCellId"> 
-										<option>--Select Registration Cell--</option>
+										<option value="">--Select Registration Cell--</option>
 										</select>
 									</div>
 								</div>
@@ -614,25 +621,26 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 							<div class="min-sub-tit"><span>Additional<br>Information</span></div>
 							<div class="min-sub-item">
 							  <div class="tit_cont">Nation(s)  </div>
-							  <select class="form-control mh-form-control fav_clr nationality_id" multiple="multiple" >
-                                  <option>----SELECT ---</option>
+							  <select class="form-control mh-form-control fav_clr nationality_id" multiple="multiple" style="width: 100%;">
+                                  <option value="">----SELECT ---</option>
                                 <option th:each="nat:${nationality}" th:value="${nat.id}" th:text="${nat.nameEnglish}"></option> 
 							  </select>
 							</div>
 							<div class="min-sub-item">
 							  <div class="tit_cont">Profession(s)  </div>
-							  <select class="form-control mh-form-control fav_clr profession_id" multiple="multiple" >
-                                <option>----SELECT ---</option>
+							  <select class="form-control mh-form-control fav_clr profession_id" multiple="multiple" style="width: 100%;">
+                                <option value="">----SELECT ---</option>
                                 <option th:each="prof:${profession}" th:value="${prof.id}" th:text="${prof.descriptionEnglish}"></option> 
 							  </select>
 							</div>
                             <div class="min-sub-item">
                                 <div class="tit_cont">Occupation(s)</div>
-                                <select class="form-control mh-form-control fav_clr occupation_id"  multiple="multiple" > 
+                                <select class="form-control mh-form-control fav_clr occupation_id"  multiple="multiple" style="width: 100%;"> 
 								<option th:each="occupat:${occupation}" th:value="${occupat.id}" th:text="${occupat.descriptionEnglish}"></option> 
                                 </select>
                               </div> 
-						  </div>
+						</div>
+						
 					</div> 
 					<div class="usr-area mt-80p">
 						<h3>Password</h3>
@@ -640,7 +648,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 							<div class="col-12">
 								<div class="min-sub-wrap ">
 									<div class="min-sub-tit type02">
-										<span>New Password</span>
+										<span>Password</span>
 									</div>
 									<div class="min-sub-item">
 										<div>
@@ -728,7 +736,10 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
     <!-- Datetimepicker JS -->
     <script src="../plugins/bootstrap4-datetimepicker-master/js/bootstrap-datetimepicker.min.js"></script>
     <!-- nppa JS -->
+	<script th:src="@{/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js}"></script>
+    <script th:src="@{/plugins/bootstrap-daterangepicker/daterangepicker.js}"></script>
     <script th:src="@{../plugins/select2/js/select2.min.js}"></script>
+	<script th:src="@{/js/jquery.form-pickers.init.js}"></script>
     <script th:src="@{../js/second_route_ajax.js}"></script>
 
     

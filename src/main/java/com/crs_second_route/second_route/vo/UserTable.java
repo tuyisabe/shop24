@@ -39,7 +39,7 @@ public class UserTable {
     @Column(columnDefinition = "VARCHAR(255) GENERATED ALWAYS AS (CONCAT(first_name, ' ' , last_name, ' ' , middle_name))", insertable = false, updatable = false)
     private String fullName;
 
-    private Date dateOfBirth;
+    private String dateOfBirth;
     private String fatherFirstName;
     private String fatherLastName;
     private String motherFirstName;

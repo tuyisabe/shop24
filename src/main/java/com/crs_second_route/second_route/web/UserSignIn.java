@@ -91,6 +91,8 @@ public class UserSignIn {
         UserTable userTable = new UserTable();
 
         userTable.setProfilePicture(newUserDTO.getProfilePicture());
+        System.out.println("???????????????????");
+        System.out.println(newUserDTO.getProfilePicture());
         userTable.setFirstName(newUserDTO.getFirstName());
         userTable.setLastName(newUserDTO.getLastName());
         userTable.setMiddleName(newUserDTO.getMiddleName());
@@ -108,7 +110,7 @@ public class UserSignIn {
         userTable.setPlaceOfIssue(newUserDTO.getPlaceOfIssue());
         userTable.setDateOfIssue(newUserDTO.getDateOfIssue());
         userTable.setDateOfExpiry(newUserDTO.getDateOfExpiry());
-        userTable.setEmail("niysalomons@gmail.com");
+        userTable.setEmail("emails@gmail.com");
         userTable.setPassword(newUserDTO.getPassword());
         userTable.setPhoneNumber(newUserDTO.getPhoneNumber());
         userTable.setBirthCountryId(newUserDTO.getBirthCountryId());

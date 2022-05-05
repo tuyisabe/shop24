@@ -94,12 +94,12 @@ public class NidaRestController {
 
 
     @RequestMapping(value="/getVillageByCode/{code}", method=RequestMethod.GET)
-    public ResponseEntity<Map<String, Object>> getdeleteAirConditionerRequest(HttpServletRequest request,
+    public ResponseEntity<Map<String, Object>> getAllAddressRequest(HttpServletRequest request,
                                                                               @PathVariable ("code")String code) throws Exception{
         Map<String, Object> map = new HashMap<String, Object>();
         try {
-            Village villageVO =villageService.findByCode(code);
-            map.put("villageVO", villageVO);
+           Village villageVO =villageService.findByCode(code);
+//            map.put("villageVO", villageVO);
 
             Cell cellVO = cellService.findByCode(villageVO.getCode().substring(0, 8));
             map.put("cellVO", cellVO);
