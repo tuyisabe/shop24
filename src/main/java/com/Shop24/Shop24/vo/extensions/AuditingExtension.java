@@ -1,4 +1,4 @@
-package com.crs_second_route.second_route.vo.extensions;
+package com.Shop24.Shop24.vo.extensions;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
