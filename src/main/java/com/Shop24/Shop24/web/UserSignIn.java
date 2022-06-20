@@ -83,7 +83,7 @@ public class UserSignIn {
 
 
     @PostMapping("/add_public_users")
-    public ResponseEntity<Map<String, Object>> add_personal_info_justiciable(
+    public ResponseEntity<Map<String, Object>> CREATING_NEW_ACCOUNT(
             @RequestBody NewUserDTO newUserDTO)
             throws Exception {
 //        Map<String, Object> message = new HashMap<>();

@@ -1,4 +1,4 @@
-package com.crs_second_route.second_route;
+package com.Shop24.Shop24;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -9,10 +9,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //@Configuration
 @EnableAutoConfiguration
 // @ComponentScan
-public class CrsSecondRouteApplication {
+public class Shop24 {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CrsSecondRouteApplication.class, args);
+		SpringApplication.run(Shop24.class, args);
 	}
 
 }
